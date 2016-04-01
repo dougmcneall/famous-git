@@ -1,0 +1,299 @@
+\begin{thebibliography}{40}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Abramowitz(2012)}]{abramowitz2012benchmarking}
+Abramowitz, G.: Towards a public, standardized, diagnostic benchmarking system
+  for land surface models, Geoscientific Model Development, 5, 819--827,
+  \doi{10.5194/gmd-5-819-2012},
+  \urlprefix\url{http://www.geosci-model-dev.net/5/819/2012/}, 2012.
+
+\bibitem[{Booth et~al.(2012)Booth, Jones, Collins, Totterdell, Cox, Sitch,
+  Huntingford, Betts, Harris, and Lloyd}]{booth2012highsensitivity}
+Booth, B. B.~B., Jones, C.~D., Collins, M., Totterdell, I.~J., Cox, P.~M.,
+  Sitch, S., Huntingford, C., Betts, R.~A., Harris, G.~R., and Lloyd, J.: High
+  sensitivity of future global warming to land carbon cycle processes,
+  Environmental Research Letters, 7, 024\,002,
+  \urlprefix\url{http://stacks.iop.org/1748-9326/7/i=2/a=024002}, 2012.
+
+\bibitem[{Booth et~al.(2013)Booth, Bernie, McNeall, Hawkins, Caesar, Boulton,
+  Friedlingstein, and Sexton}]{booth2013scenario}
+Booth, B. B.~B., Bernie, D., McNeall, D., Hawkins, E., Caesar, J., Boulton, C.,
+  Friedlingstein, P., and Sexton, D. M.~H.: Scenario and modelling uncertainty
+  in global mean temperature change derived from emission-driven global climate
+  models, Earth System Dynamics, 4, 95--108, \doi{10.5194/esd-4-95-2013},
+  \urlprefix\url{http://www.earth-syst-dynam.net/4/95/2013/}, 2013.
+
+\bibitem[{Brynjarsd{\'o}ttir and O'Hagan(2014)}]{brynjarsdottir2014learning}
+Brynjarsd{\'o}ttir, J. and O'Hagan, A.: Learning about physical parameters: the
+  importance of model discrepancy, Inverse Problems, 30, 114\,007,
+  \urlprefix\url{http://stacks.iop.org/0266-5611/30/i=11/a=114007}, 2014.
+
+\bibitem[{Carslaw et~al.(2013)Carslaw, Lee, Reddington, Pringle, Rap, Forster,
+  Mann, Spracklen, Woodhouse, Regayre et~al.}]{carslaw2013large}
+Carslaw, K., Lee, L., Reddington, C., Pringle, K., Rap, A., Forster, P., Mann,
+  G., Spracklen, D., Woodhouse, M., Regayre, L., et~al.: Large contribution of
+  natural aerosols to uncertainty in indirect forcing, Nature, 503, 67--71,
+  2013.
+
+\bibitem[{Cox et~al.(2004)Cox, Betts, Collins, Harris, Huntingford, and
+  Jones}]{cox2004amazon}
+Cox, M.~P., Betts, A.~R., Collins, M., Harris, P.~P., Huntingford, C., and
+  Jones, D.~C.: Amazonian forest dieback under climate-carbon cycle projections
+  for the 21st century, Theoretical and Applied Climatology, 78, 137--156,
+  \doi{10.1007/s00704-004-0049-4},
+  \urlprefix\url{http://dx.doi.org/10.1007/s00704-004-0049-4}, 2004.
+
+\bibitem[{Cox(2001)}]{cox2001description}
+Cox, P.~M.: Description of the TRIFFID dynamic global vegetation model, Tech.
+  rep., Technical Note 24, Hadley Centre, United Kingdom Meteorological Office,
+  Bracknell, UK, 2001.
+
+\bibitem[{Craig et~al.(1997)Craig, Goldstein, Seheult, and
+  Smith}]{craig1997pressure}
+Craig, P., Goldstein, M., Seheult, A., and Smith, J.: Pressure matching for
+  hydrocarbon reservoirs: a case study in the use of Bayes linear strategies
+  for large computer experiments, in: Case studies in Bayesian statistics,
+  edited by Gatsonis, C., Hodges, J., Kass, R., McCulloch, R., Rossi, P., and
+  Singpurwalla, N., vol.~3, pp. 36--93, Springer-Verlag, New York, USA, 1997.
+
+\bibitem[{Gnanadesikan and Stouffer(2006)}]{gnanadesikan2006diagnosing}
+Gnanadesikan, A. and Stouffer, R.~J.: Diagnosing atmosphere-ocean general
+  circulation model errors relevant to the terrestrial biosphere using the
+  Koppen climate classification, Geophysical Research Letters, 33, n/a--n/a,
+  \doi{10.1029/2006GL028098},
+  \urlprefix\url{http://dx.doi.org/10.1029/2006GL028098}, l22701, 2006.
+
+\bibitem[{Good et~al.(2008)Good, Lowe, Collins, and
+  Moufouma-Okia}]{good2008objective}
+Good, P., Lowe, J.~A., Collins, M., and Moufouma-Okia, W.: An objective
+  tropical Atlantic sea surface temperature gradient index for studies of south
+  Amazon dry-season climate variability and change, Philosophical Transactions
+  of the Royal Society of London B: Biological Sciences, 363, 1761--1766,
+  \doi{10.1098/rstb.2007.0024},
+  \urlprefix\url{http://rstb.royalsocietypublishing.org/content/363/1498/1761},
+  2008.
+
+\bibitem[{Gordon et~al.(2000)Gordon, Cooper, Senior, Banks, Gregory, Johns,
+  Mitchell, and Wood}]{gordon2000simulation}
+Gordon, C., Cooper, C., Senior, A.~C., Banks, H., Gregory, M.~J., Johns, C.~T.,
+  Mitchell, B. J.~F., and Wood, A.~R.: The simulation of SST, sea ice extents
+  and ocean heat transports in a version of the Hadley Centre coupled model
+  without flux adjustments, Climate Dynamics, 16, 147--168,
+  \doi{10.1007/s003820050010},
+  \urlprefix\url{http://dx.doi.org/10.1007/s003820050010}, 2000.
+
+\bibitem[{Gregoire et~al.(2010)Gregoire, Valdes, Payne, and
+  Kahana}]{gregoire2010optimal}
+Gregoire, L.~J., Valdes, P.~J., Payne, A.~J., and Kahana, R.: Optimal tuning of
+  a GCM using modern and glacial constraints, Climate Dynamics, 37, 705--719,
+  \doi{10.1007/s00382-010-0934-8},
+  \urlprefix\url{http://dx.doi.org/10.1007/s00382-010-0934-8}, 2010.
+
+\bibitem[{Higdon et~al.(2008)Higdon, Gattiker, Williams, and
+  Rightley}]{higdon2008calibration}
+Higdon, D., Gattiker, J., Williams, B., and Rightley, M.: Computer Model
+  Calibration Using High-Dimensional Output, Journal of the American
+  Statistical Association, 103, 570--583, \doi{10.1198/016214507000000888},
+  \urlprefix\url{http://dx.doi.org/10.1198/016214507000000888}, 2008.
+
+\bibitem[{Huntingford et~al.(2009)Huntingford, Lowe, Booth, Jones, Harris,
+  Gohar, and Meir}]{huntingford2009contributions}
+Huntingford, C., Lowe, J.~A., Booth, B. B.~B., Jones, C.~D., Harris, G.~R.,
+  Gohar, L.~K., and Meir, P.: Contributions of carbon cycle uncertainty to
+  future climate projection spread, Tellus B, 61, 355--360,
+  \doi{10.1111/j.1600-0889.2009.00414.x},
+  \urlprefix\url{http://dx.doi.org/10.1111/j.1600-0889.2009.00414.x}, 2009.
+
+\bibitem[{Joetzjer et~al.(2013)Joetzjer, Douville, Delire, and
+  Ciais}]{joetzjer2013amazon}
+Joetzjer, E., Douville, H., Delire, C., and Ciais, P.: Present-day and future
+  Amazonian precipitation in global climate models: CMIP5 versus CMIP3, Climate
+  Dynamics, 41, 2921--2936, \doi{10.1007/s00382-012-1644-1},
+  \urlprefix\url{http://dx.doi.org/10.1007/s00382-012-1644-1}, 2013.
+
+\bibitem[{Jones et~al.(2005)Jones, Gregory, Thorpe, Cox, Murphy, Sexton, and
+  Valdes}]{jones2005systematic}
+Jones, C., Gregory, J., Thorpe, R., Cox, P., Murphy, J., Sexton, D., and
+  Valdes, P.: Systematic optimisation and climate simulation of FAMOUS, a fast
+  version of HadCM3, Climate Dynamics, 25, 189--204,
+  \doi{10.1007/s00382-005-0027-2},
+  \urlprefix\url{http://dx.doi.org/10.1007/s00382-005-0027-2}, 2005.
+
+\bibitem[{Kennedy and O'Hagan(2001)}]{kennedy2001bayesian}
+Kennedy, M. and O'Hagan, A.: Bayesian calibration of computer models, Journal
+  of the Royal Statistical Society: Series B (Statistical Methodology), 63,
+  425--464, 2001.
+
+\bibitem[{Lee et~al.(2016)Lee, Reddington, and Carslaw}]{lee2016aerosol}
+Lee, L.~A., Reddington, C.~L., and Carslaw, K.~S.: On the relationship between
+  aerosol model uncertainty and radiative forcing uncertainty, Proceedings of
+  the National Academy of Sciences, \doi{10.1073/pnas.1507050113},
+  \urlprefix\url{http://www.pnas.org/content/early/2016/02/04/1507050113.abstract},
+  2016.
+
+\bibitem[{Loveland et~al.(2000)Loveland, Reed, Brown, Ohlen, Zhu, Yang, and
+  Merchant}]{loveland2000landcover}
+Loveland, T.~R., Reed, B.~C., Brown, J.~F., Ohlen, D.~O., Zhu, Z., Yang, L.,
+  and Merchant, J.~W.: Development of a global land cover characteristics
+  database and IGBP DISCover from 1 km AVHRR data, International Journal of
+  Remote Sensing, 21, 1303--1330, \doi{10.1080/014311600210191},
+  \urlprefix\url{http://dx.doi.org/10.1080/014311600210191}, 2000.
+
+\bibitem[{Luo et~al.(2012)Luo, Randerson, Abramowitz, Bacour, Blyth,
+  Carvalhais, Ciais, Dalmonech, Fisher, Fisher, Friedlingstein, Hibbard,
+  Hoffman, Huntzinger, Jones, Koven, Lawrence, Li, Mahecha, Niu, Norby, Piao,
+  Qi, Peylin, Prentice, Riley, Reichstein, Schwalm, Wang, Xia, Zaehle, and
+  Zhou}]{luo2012framework}
+Luo, Y.~Q., Randerson, J.~T., Abramowitz, G., Bacour, C., Blyth, E.,
+  Carvalhais, N., Ciais, P., Dalmonech, D., Fisher, J.~B., Fisher, R.,
+  Friedlingstein, P., Hibbard, K., Hoffman, F., Huntzinger, D., Jones, C.~D.,
+  Koven, C., Lawrence, D., Li, D.~J., Mahecha, M., Niu, S.~L., Norby, R., Piao,
+  S.~L., Qi, X., Peylin, P., Prentice, I.~C., Riley, W., Reichstein, M.,
+  Schwalm, C., Wang, Y.~P., Xia, J.~Y., Zaehle, S., and Zhou, X.~H.: A
+  framework for benchmarking land models, Biogeosciences, 9, 3857--3874,
+  \doi{10.5194/bg-9-3857-2012},
+  \urlprefix\url{http://www.biogeosciences.net/9/3857/2012/}, 2012.
+
+\bibitem[{Malhi et~al.(2009)Malhi, Arag{\~a}o, Galbraith, Huntingford, Fisher,
+  Zelazowski, Sitch, McSweeney, and Meir}]{malhi2009amazon}
+Malhi, Y., Arag{\~a}o, L. E. O.~C., Galbraith, D., Huntingford, C., Fisher, R.,
+  Zelazowski, P., Sitch, S., McSweeney, C., and Meir, P.: Exploring the
+  likelihood and mechanism of a climate-change-induced dieback of the Amazon
+  rainforest, Proceedings of the National Academy of Sciences, 106,
+  20\,610--20\,615, \doi{10.1073/pnas.0804619106},
+  \urlprefix\url{http://www.pnas.org/content/106/49/20610.abstract}, 2009.
+
+\bibitem[{McKay et~al.(1979)McKay, Beckman, and Conover}]{mckay1979comparison}
+McKay, M., Beckman, R., and Conover, W.: A comparison of three methods for
+  selecting values of input variables in the analysis of output from a computer
+  code, Technometrics, pp. 239--245, 1979.
+
+\bibitem[{McNeall et~al.(2013)McNeall, Challenor, Gattiker, and
+  Stone}]{mcneall2013potential}
+McNeall, D.~J., Challenor, P.~G., Gattiker, J.~R., and Stone, E.~J.: The
+  potential of an observational data set for calibration of a computationally
+  expensive computer model, Geoscientific Model Development, 6, 1715--1728,
+  \doi{10.5194/gmd-6-1715-2013},
+  \urlprefix\url{http://www.geosci-model-dev.net/6/1715/2013/}, 2013.
+
+\bibitem[{Pope et~al.(2000)Pope, Gallani, Rowntree, and
+  Stratton}]{pope2000impact}
+Pope, D.~V., Gallani, L.~M., Rowntree, R.~P., and Stratton, A.~R.: The impact
+  of new physical parametrizations in the Hadley Centre climate model: HadAM3,
+  Climate Dynamics, 16, 123--146, \doi{10.1007/s003820050009},
+  \urlprefix\url{http://dx.doi.org/10.1007/s003820050009}, 2000.
+
+\bibitem[{Pujol et~al.(2015)Pujol, Iooss, with contributions~from Sebastien
+  Da~Veiga, Fruth, Gilquin, Guillaume, Gratiet, Lemaitre, Ramos, and
+  Touati}]{Rpackage2015sensitivity}
+Pujol, G., Iooss, B., with contributions~from Sebastien Da~Veiga, A.~J., Fruth,
+  J., Gilquin, L., Guillaume, J., Gratiet, L.~L., Lemaitre, P., Ramos, B., and
+  Touati, T.: sensitivity: Sensitivity Analysis,
+  \urlprefix\url{https://CRAN.R-project.org/package=sensitivity}, r package
+  version 1.11.1, 2015.
+
+\bibitem[{Pukelsheim(1994)}]{pukelsheim1994three}
+Pukelsheim, F.: The three sigma rule, The American Statistician, 48, 88--91,
+  1994.
+
+\bibitem[{{R Core Team}(2016)}]{Rcore2016}
+{R Core Team}: R: A Language and Environment for Statistical Computing, R
+  Foundation for Statistical Computing, Vienna, Austria,
+  \urlprefix\url{https://www.R-project.org/}, 2016.
+
+\bibitem[{Ritz et~al.(2015)Ritz, Edwards, Durand, Payne, Peyaud, and
+  Hindmarsh}]{ritz2015potential}
+Ritz, C., Edwards, T.~L., Durand, G., Payne, A.~J., Peyaud, V., and Hindmarsh,
+  R.~C.: Potential sea-level rise from Antarctic ice-sheet instability
+  constrained by observations, Nature, 528, 115--118, 2015.
+
+\bibitem[{Roustant et~al.(2012)Roustant, Ginsbourger, and
+  Deville}]{roustant2012dicekriging}
+Roustant, O., Ginsbourger, D., and Deville, Y.: DiceKriging, DiceOptim: Two R
+  Packages for the Analysis of Computer Experiments by Kriging-Based
+  Metamodeling and Optimization, Journal of Statistical Software, 51, 1--55,
+  \doi{10.18637/jss.v051.i01},
+  \urlprefix\url{https://www.jstatsoft.org/index.php/jss/article/view/v051i01},
+  2012.
+
+\bibitem[{Sellers et~al.(1996)Sellers, Randall, Collatz, Berry, Field, Dazlich,
+  Zhang, Collelo, and Bounoua}]{sellers1996revised}
+Sellers, P., Randall, D., Collatz, G., Berry, J., Field, C., Dazlich, D.,
+  Zhang, C., Collelo, G., and Bounoua, L.: A Revised Land Surface
+  Parameterization (SiB2) for Atmospheric GCMS. Part I: Model Formulation,
+  Journal of Climate, 9, 676--705,
+  \doi{10.1175/1520-0442(1996)009<0676:ARLSPF>2.0.CO;2},
+  \urlprefix\url{http://dx.doi.org/10.1175/1520-0442(1996)009<0676:ARLSPF>2.0.CO;2},
+  1996.
+
+\bibitem[{Smith(2012)}]{smith2012famous}
+Smith, R.~S.: The FAMOUS climate model (versions XFXWB and XFHCC): description
+  update to version XDBUA, Geoscientific Model Development, 5, 269--276,
+  \doi{10.5194/gmd-5-269-2012},
+  \urlprefix\url{http://www.geosci-model-dev.net/5/269/2012/}, 2012.
+
+\bibitem[{Smith et~al.(2008)Smith, Gregory, and Osprey}]{smith2008famous}
+Smith, R.~S., Gregory, J.~M., and Osprey, A.: A description of the FAMOUS
+  (version XDBUA) climate model and control run, Geoscientific Model
+  Development, 1, 53--68, \doi{10.5194/gmd-1-53-2008},
+  \urlprefix\url{http://www.geosci-model-dev.net/1/53/2008/}, 2008.
+
+\bibitem[{Staver et~al.(2011)Staver, Archibald, and
+  Levin}]{staver2011determinants}
+Staver, A.~C., Archibald, S., and Levin, S.~A.: The Global Extent and
+  Determinants of Savanna and Forest as Alternative Biome States, Science, 334,
+  230--232, \doi{10.1126/science.1210465},
+  \urlprefix\url{http://science.sciencemag.org/content/334/6053/230}, 2011.
+
+\bibitem[{Urban and Fricker(2010)}]{urban2010comparison}
+Urban, N.~M. and Fricker, T.~E.: A comparison of Latin hypercube and grid
+  ensemble designs for the multivariate emulation of an Earth system model,
+  Computers \& Geosciences, 36, 746--755, 2010.
+
+\bibitem[{Vernon et~al.(2010)Vernon, Goldstein, and Bower}]{vernon2010galaxy}
+Vernon, I., Goldstein, M., and Bower, R.: Galaxy formation: a {B}ayesian
+  uncertainty analysis, Bayesian Analysis, 5, 619--669, 2010.
+
+\bibitem[{Williams et~al.(2013)Williams, Smith, Valdes, Booth, and
+  Osprey}]{williams2013optimising}
+Williams, J. H.~T., Smith, R.~S., Valdes, P.~J., Booth, B. B.~B., and Osprey,
+  A.: Optimising the FAMOUS climate model: inclusion of global carbon cycling,
+  Geoscientific Model Development, 6, 141--160, \doi{10.5194/gmd-6-141-2013},
+  \urlprefix\url{http://www.geosci-model-dev.net/6/141/2013/}, 2013.
+
+\bibitem[{Williams et~al.(2014)Williams, Totterdell, Halloran, and
+  Valdes}]{williams2014oxygen}
+Williams, J. H.~T., Totterdell, I.~J., Halloran, P.~R., and Valdes, P.~J.:
+  Numerical simulations of oceanic oxygen cycling in the FAMOUS Earth-System
+  model: FAMOUS-ES, version 1.0, Geoscientific Model Development, 7,
+  1419--1431, \doi{10.5194/gmd-7-1419-2014},
+  \urlprefix\url{http://www.geosci-model-dev.net/7/1419/2014/}, 2014.
+
+\bibitem[{Williamson et~al.(2013)Williamson, Goldstein, Allison, Blaker,
+  Challenor, Jackson, and Yamazaki}]{williamson2013history}
+Williamson, D., Goldstein, M., Allison, L., Blaker, A., Challenor, P., Jackson,
+  L., and Yamazaki, K.: History matching for exploring and reducing climate
+  model parameter space using observations and a large perturbed physics
+  ensemble, Climate dynamics, 41, 1703--1729, 2013.
+
+\bibitem[{Williamson et~al.(2014)Williamson, Blaker, Hampton, and
+  Salter}]{williamson2014identifying}
+Williamson, D., Blaker, A.~T., Hampton, C., and Salter, J.: Identifying and
+  removing structural biases in climate models with history matching, Climate
+  Dynamics, 45, 1299--1324, \doi{10.1007/s00382-014-2378-z},
+  \urlprefix\url{http://dx.doi.org/10.1007/s00382-014-2378-z}, 2014.
+
+\bibitem[{Yin et~al.(2012)Yin, Fu, Shevliakova, and
+  Dickinson}]{yin2012precipitation}
+Yin, L., Fu, R., Shevliakova, E., and Dickinson, R.~E.: How well can CMIP5
+  simulate precipitation and its controlling processes over tropical South
+  America?, Climate Dynamics, 41, 3127--3143, \doi{10.1007/s00382-012-1582-y},
+  \urlprefix\url{http://dx.doi.org/10.1007/s00382-012-1582-y}, 2012.
+
+\end{thebibliography}
