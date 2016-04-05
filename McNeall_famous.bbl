@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -221,6 +221,14 @@ Roustant, O., Ginsbourger, D., and Deville, Y.: DiceKriging, DiceOptim: Two R
   \doi{10.18637/jss.v051.i01},
   \urlprefix\url{https://www.jstatsoft.org/index.php/jss/article/view/v051i01},
   2012.
+
+\bibitem[{Saltelli et~al.(1999)Saltelli, Tarantola, and
+  Chan}]{saltelli1999sensitivity}
+Saltelli, A., Tarantola, S., and Chan, K. P.-S.: A Quantitative
+  Model-Independent Method for Global Sensitivity Analysis of Model Output,
+  Technometrics, 41, 39--56, \doi{10.1080/00401706.1999.10485594},
+  \urlprefix\url{http://amstat.tandfonline.com/doi/abs/10.1080/00401706.1999.10485594},
+  1999.
 
 \bibitem[{Sellers et~al.(1996)Sellers, Randall, Collatz, Berry, Field, Dazlich,
   Zhang, Collelo, and Bounoua}]{sellers1996revised}
