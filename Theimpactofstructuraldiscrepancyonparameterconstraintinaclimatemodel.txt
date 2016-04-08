@@ -196,13 +196,9 @@ Each point in input space is assigned an Implausibility $I$, according to equati
 
 
 
-
-
 [eq:implausibility]
 
-
 A threshold of implausibility, above which a candidate input can be safely ruled out as implausible, is usually set to 3; roughly equivalent to a 95% credible interval of a posterior distribution, if using a Bayesian analysis. This is due to Pukelsheim’s three-sigma rule; that for any unimodal distribution, 95% of the probability mass will be within 3 standard deviations of the mean \citep{pukelsheim1994three}.
-
 
 Any input parameter set that has an implausibility score below the threshold is designated “Not Ruled Out Yet” (NROY), and is retained for further analysis. It should be noted that this does not imply that the input setting is “good”, merely that the evidence from observations is not sufficient to rule it out as implausible: this may change as more observations, or more simulator runs become available.
 
@@ -213,13 +209,11 @@ Analyses and Results
 An initial history match
 In this section we find regions of land surface parameter space in FAMOUS that remain NROY given some defensible assumptions about observational uncertainty.  Figure \ref{fig:fraction_histogram_with_discrepancy_standard} shows how the regionally aggregated simulated forest fraction varies across the ensemble. The figure shows histograms of the number of ensemble members with a particular forest fraction, compared with the corresponding observations. Although the simulator was not run at the “standard” or “default” parameter settings in the ensemble, we can use the emulator to estimate its output and uncertainty ($\pm$ 1 standard deviation) at those settings, and show these on the plot, in black.
 
-
 The model run at the standard inputs underestimates the forest fraction in the Amazon region by a considerable margin (more than 0.3). The other tropical forests are slightly overestimated, while the North American forests are very slightly underestimated. Global forest fraction is simulated very near to the observed fraction. Most of the ensemble members overestimate forest fraction in Central Africa, Southeast Asia, and North America, while this effect is not so pronounced in the Amazon.  However, we do see that some ensemble members simulate an Amazon forest fraction around, and indeed above, the observed fraction. This gives us cause to hope that it is possible to find a set of parameters where the Amazon and other forests are simultaneously well simulated, without using a simulator discrepancy function. 
 
+fraction_histogram_with_discrepancy_standard.png 
 
- fraction_histogram_with_discrepancy_standard.png 
-
-Figure \label{fig:fraction_histogram_with_discrepancy_standard} Histograms represent the number of ensemble members of a particular forest fraction in each region, and globally. Points plotted below the histograms represent the observed forest fraction (colours), and the forest fraction simulated at the “standard” parameters $\pm$ 1 SD (black).
+Figure \label{fig:fraction_histogram_with_discrepancy_standard} Histograms represent the number of ensemble members of a particular forest fraction in each region, and globally. Points plotted below the histograms represent the observed forest fraction (colours), and the forest fraction simulated at the "standard" parameters $\pm$ 1 SD (black).
 
 
 A target for a history matching exercise therefore is to “tune away” simulator error and find regions of parameter space where the error is removed, or at least minimised to a level consistent with observational uncertainty. In practice, this requires finding a region where the large negative bias in Amazon forest fraction is minimised, while keeping the other forests well represented.

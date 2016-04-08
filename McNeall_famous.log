@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  8 APR 2016 14:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  8 APR 2016 16:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1002,162 +1002,175 @@ LaTeX Warning: Reference `sec:discussion' on page 3 undefined on input line 157
 LaTeX Warning: Reference `sec:conclusions' on page 3 undefined on input line 15
 7.
 
-[3] [4] (./McNeall_famous.bbl [5] [6] [7])
-<graphics/BL_obs_ensemble_mean_sd.pdf, id=284, 578.16pt x 433.62pt>
+[3] [4]
+
+LaTeX Warning: Reference `tab:params' on page 5 undefined on input line 175.
+
+
+LaTeX Warning: Reference `fig:fraction_pairs' on page 5 undefined on input line
+ 220.
+
+[5] [6]
+
+LaTeX Warning: Reference `eq:implausibility' on page 7 undefined on input line 
+259.
+
+[7] [8] (./McNeall_famous.bbl [9] [10] [11])
+<graphics/BL_obs_ensemble_mean_sd.pdf, id=378, 578.16pt x 433.62pt>
 File: graphics/BL_obs_ensemble_mean_sd.pdf Graphic file (type pdf)
 
 <use graphics/BL_obs_ensemble_mean_sd.pdf>
 Package pdftex.def Info: graphics/BL_obs_ensemble_mean_sd.pdf used on input lin
-e 276.
+e 386.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 387.
 
-<graphics/frac_pairs.pdf, id=285, 650.43pt x 650.43pt>
+<graphics/frac_pairs.pdf, id=379, 650.43pt x 650.43pt>
 File: graphics/frac_pairs.pdf Graphic file (type pdf)
 
 <use graphics/frac_pairs.pdf>
-Package pdftex.def Info: graphics/frac_pairs.pdf used on input line 282.
+Package pdftex.def Info: graphics/frac_pairs.pdf used on input line 392.
 (pdftex.def)             Requested size: 341.43306pt x 341.44116pt.
 
-<graphics/fraction_histogram_with_discrepancy_standard.pdf, id=286, 505.89pt x 
+<graphics/fraction_histogram_with_discrepancy_standard.pdf, id=380, 505.89pt x 
 505.89pt>
 File: graphics/fraction_histogram_with_discrepancy_standard.pdf Graphic file (t
 ype pdf)
  <use graphics/fraction_histogram_with_discrepancy_standard.pdf>
 Package pdftex.def Info: graphics/fraction_histogram_with_discrepancy_standard.
-pdf used on input line 288.
+pdf used on input line 398.
 (pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/credible_NROY.pdf, id=287, 505.89pt x 505.89pt>
+<graphics/credible_NROY.pdf, id=381, 505.89pt x 505.89pt>
 File: graphics/credible_NROY.pdf Graphic file (type pdf)
 
 <use graphics/credible_NROY.pdf>
-Package pdftex.def Info: graphics/credible_NROY.pdf used on input line 294.
+Package pdftex.def Info: graphics/credible_NROY.pdf used on input line 404.
 (pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/credible_NROY_hists.pdf, id=288, 433.62pt x 578.16pt>
+<graphics/credible_NROY_hists.pdf, id=382, 433.62pt x 578.16pt>
 File: graphics/credible_NROY_hists.pdf Graphic file (type pdf)
 
 <use graphics/credible_NROY_hists.pdf>
-Package pdftex.def Info: graphics/credible_NROY_hists.pdf used on input line 30
+Package pdftex.def Info: graphics/credible_NROY_hists.pdf used on input line 41
 0.
 (pdftex.def)             Requested size: 341.43306pt x 455.26811pt.
 
-<graphics/amaz_oat_sens.pdf, id=289, 578.16pt x 578.16pt>
+<graphics/amaz_oat_sens.pdf, id=383, 578.16pt x 578.16pt>
 File: graphics/amaz_oat_sens.pdf Graphic file (type pdf)
 
 <use graphics/amaz_oat_sens.pdf>
-Package pdftex.def Info: graphics/amaz_oat_sens.pdf used on input line 306.
+Package pdftex.def Info: graphics/amaz_oat_sens.pdf used on input line 416.
 (pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
 
-<graphics/FAST_histograms.pdf, id=290, 469.755pt x 505.89pt>
+<graphics/FAST_histograms.pdf, id=384, 469.755pt x 505.89pt>
 File: graphics/FAST_histograms.pdf Graphic file (type pdf)
 
 <use graphics/FAST_histograms.pdf>
-Package pdftex.def Info: graphics/FAST_histograms.pdf used on input line 312.
+Package pdftex.def Info: graphics/FAST_histograms.pdf used on input line 422.
 (pdftex.def)             Requested size: 341.43306pt x 367.69873pt.
 
-<graphics/discrepancy_parameter_space.pdf, id=291, 578.16pt x 578.16pt>
+<graphics/discrepancy_parameter_space.pdf, id=385, 578.16pt x 578.16pt>
 File: graphics/discrepancy_parameter_space.pdf Graphic file (type pdf)
 
 <use graphics/discrepancy_parameter_space.pdf>
 Package pdftex.def Info: graphics/discrepancy_parameter_space.pdf used on input
- line 318.
+ line 428.
 (pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
 
-<graphics/Prop_NROY_tolerance_unc.pdf, id=292, 505.89pt x 505.89pt>
+<graphics/Prop_NROY_tolerance_unc.pdf, id=386, 505.89pt x 505.89pt>
 File: graphics/Prop_NROY_tolerance_unc.pdf Graphic file (type pdf)
 
 <use graphics/Prop_NROY_tolerance_unc.pdf>
 Package pdftex.def Info: graphics/Prop_NROY_tolerance_unc.pdf used on input lin
-e 324.
+e 434.
 (pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/best_inputs_amazon.pdf, id=293, 505.89pt x 505.89pt>
+<graphics/best_inputs_amazon.pdf, id=387, 505.89pt x 505.89pt>
 File: graphics/best_inputs_amazon.pdf Graphic file (type pdf)
 
 <use graphics/best_inputs_amazon.pdf>
-Package pdftex.def Info: graphics/best_inputs_amazon.pdf used on input line 330
+Package pdftex.def Info: graphics/best_inputs_amazon.pdf used on input line 440
 .
 (pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/best_inputs_congo.pdf, id=294, 505.89pt x 505.89pt>
+<graphics/best_inputs_congo.pdf, id=388, 505.89pt x 505.89pt>
 File: graphics/best_inputs_congo.pdf Graphic file (type pdf)
 
 <use graphics/best_inputs_congo.pdf>
-Package pdftex.def Info: graphics/best_inputs_congo.pdf used on input line 336.
+Package pdftex.def Info: graphics/best_inputs_congo.pdf used on input line 446.
 
 (pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/taat_amaz.pdf, id=295, 505.89pt x 505.89pt>
+<graphics/taat_amaz.pdf, id=389, 505.89pt x 505.89pt>
 File: graphics/taat_amaz.pdf Graphic file (type pdf)
 
 <use graphics/taat_amaz.pdf>
-Package pdftex.def Info: graphics/taat_amaz.pdf used on input line 342.
+Package pdftex.def Info: graphics/taat_amaz.pdf used on input line 452.
 (pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/taat_congo.pdf, id=296, 505.89pt x 505.89pt>
+<graphics/taat_congo.pdf, id=390, 505.89pt x 505.89pt>
 File: graphics/taat_congo.pdf Graphic file (type pdf)
 
 <use graphics/taat_congo.pdf>
-Package pdftex.def Info: graphics/taat_congo.pdf used on input line 348.
+Package pdftex.def Info: graphics/taat_congo.pdf used on input line 458.
 (pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/best_inputs_swaps_hists_Paired.pdf, id=297, 505.89pt x 505.89pt>
+<graphics/best_inputs_swaps_hists_Paired.pdf, id=391, 505.89pt x 505.89pt>
 File: graphics/best_inputs_swaps_hists_Paired.pdf Graphic file (type pdf)
 
 <use graphics/best_inputs_swaps_hists_Paired.pdf>
 Package pdftex.def Info: graphics/best_inputs_swaps_hists_Paired.pdf used on in
-put line 354.
+put line 464.
 (pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/best_X_maps.pdf, id=298, 361.35pt x 650.43pt>
+<graphics/best_X_maps.pdf, id=392, 361.35pt x 650.43pt>
 File: graphics/best_X_maps.pdf Graphic file (type pdf)
 
 <use graphics/best_X_maps.pdf>
-Package pdftex.def Info: graphics/best_X_maps.pdf used on input line 360.
+Package pdftex.def Info: graphics/best_X_maps.pdf used on input line 470.
 (pdftex.def)             Requested size: 236.15796pt x 425.08696pt.
 
-<graphics/credible_NROY_hists_disc.pdf, id=299, 433.62pt x 578.16pt>
+<graphics/credible_NROY_hists_disc.pdf, id=393, 433.62pt x 578.16pt>
 File: graphics/credible_NROY_hists_disc.pdf Graphic file (type pdf)
 
 <use graphics/credible_NROY_hists_disc.pdf>
 Package pdftex.def Info: graphics/credible_NROY_hists_disc.pdf used on input li
-ne 366.
+ne 476.
 (pdftex.def)             Requested size: 341.43306pt x 455.26811pt.
 
-<graphics/plausible_disc_input_space.pdf, id=300, 505.89pt x 505.89pt>
+<graphics/plausible_disc_input_space.pdf, id=394, 505.89pt x 505.89pt>
 File: graphics/plausible_disc_input_space.pdf Graphic file (type pdf)
 
 <use graphics/plausible_disc_input_space.pdf>
 Package pdftex.def Info: graphics/plausible_disc_input_space.pdf used on input 
-line 372.
+line 482.
 (pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/input_frequency_marginal.pdf, id=301, 505.89pt x 505.89pt>
+<graphics/input_frequency_marginal.pdf, id=395, 505.89pt x 505.89pt>
 File: graphics/input_frequency_marginal.pdf Graphic file (type pdf)
 
 <use graphics/input_frequency_marginal.pdf>
 Package pdftex.def Info: graphics/input_frequency_marginal.pdf used on input li
-ne 378.
+ne 488.
 (pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
- [8] [9 <./graphics/BL_obs_ensemble_mean_sd.pdf>] [10 <./graphics/frac_pairs.pd
-f>] [11 <./graphics/fraction_histogram_with_discrepancy_standard.pdf>] [12 <./g
-raphics/credible_NROY.pdf>] [13 <./graphics/credible_NROY_hists.pdf>] [14 <./gr
-aphics/amaz_oat_sens.pdf>] [15 <./graphics/FAST_histograms.pdf>] [16 <./graphic
-s/discrepancy_parameter_space.pdf>]
-[17 <./graphics/Prop_NROY_tolerance_unc.pdf>] [18 <./graphics/best_inputs_amazo
-n.pdf>] [19 <./graphics/best_inputs_congo.pdf>] [20 <./graphics/taat_amaz.pdf>]
-[21 <./graphics/taat_congo.pdf>] [22 <./graphics/best_inputs_swaps_hists_Paired
-.pdf>] [23 <./graphics/best_X_maps.pdf>] [24 <./graphics/credible_NROY_hists_di
-sc.pdf>] [25 <./graphics/plausible_disc_input_space.pdf>] [26 <./graphics/input
-_frequency_marginal.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 524.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 524.
+ [12] [13 <./graphics/BL_obs_ensemble_mean_sd.pdf>] [14 <./graphics/frac_pairs.
+pdf>] [15 <./graphics/fraction_histogram_with_discrepancy_standard.pdf>] [16 <.
+/graphics/credible_NROY.pdf>]
+[17 <./graphics/credible_NROY_hists.pdf>] [18 <./graphics/amaz_oat_sens.pdf>]
+[19 <./graphics/FAST_histograms.pdf>] [20 <./graphics/discrepancy_parameter_spa
+ce.pdf>] [21 <./graphics/Prop_NROY_tolerance_unc.pdf>] [22 <./graphics/best_inp
+uts_amazon.pdf>] [23 <./graphics/best_inputs_congo.pdf>] [24 <./graphics/taat_a
+maz.pdf>] [25 <./graphics/taat_congo.pdf>] [26 <./graphics/best_inputs_swaps_hi
+sts_Paired.pdf>] [27 <./graphics/best_X_maps.pdf>] [28 <./graphics/credible_NRO
+Y_hists_disc.pdf>] [29 <./graphics/plausible_disc_input_space.pdf>] [30 <./grap
+hics/input_frequency_marginal.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 634.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 634.
  (./McNeall_famous.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 524.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 524.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 634.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 634.
 
 
 LaTeX Warning: There were undefined references.
@@ -1165,25 +1178,29 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 524.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 634.
  ) 
 Here is how much of TeX's memory you used:
- 10290 strings out of 493315
- 148904 string characters out of 6137904
- 270382 words of memory out of 5000000
- 13418 multiletter control sequences out of 15000+600000
+ 10323 strings out of 493315
+ 149297 string characters out of 6137904
+ 270922 words of memory out of 5000000
+ 13437 multiletter control sequences out of 15000+600000
  45231 words of font info for 72 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  43i,6n,40p,1435b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/urw/times/utmri8a.pfb>
-Output written on McNeall_famous.pdf (26 pages, 741498 bytes).
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/f
+onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on McNeall_famous.pdf (30 pages, 791523 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
- 480 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 662 PDF objects out of 1000 (max. 8388607)
+ 580 compressed objects within 6 object streams
+ 115 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
