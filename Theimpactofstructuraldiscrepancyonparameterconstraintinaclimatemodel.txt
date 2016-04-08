@@ -263,7 +263,6 @@ In the remainder of this section, we use a number of analysis techniques to inve
 
 Finding the active parameters with sensitivity analysis
 
-
 We perform a sensitivity analysis with the aim of identifying the active subspace of model inputs and  quantifying relationships between the model inputs and outputs. In a descriptive sensitivity analysis, we show emulated mean regional and global forest fraction with inputs sampled from across input parameter space in a one-factor-at-a-time fashion, holding all but one parameter at their standard values while varying the remaining parameter (figure \ref{fig:forest_sa}). The emulator is not a perfect representation of the simulator, and so we include the emulator uncertainty estimates at \pm one standard deviation, shown as shaded regions in the plot.
 
 
