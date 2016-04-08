@@ -315,9 +315,7 @@ Table \label{tab:effects_sum} Sum of the total effects across the Amazon, Centra
 
 Mapping simulator error
 
-
 In this section, we examine the ability of the simulator to reproduce the observed forest fraction, how that ability varies across input parameter space, and assess the region of parameter space which is consistent with each of the forest fraction observations.
-
 
 We show a map of simulator error in the the two dimensional space of the most important parameters identified in section \ref{ssec:sensitivity} parameter space, in figure \ref{discrepancy_parameter_space}. We sample the emulator across all parameter space, and plot the mean predicted difference between model output and the observations for each point. The maps appear noisy because of the impact of randomly chosen values of the remaining dimension, but the structure is clear. For the Central Africa, SE Asia and N American forests there is a broad sweep of parameter space, running from low NL0, low V_CRIT_ALPHA to high NL0, high V_CRIT_ALPHA, where discrepancy is close to zero. The Amazon input space does not have this region - only the high NL0, high V_CRIT_ALPHA corner has a discrepancy close to zero, suggesting bias in the model that is not common to all of the forests. It is possible to find a portion of parameter space where the bias is similar for all simulator outputs in the low NL0, high V_CRIT_ALPHA corner. However, the bias is rather large (at least -0.6)[g] at this point.
  discrepancy_parameter_space.png 
@@ -327,9 +325,7 @@ Figure \label{fig:discrepancy_parameter_space} Maps of simulator error, in units
 
 How much input space is ruled out by combinations of observations?
 
-
 Williamson et al. (2014) discuss treating the model discrepancy as a “tolerance to error”. We take this approach, and find the potential of the history matching technique to rule out parameter space under a number of scenarios of observational and tolerance to model structural error. The denominator of equation \ref{eq:implausibility} is the sum of the squared variances of the emulator, discrepancy, and observational uncertainty. Our emulator uncertainty is set largely by the design of the ensemble, but we can experiment with the overall uncertainty budget by partitioning uncertainty between observations and model discrepancy at will.
-
 
 Different observations will tend to rule out different parts of parameter space, while combining observations can be a powerful method of ruling out large parts of parameter space. A number of approaches to combining data in history matching are discussed in \citep{vernon2010galaxy} and \citep{williamson2013history}. A simple strategy is to calculate $max[I]$ at a candidate input across all data independently, and reject those candidates with a value larger than 3 in any. A danger of history matching using $max[I]$ is that a single poorly specified emulator or model discrepancy term could lead to large swathes of parameter space being incorrectly ruled out. As the number of comparisons with data goes up, so does the probability of including a poorly specified model discrepancy. For example, comparing a model with a serious but undiagnosed bias could lead to all a priori plausible parameter space being ruled out as a poor match to the observations. For that reason, it is important to first combine knowledge and judgement about the system being modelled, and the way that the parameters represent their real world counterparts (or don’t), before simply relying on observations to remove plausible parameter space.
 
@@ -418,8 +414,6 @@ In contrast, using the Amazon as an observation, the shape of the plausible regi
 Figure \label{[taat_} Implausibility, given a “tolerance to error” of 0.1. Blue indicates regions where the model best simulates the individual option, while red indicates regions where the model simulates the forests more poorly. The green point indicates the location of the “standard” set of parameters for FAMOUS.
 
 
-
-
 The forests at best parameters
 To examine the implications of using each observation separately to tune the model, we use the emulator to project the forest at the set of “best” inputs for the alternative forests. We find input parameters where the model reproduces each forest, with a very small tolerance of error. We then use the emulator to project the Amazon forest fraction using the “best” parameters for each forest, and the forest fraction for each of those forests using the “best” parameters for the Amazon \ref{figure swap_parameters}. As there is some uncertainty, due to emulator uncertainty, and our very small tolerance to error, these are plotted as histograms.
 
@@ -500,7 +494,6 @@ Finally, does the model simulate the climatic boundary conditions of the forest 
 
 
 Conclusions
-
 
 We analyse an ensemble of the fast climate model FAMOUS, with the aim of constraining carbon cycle parameters through a comparison of simulator output with forest observations. We find that we are unable to constrain the parameters individually, but that areas of joint parameter space are effectively ruled out. With a defensible model discrepancy term for the Amazon, and assumed observational uncertainty we are able to rule out 43\% of the input parameter space defined by the ensemble design.
 
