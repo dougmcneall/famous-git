@@ -10,9 +10,8 @@
 
 
 %% 2-Column Papers and Discussion Papers
+% \documentclass[esd, article]{copernicus} % uncomment to see what the 2 column final paper will look like.
 \documentclass[esd, manuscript]{copernicus}
-
-
 
 %% Journal Abbreviations (Please use the same for Discussion Papers and Final Revised Papers)
 
@@ -91,7 +90,7 @@
 
 
 
-\runningtitle{impact of discrepancy in a climate model }
+\runningtitle{Impact of discrepancy on parameter constraint.}
 
 \runningauthor{McNeall}
 
@@ -154,7 +153,7 @@ Simulator discrepancy might be known a priori - perhaps a computationally necess
 
 Our aim is to identify parameter sets for the land surface module of the climate simulator FAMOUS where the simulator output and the observations of forest fraction are consistent to an acceptable degree.  An initial attempt using history matching suggests that FAMOUS is unable to simulate the Amazon forest and other forests simultaneously at any set of parameters within the experiment design. We argue that this is due to a fundamental simulator discrepancy, which has implications for constraining the input parameters of FAMOUS. We use a number of techniques to characterise and find the drivers of this structural discrepancy, before performing a second history match with an appropriate discrepancy function.
 
-In section \ref{sec:methods} we briefly describe the ensemble of a climate simulator, an emulator and the history matching technique that we use to explore simulator discrepancy. We perform an initial history matching exercise in section \ref{ssec:initial_history_match}. We use the emulator to quantify the relationships between the simulated forest fraction and a set of model input parameters in a sensitivity analysis in section \ref{sec:sensitivity}. Next, we measure the performance of the model ensemble in simulating forest fraction in section \ref{sec:confront}. We see how much input space would be ruled out as implausible in various scenarios of data combination and uncertainty budget in \ref{sec:combination} and we learn what each individual observation tells us about input space in section \ref{sec:learn}. In section \ref{sec:project}, we use the emulator and an implausibility measure to find the “best” set of parameters for each forest, and project the consequences of using those parameters on the other forests. Finally, we perform a history matching exercise with a credible discrepancy function in section \ref{sec:discrepancy}. In section \ref{sec:discussion}, we discuss the consequences of our findings for models of the Amazon rainforest. We offer conclusions in section \ref{sec:conclusions}.
+In section \ref{sec:dataandmethods} we briefly describe the ensemble of a climate simulator, an emulator and the history matching technique that we use to explore simulator discrepancy. We perform an initial history matching exercise in section \ref{ssec:initialhistorymatch}. We use the emulator to quantify the relationships between the simulated forest fraction and a set of model input parameters in a sensitivity analysis in section \ref{ssec:sensitivity}. Next, we measure the performance of the model ensemble in simulating forest fraction in section \ref{ssec:mapping}. We see how much input space would be ruled out as implausible in various scenarios of data combination and uncertainty budget in \ref{ssec:combination} and we learn what each individual observation tells us about input space in section \ref{ssec:learn}. In section \ref{ssec:bestparameters}, we use the emulator and an implausibility measure to find the `best' set of parameters for each forest, and project the consequences of using those parameters on the other forests. Finally, we perform a history matching exercise with a credible discrepancy function in section \ref{ssec:hist_disc}. In section \ref{sec:discussion}, we discuss the consequences of our findings for models of the Amazon rainforest. We offer conclusions in section \ref{sec:conclusions}.
 
 
 \section{Data and Methods}\label{sec:dataandmethods}
@@ -169,7 +168,7 @@ The explicit inclusion of vegetation in FAMOUS is documented in \citep{williams2
 
 \subsection{Known biases in the climate of FAMOUS}\label{ssec:biases}
 
-FAMOUS shows a northern-hemisphere-winter surface air temperature cold bias with respect to HadCM3 and also the overestimation of the fractions of needleleaf trees in North America and C3 grassland in the northern part of Eurasia. The initial version of FAMOUS, used the MOSES1 surface exchange scheme, and did not explicitly describe the inclusion of any vegetation cover, instead using gridbox averages of surface quantities such as root depth, surface albedo and roughness length to describe momentum and water exchange between the surface and the atmosphere. Biases were already present in regimes relevant for the Amazon rainforest. \citep{smith2008famous} noted: "the Amazon region is not wet enough for a fully humid region to exist". These regimes are formulated using the Koppen-Geiger climate classification scheme, which is based on temporal and magnitude distributions of precipitation and temperature \citep{gnanadesikan2006diagnosing}.
+FAMOUS shows a northern-hemisphere-winter surface air temperature cold bias with respect to HadCM3 and also the overestimation of the fractions of needleleaf trees in North America and C3 grassland in the northern part of Eurasia. The initial version of FAMOUS, used the MOSES1 surface exchange scheme, and did not explicitly describe the inclusion of any vegetation cover, instead using gridbox averages of surface quantities such as root depth, surface albedo and roughness length to describe momentum and water exchange between the surface and the atmosphere. Biases were already present in regimes relevant for the Amazon rainforest. \citep{smith2008famous} noted: \emph{"the Amazon region is not wet enough for a fully humid region to exist"}. These regimes are formulated using the Koppen-Geiger climate classification scheme, which is based on temporal and magnitude distributions of precipitation and temperature \citep{gnanadesikan2006diagnosing}.
 
 \subsection{The ensemble}
 We use an ensemble of 100 simulations of FAMOUS detailed in \citep{williams2013optimising}, and build upon the results of that study. The ensemble was run in order to test the utility of including the carbon cycle in enhancing the FAMOUS model. The ensemble design perturbs 7 vegetation and land surface control parameters (see table \ref{tab:params}) in a latin hypercube configuration \citep{mckay1979comparison}. This kind of design efficiently spans parameter space, and has been shown to be better than others for constructing surface response type statistical models known as emulators \citep{urban2010comparison}.
@@ -181,54 +180,39 @@ Ranges for the land surface parameters follow those used in the study by \citep{
 The ensemble simulates the preindustrial climate, with ensemble members spun up over a 200 year period to ensure that the vegetation is in equilibrium with the climate at 290 ppm of CO2. The vegetation dynamics component of the simulator, TRIFFID, is run in "equilibrium" mode to increase computational efficiency. Here, the vegetation dynamics module is run for the equivalent of 10,000 years for each decade of climate. The climatology is constructed using the final 30 year period of the ensemble. 
 
 
-%%t
-%\begin{table*}[t]
-%\caption{Land surface input parameters for FAMOUS}
-%\begin{tabular}{column = lcr}
-%\tophline
-%
-%\middlehline
-%
-%\bottomhline
-%\end{tabular}
-%\belowtable{} % Table Footnotes
-%\end{table*}
-%
-%Inputs
-%Parameter
-%	Description
-%	F0
-%	Ratio of CO2 concentrations inside and outside leaves at zero humidity deficit.
-%	LAI_MIN 
-%	PFT must achieve this value of the leaf area index before it starts to contend with other PFTs for growing area.
-%	NL0
-%	Top leaf nitrogen concentration. The amount of nitrogen per amount of carbon.
-%[d]	
-%RGROW
-%	Growth respiration fraction
-%	TUPP
-%	Control on variation of photosynthesis with temperature.
-%	Q10
-%	Control on soil respiration with temperature.
-%	V_CRIT_ALPHA
-%	Control of photosynthesis with soil moisture.
-%	
-%Table \label{tab:params[e]}
+%t
+\begin{table*}[t]
+\caption{Land surface input parameters for FAMOUS}\label{tab:params}
+\begin{tabular}{ll}
+
+\tophline
+Parameter &  Description \\
+F0              &    Ratio of CO2 concentrations inside and outside leaves at zero humidity deficit. \\
+LAI\_MIN    &      PFT must achieve this value of the leaf area index before it starts to contend with other PFTs for growing area. \\
+NL0           &      Top leaf nitrogen concentration. The amount of nitrogen per amount of carbon. \\
+RGROW    &       Growth respiration fraction \\
+TUPP        &    Control on variation of photosynthesis with temperature. \\
+Q10           &     Control on soil respiration with temperature. \\
+V\_CRIT\_ALPHA  & Control of photosynthesis with soil moisture. \\
+\bottomhline
+\end{tabular}
+\belowtable{} % Table Footnotes
+\end{table*}
 
 
 \subsection{Simulator outputs and observations}\label{inputsoutputs}
-We use forest fraction as the primary simulator output for study. Observations of forest fraction were adapted from \citep{loveland2000landcover}, and are regionally aggregated versions of the data used in the previous study by \citep{williams2013optimising}. We use broadleaf only for the tropical forest, and a mixture of broadleaf and needleleaf for the North American forest. A summary of the forest fraction data in the ensemble can be found in figures \ref{fig:BL_obs_ensemble_mean_sd} and \ref{fig:fraction_pairs}.  The former shows the spatial distribution of forest fraction in FAMOUS, showing maps of both the mean and standard distribution across the ensemble of 100 members. The parameter ranges are not explicitly chosen to represent uncertainty, and so the ensemble mean and standard deviation are not a meaningful representation of data uncertainty but provide a useful summary of the data. To summarise the forest fraction data, we find the mean forest fraction in each of the Amazon, Central Africa, South East Asia, North America and Global regions (see supplementary information for region details).
+We use forest fraction as the primary simulator output for study. Observations of forest fraction were adapted from \citep{loveland2000landcover}, and are regionally aggregated versions of the data used in the previous study by \citep{williams2013optimising}. We use broadleaf only for the tropical forest, and a mixture of broadleaf and needleleaf for the North American forest. A summary of the forest fraction data in the ensemble can be found in figures \ref{fig:BL_obs_ensemble_mean_sd} and \ref{fig:frac_pairs}.  The former shows the spatial distribution of forest fraction in FAMOUS, showing maps of both the mean and standard distribution across the ensemble of 100 members. The parameter ranges are not explicitly chosen to represent uncertainty, and so the ensemble mean and standard deviation are not a meaningful representation of data uncertainty but provide a useful summary of the data. To summarise the forest fraction data, we find the mean forest fraction in each of the Amazon, Central Africa, South East Asia, North America and Global regions (see supplementary information for region details).
 
 %BL_obs_ensemble_mean_sd.png
-%Figure \label{fig:BL_obs_ensemble_mean_sd} Observations of Broadleaf forest fraction (top left). Mean (top right) and standard deviation (bottom left) of broadleaf forest fraction across the 100 member ensemble of FAMOUS.
+%
 
-%Figure \ref{fig:fraction_pairs} shows every input and summary output, plotted against each other. This shows the marginal relationships of the 1) inputs against the inputs (which as expected show no obvious relationship), 2) the strength of the marginal relationship between the inputs and outputs, and 3) the outputs against the outputs, which highlights where outputs vary together.
+Figure \ref{fig:frac_pairs} shows every input and summary output, plotted against each other. This shows the marginal relationships of the 1) inputs against the inputs (which as expected show no obvious relationship), 2) the strength of the marginal relationship between the inputs and outputs, and 3) the outputs against the outputs, which highlights where outputs vary together.
 
 %frac_pairs.png 
 
-%Figure \ref{fig:frac_pairs} FAMOUS input parameters and forest fraction parameters, plotted against each other.
+%Figure \ref{fig:frac_pairs} 
 
-South East Asia and Central African forests vary together very strongly across the ensemble, whereas the Central African and North American forests show a weaker relationship, with more scatter. This might be expected, given the different structure of the North American forests, compared with the tropical. The scatter plot also identifies NL0 (leaf Nitrogen) and VCRITALPHA (soil moisture control on photosynthesis) as being important controls on forest fraction, as the output seems to vary most with these parameters.
+South East Asia and Central African forests vary together very strongly across the ensemble, whereas the Central African and North American forests show a weaker relationship, with more scatter. This might be expected, given the different structure of the North American forests, compared with the tropical. The scatter plot also identifies NL0 (leaf Nitrogen) and V\_CRIT\_ALPHA (soil moisture control on photosynthesis) as being important controls on forest fraction, as the output seems to vary most with these parameters.
 
 \subsection{Training an emulator}\label{emulator}
 The simulator FAMOUS, although relatively computationally cheap, is not fast enough to evaluate at every viable candidate point within input space, termed $\mathcal{X}$. We therefore use a computationally cheap statistical proxy to the simulator, called an emulator. The emulator provides a prediction of simulator output at any required untested input, many orders of magnitude faster than the original simulator.  Once trained, any analysis that might have been done with the simulator can be done with the emulator, with the proviso that we must include an extra uncertainty term to account for the fact that the emulator is not a perfect prediction of the simulator output. We use a gaussian process emulator that assume zero uncertainty at points where the model has already been evaluated, growing larger away from those points, and dependent upon a set of hyperparameters that are trained at the same time as the emulator. 
@@ -244,22 +228,22 @@ where $\eta$ represents the emulator, as a substitute for $g()$, and  $e$ repres
 DiceKriging allows the user flexibility in specifying the emulator, and then estimates hyperparameters using the training data. We use "Universal Kriging" and specify a linear prior  for each emulator. This means that the emulator starts with a linear model, and then models deviations from this as a Gaussian process. We verify the quality of the emulators, using a leave-one-out cross validation metric, ensuring that the accuracy and uncertainty estimates of the emulator are consistent across the ensemble (see supplementary material). 
 
 \subsection{History matching}\label{historymatching}
-We aim to repeat the achievement of \citep{williamson2014identifying}, to use history matching to find a region of parameter space that is consistent with observations, to within the level of observational and acceptable simulator uncertainty. In practice this means finding a set of input parameters $x*$ where the output of the model is deemed tolerably close to the observations, given uncertainty in the observations and known deficiencies of the model. Constraining parameters in this way should help identify the range of projected futures of the forest that are consistent with the observations, rather than a single set of "best" parameters.
+We aim to repeat the achievement of \citep{williamson2014identifying}, to use history matching to find a region of parameter space that is consistent with observations, to within the level of observational and acceptable simulator uncertainty. In practice this means finding a set of input parameters $x^{*}$ where the output of the model is deemed tolerably close to the observations, given uncertainty in the observations and known deficiencies of the model. Constraining parameters in this way should help identify the range of projected futures of the forest that are consistent with the observations, rather than a single set of "best" parameters.
 
 A key distinction from the practice of model calibration is that the set of statistically consistent inputs are not accepted, but instead are deemed "Not Ruled Out Yet" (NROY). As such, we regard them as conditionally accepted, contingent on new observations or information. History matching was developed by \citep{craig1997pressure}, and has been used extensively in hydrocarbon extraction sciences, and astronomy (e.g. \citep{vernon2010galaxy}). It has been used to confront climate simulators with observations, for example by \citep{lee2016aerosol}, \citep{williamson2013history}, \citep{ritz2015potential},]. The potential of an observational dataset to constrain NROY input space depends on the strength of the relationship between the inputs and simulator outputs, the accuracy of the model, the uncertainty of the observations, and the tolerance of the modeller towards a mismatch between the model and the observations \citep{mcneall2013potential}.
 
-Observations of the system are denoted $z$, and we assume that they are made with uncorrelated and independent errors $\eta$ such that $z=y+\eta$. Assuming that the simulator contains a systematic structural discrepancy $\delta$, then the observations can be related to the input parameters
+Observations of the system are denoted $z$, and we assume that they are made with uncorrelated and independent errors $\epsilon$ such that $z=y+\epsilon$. Assuming that the simulator contains a systematic structural discrepancy $\delta$, then the observations can be related to the input parameters
 
 \begin{equation}\label{eq:em_structure}
-z=g(x*) + \delta + \eta
+z=g(x*) + \delta + \epsilon
 \end{equation}
 
-If the simulator were fast enough to evaluate at a large number of candidate points for $x*$, this region could be found by standard Monte Carlo or optimisation methods. Our simulator FAMOUS, although relatively computationally cheap, is not fast enough for this. It is also our intention to develop methods that can be used on even more computationally expensive simulators. We therefore again use the emulator as an efficient proxy for the model output, replacing $g(x)$ with $\eta(x)$ in equation \ref{eq:em_structure}, and including a term for emulator uncertainty in the history matching calculations.
+If the simulator were fast enough to evaluate at a large number of candidate points for $x^{*}$, this region could be found by standard Monte Carlo or optimisation methods. Our simulator FAMOUS, although relatively computationally cheap, is not fast enough for this. It is also our intention to develop methods that can be used on even more computationally expensive simulators. We therefore again use the emulator as an efficient proxy for the model output, replacing $g(x)$ with $\eta(x)$ in equation \ref{eq:em_structure}, and including a term for emulator uncertainty in the history matching calculations.
 
 Each point in input space is assigned an Implausibility $I$, according to equation \ref{eq:implausibility}. The forest fraction at a sample of points in input space are calculated, along with uncertainties, using the emulator described above. Inputs that produce forest fraction that is further from the observations are deemed more implausible. Those same inputs are less implausible if there is uncertainty  about the observation ,  or uncertainty about the model discrepancy , or the emulated output at that input . 
 
-\begin{equation}\label{eq:eq:implausibility}
-I^{2}=  |z -E[g(x)]|^{2} / var(g(x)) +var(\delta) +var(\eta)
+\begin{equation}\label{eq:implausibility}
+I^{2}=  |z -E[g(x)]|^{2} / var(g(x)) +var(\delta) +var(\epsilon)
 \end{equation}
 
 A threshold of implausibility, above which a candidate input can be safely ruled out as implausible, is usually set to 3; roughly equivalent to a 95\% credible interval of a posterior distribution, if using a Bayesian analysis. This is due to Pukelsheim's three-sigma rule; that for any unimodal distribution, 95\% of the probability mass will be within 3 standard deviations of the mean \citep{pukelsheim1994three}.
@@ -268,14 +252,14 @@ Any input parameter set that has an implausibility score below the threshold is 
 
 \section{Analyses and Results}\label{AnalysesandResults}
 
-\subsection{An initial history match}\label{initialhistorymatch}
+\subsection{An initial history match}\label{ssec:initialhistorymatch}
 In this section we find regions of land surface parameter space in FAMOUS that remain NROY given some defensible assumptions about observational uncertainty.  Figure \ref{fig:fraction_histogram_with_discrepancy_standard} shows how the regionally aggregated simulated forest fraction varies across the ensemble. The figure shows histograms of the number of ensemble members with a particular forest fraction, compared with the corresponding observations. Although the simulator was not run at the `standard' or `default' parameter settings in the ensemble, we can use the emulator to estimate its output and uncertainty ($\pm$ 1 standard deviation) at those settings, and show these on the plot, in black.
 
 The model run at the standard inputs underestimates the forest fraction in the Amazon region by a considerable margin (more than 0.3). The other tropical forests are slightly overestimated, while the North American forests are very slightly underestimated. Global forest fraction is simulated very near to the observed fraction. Most of the ensemble members overestimate forest fraction in Central Africa, Southeast Asia, and North America, while this effect is not so pronounced in the Amazon.  However, we do see that some ensemble members simulate an Amazon forest fraction around, and indeed above, the observed fraction. This gives us cause to hope that it is possible to find a set of parameters where the Amazon and other forests are simultaneously well simulated, without using a simulator discrepancy function. 
 
 %fraction_histogram_with_discrepancy_standard.png 
 
-%Figure \label{fig:fraction_histogram_with_discrepancy_standard} Histograms represent the number of ensemble members of a particular forest fraction in each region, and globally. Points plotted below the histograms represent the observed forest fraction (colours), and the forest fraction simulated at the "standard" parameters $\pm$ 1 SD (black).
+%Figure \label{fig:fraction_histogram_with_discrepancy_standard} 
 
 A target for a history matching exercise therefore is to tune away simulator error and find regions of parameter space where the error is removed, or at least minimised to a level consistent with observational uncertainty. In practice, this requires finding a region where the large negative bias in Amazon forest fraction is minimised, while keeping the other forests well represented.
 
@@ -284,77 +268,83 @@ We allow an observational uncertainty of 0.05 (one standard deviation) in each o
 We sample from the emulator uniformly across input parameter space, history match using al 4 forest observations, and visualise the space where $max[I] < 3$. Figure \ref{fig:credible_NROY} shows a density pairs plot of the approximately 12\% of the 10,000 samples from the emulator that are Not Ruled Out Yet by the history match.
 
 %credible_NROY.png 
-%Figure \label{fig:credible_NROY} A density pairs plot of two dimensional projections of parameter space. The blue areas represent the density of NROY points, using all of the data, with an assumed observational uncertainty of 0.05 (1SD).
+%Figure \label{fig:credible_NROY} 
 
 Does this region represent a viable set of inputs, perhaps to replace the default set of parameters? Where it appears that we may have found regions where both Amazon and other forests are plausible, we are suspicious of this region, for three reasons. First, the default set of parameters is ruled out, in this case by comparison of the simulator with observations of the Amazon (Table \ref{tab:default_parameter_implausibility}).
 
-%Data
-%	Implausibility score of default parameters
-%	Amazon
-%	3.99
-%	Central Africa
-%	0.56
-%	SE Asia
-%	1.24
-%	N America
-%	0.27
-%	Table \label{tab:default_parameter_implausibility}. Implausibility $I$ of the default parameters in an initial history matching exercise.
-%
+
+%t
+\begin{table*}[t]
+\caption{Implausibility $I$ of forest observations at default input parameter setting of FAMOUS}\label{tab:default_parameter_implausibility}
+\begin{tabular}{lc}
+
+\tophline
+Observation &  Implausibility $I$ at default parameters \\
+Amazon & 3.99 \\
+Central Africa & 0.56 \\
+Southeast Asia & 1.24 \\
+North America & 0.27 \\
+\bottomhline
+\end{tabular}
+\belowtable{} % Table Footnotes
+\end{table*}
 
 Second, It appears that in the active parameter space projections, these candidates are near the edges and corners of the input space considered plausible. The failure to rule out these points could be due to a relatively large emulator uncertainty. When parameters near the edge of an experimental design are suggested as NROY by a simulator-data comparison, this can suggest an undiagnosed fundamental simulator discrepancy. Third, we plot the histograms of the `best estimate' emulator output at these NROY points (figure \ref{fig:credible_NROY_hists}), we see that they can be seen as \emph{compromise candidates}. In general, if the simulator is run at points in this region, it will overestimate the Central African, South East Asian and, most likely, North American forest fraction while underestimating the Amazon forest fraction. They are still included as NROY at these values because of the combination of the emulator uncertainty and the assumed observational uncertainty.
 
 %credible_NROY_hists.png 
-%Figure \label{fig:credible_NROY_hists} Best-estimate draws of forest fraction output from the emulator, at the set of points Not Ruled Out Yet when assuming a credible observational uncertainty. The value of the observed forest fractions are are plotted as a single point on the corresponding x-axes (a “rug plot”).
+%Figure \label{fig:credible_NROY_hists} 
 
 In the remainder of this section, we use a number of analysis techniques to investigate why a region on the edge of parameter space initially considered plausible, that does not contain the default parameter settings, is identified as NROY.
 
-\subsection{Finding the active parameters with sensitivity analysis}\label{SA}
+\subsection{Finding the active parameters with sensitivity analysis}\label{ssec:sensitivity}
 
 We perform a sensitivity analysis with the aim of identifying the active subspace of model inputs and  quantifying relationships between the model inputs and outputs. In a descriptive sensitivity analysis, we show emulated mean regional and global forest fraction with inputs sampled from across input parameter space in a one-factor-at-a-time fashion, holding all but one parameter at their standard values while varying the remaining parameter (figure \ref{fig:forest_sa}). The emulator is not a perfect representation of the simulator, and so we include the emulator uncertainty estimates at $\pm$ one standard deviation, shown as shaded regions in the plot.
 
-VCRITALPHA, and NL0 are the most influential individual parameters when considered across the entire ensemble, and counter each other when both raised. The Q10 parameter has little or no influence on forest fraction. The TUPP parameter is important only to the Central African (termed `Congo' here, for brevity) and SE Asia forest fraction, much less important to the Amazon, and not important at all to the N American forests. 
+V\_CRIT\_ALPHA, and NL0 are the most influential individual parameters when considered across the entire ensemble, and counter each other when both raised. The Q10 parameter has little or no influence on forest fraction. The TUPP parameter is important only to the Central African (termed `Congo' here, for brevity) and SE Asia forest fraction, much less important to the Amazon, and not important at all to the N American forests. 
 
-The relationships change across parameter space and are therefore dependent on the somewhat arbitrary range of the initial input parameters of the ensemble design. Sensitivity can change in importance as parts of input space are ruled out. For example, the forests are most sensitive to NL0 in the lower part of the ensemble range, and most sensitive to VCRITALPHA in the upper part of the ensemble range.
+The relationships change across parameter space and are therefore dependent on the somewhat arbitrary range of the initial input parameters of the ensemble design. Sensitivity can change in importance as parts of input space are ruled out. For example, the forests are most sensitive to NL0 in the lower part of the ensemble range, and most sensitive to V\_CRIT\_ALPHA in the upper part of the ensemble range.
 
 %amaz_oat_sens.png 
-%Figure \label{fig:forest_sa}. Marginal sensitivity of mean forest fraction to each input parameter in turn, with all other parameters held at standard values. Central lines represent the emulator mean, and shaded areas represent the estimate of emulator uncertainty, at the \pm 1 standard deviation level.
+%Figure \label{fig:forest_sa}. 
 
-Following \citep{carslaw2013large}, we quantify the sensitivity of the simulated forest fraction to the input parameters, using the FAST methodology \citep{saltelli1999sensitivity}, as coded in the R package “Sensitivity” \citep{Rpackage2015sensitivity} . We calculate the global sensitivity of the model output due to each input, as both a main effect and total, including interaction terms (figure \ref{fig:FAST_SA}). VCRITALPHA (stomatal closure parameter) is the most important parameter across the tropical forests and globally, with a total effect index of around 0.6. In tropical forests, NL0 (leaf nitrogen parameter) is next most important, with an effect index between 0.2 and 0.3. In all cases, interaction terms are relatively unimportant, accounting for only a few percent of the variance. North American forests show slightly different results, with NL0 (leaf nitrogen) being the most important parameter with a sensitivity index near 0.4 followed by LAIMIN (leaf area index), at around 0.3 and VCRITALPHA at 0.25. This difference is unsurprising, as the North American forests are a mix of broadleaf and needleleaf trees, which will have different sensitivities from a broadleaf tropical forest.
+Following \citep{carslaw2013large}, we quantify the sensitivity of the simulated forest fraction to the input parameters, using the FAST methodology \citep{saltelli1999sensitivity}, as coded in the R package \emph{Sensitivity} V\_CRIT\_ALPHA\citep{Rpackage2015sensitivity} . We calculate the global sensitivity of the model output due to each input, as both a main effect and total, including interaction terms (figure \ref{fig:FAST_histograms}). V\_CRIT\_ALPHA (stomatal closure parameter) is the most important parameter across the tropical forests and globally, with a total effect index of around 0.6. In tropical forests, NL0 (leaf nitrogen parameter) is next most important, with an effect index between 0.2 and 0.3. In all cases, interaction terms are relatively unimportant, accounting for only a few percent of the variance. North American forests show slightly different results, with NL0 (leaf nitrogen) being the most important parameter with a sensitivity index near 0.4 followed by LAIMIN (leaf area index), at around 0.3 and V\_CRIT\_ALPHA at 0.25. This difference is unsurprising, as the North American forests are a mix of broadleaf and needleleaf trees, which will have different sensitivities from a broadleaf tropical forest.
 
 %FAST_histograms.png 
-%Figure \label{fig:FAST_SA}] Sensitivity analysis of forest fraction via the FAST algorithm of \cite{saltelli1999sensitivity}.
+%Figure \label{fig:FAST_SA}] 
 
 Parameter Q10 has almost no influence on forest fraction, in line with expectation from land surface modellers. The non-zero estimate of sensitivity here is very likely due to the fact that the emulator is not a perfect representation of the simulator, and a zero sensitivity is well within the uncertainty bounds of the sensitivity analysis. Parameters TUPP and RGROW have very little impact on forest fraction. Parameter F0 has virtually no influence away from the tropics, conversely, LAIMIN is only important in the North American forest. If we sum the total effects (first order plus interactions) for all of the forests types excluding global (as it is largely made up of our forests), we obtain a rank for each parameter (table \ref{tab:effects_sum}).
 
-%Parameter
-%	Total Effect Sum
-%	V_CRIT_ALPHA
-%	2.03
-%	NL0
-%	1.09
-%	LAI_MIN
-%	0.53
-%	F0
-%	0.41
-%	TUPP
-%	0.25
-%	R_GROW
-%	0.13
-%	Q10
-%	0.04  
-%	
-%Table \label{tab:effects_sum} Sum of the total effects across the Amazon, Central Africa, SE Asia and N American forests.
+%t
+\begin{table*}[t]
+\caption{Total effect sum in sensitivity analysis.}\label{tab:effects_sum}
+\begin{tabular}{lc}
 
-\subsection{Mapping simulator error}\label{mapping}
+\tophline
+Parameter &  Total effect sum \\
+V\_CRIT\_ALPHA & 2.03 \\
+NL0 & 1.09 \\
+LAI\_MIN & 0.53 \\
+F0 & 0.41 \\
+TUPP & 0.25 \\
+R\_GROW  & 0.13 \\
+Q10 & 0.04 \\
+
+\bottomhline
+\end{tabular}
+\belowtable{} % Table Footnotes
+\end{table*}
+
+
+\subsection{Mapping simulator error}\label{ssec:mapping}
 
 In this section, we examine the ability of the simulator to reproduce the observed forest fraction, how that ability varies across input parameter space, and assess the region of parameter space which is consistent with each of the forest fraction observations.
 
-We show a map of simulator error in the the two dimensional space of the most important parameters identified in section \ref{ssec:sensitivity} parameter space, in figure \ref{discrepancy_parameter_space}. We sample the emulator across all parameter space, and plot the mean predicted difference between model output and the observations for each point. The maps appear noisy because of the impact of randomly chosen values of the remaining dimension, but the structure is clear. For the Central Africa, SE Asia and N American forests there is a broad sweep of parameter space, running from low NL0, low VCRITALPHA to high NL0, high VCRITALPHA, where discrepancy is close to zero. The Amazon input space does not have this region - only the high NL0, high VCRITALPHA corner has a discrepancy close to zero, suggesting bias in the model that is not common to all of the forests. It is possible to find a portion of parameter space where the bias is similar for all simulator outputs in the low NL0, high VCRITALPHA corner. However, the bias is rather large (at least -0.6) at this point.
+We show a map of simulator error in the the two dimensional space of the most important parameters identified in section \ref{ssec:sensitivity} parameter space, in figure \ref{fig:discrepancy_parameter_space}. We sample the emulator across all parameter space, and plot the mean predicted difference between model output and the observations for each point. The maps appear noisy because of the impact of randomly chosen values of the remaining dimension, but the structure is clear. For the Central Africa, SE Asia and N American forests there is a broad sweep of parameter space, running from low NL0, low V\_CRIT\_ALPHA to high NL0, high V\_CRIT\_ALPHA, where discrepancy is close to zero. The Amazon input space does not have this region - only the high NL0, high V\_CRIT\_ALPHA corner has a discrepancy close to zero, suggesting bias in the model that is not common to all of the forests. It is possible to find a portion of parameter space where the bias is similar for all simulator outputs in the low NL0, high V\_CRIT\_ALPHA corner. However, the bias is rather large (at least -0.6) at this point.
 
 %discrepancy_parameter_space.png 
-%Figure \label{fig:discrepancy_parameter_space} Maps of simulator error, in units of forest fraction, when projected into the two dimensional space of the most active parameters, NL0 and V_CRIT_ALPHA.
+%Figure \label{fig:discrepancy_parameter_space} 
 
-\subsection{How much input space is ruled out by combinations of observations?}\label{combinations}
+\subsection{How much input space is ruled out by combinations of observations?}\label{ssec:combination}
 
 \citep{williamson2014identifying} discuss treating the model discrepancy as a `tolerance to error'. We take this approach, and find the potential of the history matching technique to rule out parameter space under a number of scenarios of observational and tolerance to model structural error. The denominator of equation \ref{eq:implausibility} is the sum of the squared variances of the emulator, discrepancy, and observational uncertainty. Our emulator uncertainty is set largely by the design of the ensemble, but we can experiment with the overall uncertainty budget by partitioning uncertainty between observations and model discrepancy at will.
 
@@ -371,46 +361,41 @@ Combining data, and using the maximum Implausibility of any dataset improves the
 An alternative and perhaps more robust calculation of tolerance to error can therefore be found by excluding the Amazon observations and using the maximum implausibility from the other observations. This excludes more input parameter space than any single observation on its own, up to a tolerance to error of around 0.85 (1 sd), where it performs in a similar manner to using SE Asia forest fraction.
  
 %Prop_NROY_tolerance_unc.png 
-%Figure \label{fig:Prop_NROY_tolerance_unc} Proportion of NROY (Not Ruled Out Yet) input space plotted against “tolerence to error” - the total error budget including emulator, observational and simulator discrepancy uncertainty. 
+%Figure \label{fig:Prop_NROY_tolerance_unc} 
 
 To what extent do the input spaces that are NROY when history matching with two forests overlap? We suppose that data that suggest highly overlapping input spaces give us confidence that those input spaces are valid. Another perspective is that overlapping input spaces give us little extra information, and we should seek out those that minimise overlap. We sample uniformly from the input space, and test each point using a comparison with each forest observation to see if it is ruled out or not. If a point has the same status using both forests in the history match, we class that as an overlapping point. Table \ref{tab:input_overlap} gives the proportion of the samples which have the same status using each permutation of two forests for the history matching.
 
 The most similar input space is found if we use the SE Asian and Central African rainforests. Comparing these forests with the North American forests gives a fairly high overlap - 61 and 66\% for SE Asia and Central Africa respectively. The Amazon has markedly lower overlap with the other forests - 40\% at the most with North America, and only 26\% with South East Asia.
 
-%Forest A
-%	Forest B
-%	Input agreement
-%	Amazon
-%	SE Asia
-%	26%
-%	Amazon
-%	Congo
-%	33%
-%	Amazon
-%	N America
-%	40%
-%	SE Asia
-%	Congo
-%	84%
-%	SE Asia
-%	N America
-%	61%
-%	Congo
-%	N America
-%	66%
-%
-%Table \label{tab:input_overlap}
 
-\subsection{What do the individual forests tell us about the best parameters?}\label{ssec:individual}
+%t
+\begin{table*}[t]
+\caption{Total effect sum in sensitivity analysis.}\label{tab:input_overlap}
+\begin{tabular}{llc}
+
+\tophline
+Forest A &  Forest B & Input agreement (\%) \\
+Amazon & Southeast Asia & 26 \\
+Amazon & Central Africa & 33 \\
+Amazon & North America & 40 \\
+Southeast Asia & Central Africa & 84 \\
+Southeast Asia & North America & 61 \\
+Central Africa  & North America & 66 \\
+\bottomhline
+\end{tabular}
+\belowtable{} % Table Footnotes
+\end{table*}
+
+\subsection{What do the individual forests tell us about the best parameters?}\label{ssec:learn}
 In order to more fully explore the causes of model discrepancy and its consequences, we make the illustrative assumption that that model discrepancy uncertainty is zero, and that observational uncertainty is very low. We sample a large number of points uniformly across input space, assume zero model discrepancy uncertainty of zero and an observational uncertainty of 0.01.
 
-We keep as NROY only those emulated samples where the implausibility (or maximum implausibility in the case of combined data) is below 3. Setting such a demanding threshold allows us to find and describe the relatively small regions in input space where the model performs “best”, in two cases. First, using the South East Asian, Central Africa and North American forest fraction in the history matching exercise, second using the Amazon forest fraction.
+We keep as NROY only those emulated samples where the implausibility (or maximum implausibility in the case of combined data) is below 3. Setting such a demanding threshold allows us to find and describe the relatively small regions in input space where the model performs best, in two cases. First, using the South East Asian, Central Africa and North American forest fraction in the history matching exercise, second using the Amazon forest fraction.
 
 %plausible_all_but_amazon.png 
 %best_inputs_amazon.png 
-%Figure \label{fig:best_inputs}. [h]Marginal density of input parameter sets consistent with a very low “tolerance to error”, and perfect observations, for all  SE Asia, N America and Central Africa combined (left) and the Amazon (right). Dark blue regions indicate those with the highest concentration of NROY candidates, and therefore most compatible with the observations.
+%Figure \label{fig:best_inputs}. [h]
 
-Plotted in two-dimensional projections in figure \ref{fig:best_inputs}[i], we see that the `best' set of parameters as defined by matching to the observed Amazon forest fraction, and to the other forests, form almost non-overlapping sets in the most active subspace comprising VCRITALPHA and NL0. Again, we see a swathe of input parameter space, running from low VCRITALPHA, low NL0 through high values of those parameters. This pattern is confirmed when using the individual data sets for history matching (not shown). The three non-Amazonian forests have a high degree of overlap of NROY space.
+Plotted in two-dimensional projections in figure \ref{fig:best_inputs}[i], we see that the `best' set of parameters as defined by matching to the observed Amazon forest fraction, and to the other forests, form almost non-overlapping sets in the most active subspace comprising V\_CRIT\_ALPHA and NL0. Again, we see a swathe of input parameter space, running from low V\_CRIT\_ALPHA, low NL0 through high values of those parameters. This pattern is confirmed when using the individual data sets for history matching (not shown). The three non-Amazonian forests have a high degree of overlap of NROY space.
 
 When run at a single parameter set, FAMOUS struggles to simulate both the Amazon and the other forests simultaneously, at any parameter combination when using a low threshold of implausibility. The implication of this is that it is very difficult to reconcile the model simulation of the Amazon simultaneously with the other forests if there is little uncertainty about the observations. A model discrepancy term and corresponding uncertainty of some form is necessary to attain an adequately performing simulator.
 
@@ -422,7 +407,7 @@ In contrast, using the Amazon as an observation, the shape of the plausible regi
 
 %taat_congo.png 
 %taat_amaz_test.png 
-%Figure \label{[taat_} Implausibility, given a “tolerance to error” of 0.1. Blue indicates regions where the model best simulates the individual option, while red indicates regions where the model simulates the forests more poorly. The green point indicates the location of the “standard” set of parameters for FAMOUS.
+%Figure \label{[taat_} 
 
 
 \subsection{The forests at best parameters}\label{ssec:bestparameters}
@@ -431,12 +416,12 @@ To examine the implications of using each observation separately to tune the mod
 We find that the using the best set of parameters as defined for each non-Amazon forest would most likely lead to an underestimate of the Amazon forest fraction by around 50\%, compared to the observed fraction (around 0.3, compared to an observation of around 0.6). Conversely, using the best parameters as defined for the Amazon leads to an overestimate of the other forests - around 0.3 for the tropical forests, and 0.15 for the North American forest. This occurs even even though the observed aggregate forest fraction is very similar for the tropical forests.
 
 %best_inputs_swaps_hists_Paired.png 
-%Figure \label{fig:best_inputs_swap_hists_Paired} (Top) Forest fraction in the FAMOUS Amazon at the set of parameters where the FAMOUS best matches each of the other forest observations. (Bottom) Other forests in FAMOUS at the set where the FAMOUS Amazon best matches observations. Observed forest fractions are shown as marks underneath the histograms.
+%Figure \label{fig:best_inputs_swap_hists_Paired} 
 
 To further explore this difference, we project the `best' set of input parameters, found using the Amazon and African forest to match the simulator against, over a map of the entire FAMOUS land surface. In each case, an independent emulator is trained on the ensemble for each grid box. This strategy can be more computationally intensive than e.g. emulation via dimension reduction, but is effective. The maps of the mean forest fraction for each parameter set, and the difference between them, is shown in figure \ref{fig:best_X_maps}.
 
 %best_X_maps.png 
-%Figure \label{fig:best_X_maps} Maps of mean broadleaf forest fraction, over the “best” set of parameters found for the Amazon (top) and the Central Africa (centre).   The difference between the two is mapped at the bottom.
+%Figure \label{fig:best_X_maps} 
 
 We see that even using the `best' Amazon parameters, the simulator underestimates the Amazon coverage in the North East of South America. This makes it very difficult to approach a sensible forest fraction, even when boosting the forest fraction in places where the model does have forest cover.
 
@@ -444,23 +429,23 @@ We see that even using the `best' Amazon parameters, the simulator underestimate
 
 Taken together, the analysis in the previous sections show that the inputs where FAMOUS best simulates Central African, South East Asian and North American forests cover a similar input space, whereas the best inputs for the Amazon are in a different region. This suggests that we should use a non-zero-mean discrepancy function for the Amazon: allowing the Amazon to be less vigorous in our simulations, while maintaining that the simulator output should broadly match the other forests.
 
-We perform a history match using all of the forest observations, along with a simulator discrepancy term for the Amazon forest. We use the best estimate of the difference between Amazon observations, and that simulated by FAMOUS at the default set of parameters as the best estimate of the discrepancy mean. The difference in forest fraction at the default parameters is approximately 0.3. Figure \ref{fig:credible_NROY_hists_disc} shows the histograms of NROY input space using this discrepancy function, along with credible estimates for observational uncertainty (1sd = 0.05) and tolerable discrepancy uncertainty (1sd = 0.03). The corresponding two-dimensional density plots of NROY emulated samples can be seen in figure \ref{fig:credible_NROY_inputs_disc}. The remaining NROY input space represents around 57\% of the original input space defined by the input design, meaning that we have ruled out 43\% of the space.
+We perform a history match using all of the forest observations, along with a simulator discrepancy term for the Amazon forest. We use the best estimate of the difference between Amazon observations, and that simulated by FAMOUS at the default set of parameters as the best estimate of the discrepancy mean. The difference in forest fraction at the default parameters is approximately 0.3. Figure \ref{fig:credible_NROY_hists_disc} shows the histograms of NROY input space using this discrepancy function, along with credible estimates for observational uncertainty (1sd = 0.05) and tolerable discrepancy uncertainty (1sd = 0.03). The corresponding two-dimensional density plots of NROY emulated samples can be seen in figure \ref{fig:plausible_disc_input_space}. The remaining NROY input space represents around 57\% of the original input space defined by the input design, meaning that we have ruled out 43\% of the space.
 
-Finally, marginal histograms of the relative density of NROY points for each individual input parameter are shown in figure \ref{fig:input_frequency_marginal}. These indicate that no part of the marginal input space is completely ruled out, and so we cannot `constrain' any of the parameters in an individual dimension. However, the relative frequency of NROY points is higher in some locations than others - low in NL0 and high in VCRITALPHA for example, suggesting a higher probability that the best estimates of the parameters is in these regions.
+Finally, marginal histograms of the relative density of NROY points for each individual input parameter are shown in figure \ref{fig:input_frequency_marginal}. These indicate that no part of the marginal input space is completely ruled out, and so we cannot `constrain' any of the parameters in an individual dimension. However, the relative frequency of NROY points is higher in some locations than others - low in NL0 and high in V\_CRIT\_ALPHA for example, suggesting a higher probability that the best estimates of the parameters is in these regions.
 
 %credible_NROY_hists_disc.png 
-%Figure \label{fig:credible_NROY_hists_disc}. Histograms of emulated simulator output using credible estimates for observational uncertainty, a model discrepancy term for the Amazon, and credible discrepancy uncertainty.
+%Figure \label{fig:credible_NROY_hists_disc}. 
  
 %plausible_disc_input_space.png 
-%Figure \label{fig:plausible_disc_input_space}  A density plot of the two dimensional projections of NROY samples from the design input space, using a all forest observations and a discrepancy function for the Amazon. \label{fig:credible_NROY_inputs_disc}
+%Figure \label{fig:plausible_disc_input_space}   \label{fig:credible_NROY_inputs_disc}
 
 %input_frequency_marginal.png 
-%Figure \label{fig:input_frequency_marginal}. Marginal histograms of the relative frequency of NROY emulated input points in each dimension of parameter space, using all forest observations and a discrepancy function for the Amazon.
+%Figure \label{fig:input_frequency_marginal}. 
 
 \section{Discussion}\label{sec:discussion}
 Uncertainty in carbon cycle and land surface process contributes significantly to uncertainty in future climate change. There are a large number of uncertain input parameters to carbon cycle and land surface components of climate models, and our study attempts to use comparisons of the model with observed data to constrain some of the key parameters. We find that forest fraction does not offer a marginal constraint on the parameters: that is, there is little or no constraint on each parameter individually, but there is a significant constraint on the joint input space of the parameters. Approximately 43\% of a priori parameter space is ruled out, which is relatively little compared to other studies. This is explained by two factors: 1) our observational uncertainty is assumed conservatively large, and 2) we have only a single wave of history matching. A further experiment could run the climate model within the NROY space in order to reduce emulator uncertainty, and provide a basis to further rule out input space. The value of further waves of history matching might be diminished by the fact that the simulator likely has a large discrepancy in the Amazon, and the model discrepancy uncertainty is likely a large component of the overall uncertainty budget.
 
-Our analysis illustrates the challenges in distinguishing between model discrepancy, parameter uncertainty and observational uncertainty during model development. For example, forest fraction in the model can be tuned largely by using the two most active parameters: VCRITALPHA and NL0.  As these parameters alter forest fraction in counteracting directions, a number of solutions can be found that give plausible forest fractions. Information from outside sources about the `true' (or appropriate) values of one these parameters might therefore offer a strong constraint on the value of the other. NL0 is the leaf nitrogen parameter - the ratio of nitrogen to carbon found in leaves. In theory, this is something that is well observed and recorded, but it is  uncertain what value should be to reflect the observational range across the spatial scale of FAMOUS. Nitrogen content determines the maximum photosynthesis, and therefore how much CO$_2$ can be assimilated, or the productivity of a plant. Low (high) NL0 values correspond to low (high) nitrogen content, and hence a low (high) productivity plant. VCRIT is the soil moisture threshold below which plants are water limited.  So if this parameter is high, then the plant is more often in a water limited regime. Where as if it is low, then a plant is not as often water limited.
+Our analysis illustrates the challenges in distinguishing between model discrepancy, parameter uncertainty and observational uncertainty during model development. For example, forest fraction in the model can be tuned largely by using the two most active parameters: V\_CRIT\_ALPHA and NL0.  As these parameters alter forest fraction in counteracting directions, a number of solutions can be found that give plausible forest fractions. Information from outside sources about the `true' (or appropriate) values of one these parameters might therefore offer a strong constraint on the value of the other. NL0 is the leaf nitrogen parameter - the ratio of nitrogen to carbon found in leaves. In theory, this is something that is well observed and recorded, but it is  uncertain what value should be to reflect the observational range across the spatial scale of FAMOUS. Nitrogen content determines the maximum photosynthesis, and therefore how much CO$_2$ can be assimilated, or the productivity of a plant. Low (high) NL0 values correspond to low (high) nitrogen content, and hence a low (high) productivity plant. VCRIT is the soil moisture threshold below which plants are water limited.  So if this parameter is high, then the plant is more often in a water limited regime. Where as if it is low, then a plant is not as often water limited.
 
 If we use observations of the Amazon rainforest, along with the other forests major forests in the history matching exercise, we find that we can rule out a large swathe of parameter space, including the standard set of parameters. There appears to be a corner of parameter space that is NROY under these conditions. While it first appears that we have found a region of parameter space where the model output is tolerably close to the observations given a zero-mean discrepancy, there are good reasons to be suspicious of this region. The region is close to the edge of the ensemble in the active parameter subspace, so that uncertainty may dominate the implausibility calculation. The region excludes the default set of parameters, which are chosen the result of multiple lines of evidence and scientific judgement. Further, the information obtained from using each of the four forests shows that the Central African, Southeast Asian and North American forests all indicate very similar, highly overlapping NROY regions. In contrast, the NROY region suggested by comparing FAMOUS to observations from the Amazon is very different. Should we trust this region as NROY? 
 
@@ -468,7 +453,7 @@ For illustration, we imagine a situation where we are forced to choose between k
 
 We urge caution with a naive or automatic application of history matching conclusions, particularly when using multiple observations for comparison with the simulator. Even in our relatively simple history matching exercise, there is a clear need to include model discrepancy, or increase model discrepancy uncertainty, or to apply a conservative version of the measure of implausibility. One strategy, adopted for example by \cite{vernon2014observable} is to reject parameter space that has a second- or third- highest implausibility metric larger than some threshold. This would be effective in the case of our comparison. Another strategy might be to reject only parameter space where the minimum implausibility is higher than some threshold. We believe that this would not rule out much input space in many circumstances. We call for more research on the behaviour of measures of implausibility, when the number of data comparisons is high, and there is a chance that many of them may suffer from structural biases. 
 
-We are able to offer a counter example to the hypothesis of \citep{williamson2014identifying}, who found regions of parameter space where what was thought a structural error in the model was significantly reduced. In this case, we believe it likely that better observations would simply confirm that the “best” regions of parameter space for the Amazon and other forests were non-overlapping. While individual forest fraction observations may have some uncertainty, we would expect the uncertainty on the differences between those observations to be smaller. A systematic bias in the way that the forests are measured would be common to all observations, for example, even though it would need to be taken into account in the uncertainty calculation for an individual observation.
+We are able to offer a counter example to the hypothesis of \citep{williamson2014identifying}, who found regions of parameter space where what was thought a structural error in the model was significantly reduced. In this case, we believe it likely that better observations would simply confirm that the `best' regions of parameter space for the Amazon and other forests were non-overlapping. While individual forest fraction observations may have some uncertainty, we would expect the uncertainty on the differences between those observations to be smaller. A systematic bias in the way that the forests are measured would be common to all observations, for example, even though it would need to be taken into account in the uncertainty calculation for an individual observation.
 
 \subsection{Causes of discrepancy}\label{ssec:causes}
 What could cause this fundamental structural error in the Amazon? There are three possible causes - \emph{external} and \emph{internal} to the vegetation model, although a combination of these causes is not ruled out. First, is there a problem with the emulator that could cause such a bias? We believe that this is not the case, as the emulator performs sufficiently well across parameter space in cross validation experiments (see supplementary material).
@@ -477,12 +462,12 @@ Second, is there a missing processes in the vegetation model, that impacts the A
 
 Finally, does the model simulate the climatic boundary conditions of the forest well enough? \citep{malhi2009amazon} and \citep{staver2011determinants} note the dramatic influence of climate on Amazon forest cover, albeit mediated by fire and not included in FAMOUS. Evidence from previous studies shows that HadCM3, which FAMOUS is designed to replicate, does have some climatic biases in the Amazon.\citep{cox2004amazon} find that rainfall in the Amazon is underestimated, particularly along the North East coastline. Precipitation is underestimated by approximately 20\%. The dry season is too long (it starts a month early), and there is an underestimate of wet season rainfall. This precipitation anomaly persists in FAMOUS, although is perhaps not as severe as in HadCM3 (Jones et al. 2005, figure 4). \citep{good2008objective} note that simulated Amazon dry season precipitation is closely tied to meridional sea surface temperature gradients in the region. \citep{joetzjer2013amazon} and \citep{yin2012precipitation} note similar climatic biases across the CMIP5 archive. We suggest that attributing the simulator discrepancy to these causes might be a fruitful direction for a further study.
 
-\conclusions  %% \conclusions[modified heading if necessary]
+\conclusions \label{sec:conclusions} %% \conclusions[modified heading if necessary]
 %\section{Conclusions}\label{sec:conclusions}
 
 We analyse an ensemble of the fast climate model FAMOUS, with the aim of constraining carbon cycle parameters through a comparison of simulator output with forest observations. We find that we are unable to constrain the parameters individually, but that areas of joint parameter space are effectively ruled out. With a defensible model discrepancy term for the Amazon, and assumed observational uncertainty we are able to rule out 43\% of the input parameter space defined by the ensemble design.
 
-We perform a sensitivity analysis, identifying moisture control on photosynthesis (VCRITALPHA) as the most important parameter control on forest fraction, with the next most important leaf nitrogen (NL0), parameter being approximately half as important, and that twice as important as any other parameter. These parameters have counteracting effects on the forest fraction, so we are unable to rule out a broad swathe of the joint space of these two parameters.
+We perform a sensitivity analysis, identifying moisture control on photosynthesis (V\_CRIT\_ALPHA) as the most important parameter control on forest fraction, with the next most important leaf nitrogen (NL0), parameter being approximately half as important, and that twice as important as any other parameter. These parameters have counteracting effects on the forest fraction, so we are unable to rule out a broad swathe of the joint space of these two parameters.
 
 We suggest that we should exercise care if using observations of the Amazon rainforest to compare to FAMOUS, as an apparent structural bias in the climate model could lead to misleading constraints on the input parameters. Using the Amazon forest as an observational constraint suggests very different parts of input parameter space as \emph{not implausible} than using other forests. Although we are able to find a region of parameter space that we are unable to rule out, given a defensible assumed observational uncertainty, we have reason to suspect that this region does not offer a credible alternative to default parameter settings. Further investigation with the emulator reveals that choosing the region would systematically overestimate the forest fraction of the Central African, South East Asian and North American forests, while simultaneously underestimating the Amazon.  We fail to find a set of parameters that eliminates the discrepancy between the simulated fraction of the Amazon and other tropical and boreal forests. We suggest that we cannot find a set of vegetation model parameters that improve the Amazon without making the other forests worse. This satisfies the criterion of \citep{williamson2014identifying} to identify a simulator bias. 
 
@@ -590,55 +575,55 @@ TEXT
 %f
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/BL_obs_ensemble_mean_sd.pdf}
-\caption{TEXT}
+\caption{Observations of Broadleaf forest fraction (top left). Mean (top right) and standard deviation (bottom left) of broadleaf forest fraction across the 100 member ensemble of FAMOUS.}
 \label{fig:BL_obs_ensemble_mean_sd}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/frac_pairs.pdf}
-\caption{TEXT}
+\caption{FAMOUS input parameters and forest fraction parameters, plotted against each other.}
 \label{fig:frac_pairs}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/fraction_histogram_with_discrepancy_standard.pdf}
-\caption{TEXT}
+\caption{Histograms represent the number of ensemble members of a particular forest fraction in each region, and globally. Points plotted below the histograms represent the observed forest fraction (colours), and the forest fraction simulated at the "standard" parameters $\pm$ 1 SD (black).}
 \label{fig:fraction_histogram_with_discrepancy_standard}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/credible_NROY.pdf}
-\caption{TEXT}
+\caption{A density pairs plot of two dimensional projections of parameter space. The blue areas represent the density of NROY points, using all of the data, with an assumed observational uncertainty of 0.05 (1SD).}
 \label{fig:credible_NROY}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/credible_NROY_hists.pdf}
-\caption{TEXT}
+\caption{Best-estimate draws of forest fraction output from the emulator, at the set of points Not Ruled Out Yet when assuming a credible observational uncertainty. The value of the observed forest fractions are are plotted as a single point on the corresponding x-axes (a `rug plot').}
 \label{fig:credible_NROY_hists}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/amaz_oat_sens.pdf}
-\caption{TEXT}
+\caption{Marginal sensitivity of mean forest fraction to each input parameter in turn, with all other parameters held at standard values. Central lines represent the emulator mean, and shaded areas represent the estimate of emulator uncertainty, at the $\pm$ 1 standard deviation level.}
 \label{fig:amaz_oat_sens}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/FAST_histograms.pdf}
-\caption{TEXT}
+\caption{Sensitivity analysis of forest fraction via the FAST algorithm of \cite{saltelli1999sensitivity}.}
 \label{fig:FAST_histograms}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/discrepancy_parameter_space.pdf}
-\caption{TEXT}
+\caption{Maps of simulator error, in units of forest fraction, when projected into the two dimensional space of the most active parameters, NL0 and V\_CRIT\_ALPHA.}
 \label{fig:discrepancy_parameter_space}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/Prop_NROY_tolerance_unc.pdf}
-\caption{TEXT}
+\caption{Proportion of NROY (Not Ruled Out Yet) input space plotted against `tolerence to error' - the total error budget including emulator, observational and simulator discrepancy uncertainty.}
 \label{fig:Prop_NROY_tolerance_unc}
 \end{figure}
 
@@ -650,7 +635,7 @@ TEXT
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/best_inputs_congo.pdf}
-\caption{TEXT}
+\caption{Marginal density of input parameter sets consistent with a very low `tolerance to error', and perfect observations, for all  SE Asia, N America and Central Africa combined (left) and the Amazon (right). Dark blue regions indicate those with the highest concentration of NROY candidates, and therefore most compatible with the observations.}
 \label{fig:}
 \end{figure}
 
@@ -662,37 +647,37 @@ TEXT
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/taat_congo.pdf}
-\caption{TEXT}
+\caption{Implausibility, given a `tolerance to error' of 0.1. Blue indicates regions where the model best simulates the individual option, while red indicates regions where the model simulates the forests more poorly. The green point indicates the location of the `standard' set of parameters for FAMOUS.}
 \label{fig:}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/best_inputs_swaps_hists_Paired.pdf}
-\caption{TEXT}
+\caption{(Top) Forest fraction in the FAMOUS Amazon at the set of parameters where the FAMOUS best matches each of the other forest observations. (Bottom) Other forests in FAMOUS at the set where the FAMOUS Amazon best matches observations. Observed forest fractions are shown as marks underneath the histograms.}
 \label{fig:best_inputs_swaps_hists_Paired}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/best_X_maps.pdf}
-\caption{TEXT}
+\includegraphics[width=12cm]{graphics/best_X_maps.pdf}
+\caption{Maps of mean broadleaf forest fraction, over the “best” set of parameters found for the Amazon (top) and the Central Africa (centre).   The difference between the two is mapped at the bottom.}
 \label{fig:best_X_maps}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/credible_NROY_hists_disc.pdf}
-\caption{TEXT}
+\caption{Histograms of emulated simulator output using credible estimates for observational uncertainty, a model discrepancy term for the Amazon, and credible discrepancy uncertainty.}
 \label{fig:credible_NROY_hists_disc}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/plausible_disc_input_space.pdf}
-\caption{TEXT}
+\caption{A density plot of the two dimensional projections of NROY samples from the design input space, using a all forest observations and a discrepancy function for the Amazon.}
 \label{fig:plausible_disc_input_space}
 \end{figure}
 
 \begin{figure}[t]
 \includegraphics[width=12cm]{graphics/input_frequency_marginal.pdf}
-\caption{TEXT}
+\caption{Marginal histograms of the relative frequency of NROY emulated input points in each dimension of parameter space, using all forest observations and a discrepancy function for the Amazon.}
 \label{fig:input_frequency_marginal}
 \end{figure}
 
