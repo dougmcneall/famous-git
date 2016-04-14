@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  14 APR 2016 14:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  14 APR 2016 16:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1029,17 +1029,18 @@ Underfull \vbox (badness 2635) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 3849) has occurred while \output is active []
-
- [8]
+[8]
 Underfull \hbox (badness 1189) in paragraph at lines 425--426
 \T1/ptm/m/n/10 that the in-puts where FA-MOUS best sim-u-lates Cen-tral
  []
 
-[9] [10]
+[9]
+Underfull \vbox (badness 6658) has occurred while \output is active []
+
+ [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 465--466
 []\T1/ptm/m/n/10 We iden-tify mois-ture con-trol on pho-to-syn-the-sis
  []
@@ -1051,12 +1052,12 @@ Underfull \hbox (badness 6708) in paragraph at lines 465--466
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 521.
-[11]
+
 Underfull \hbox (badness 1412) in paragraph at lines 524--525
 []\T1/ptm/m/n/9 This work was sup-ported by the Joint
  []
 
-(./McNeall_famous.bbl
+[11] (./McNeall_famous.bbl
 Underfull \hbox (badness 4120) in paragraph at lines 74--81
 []\T1/ptm/m/n/9 Good, P., Lowe, J. A., Collins, M., and Moufouma-Okia,
  []
@@ -1237,7 +1238,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--306
 \T1/ptm/m/n/9 ics, 45, 1299--1324, doi:[]10.1007/s00382-014-2378-z[],
  []
 
-) <graphics/BL_obs_ensemble_mean_sd.pdf, id=409, 578.16pt x 433.62pt>
+) <graphics/BL_obs_ensemble_mean_sd.pdf, id=411, 578.16pt x 433.62pt>
 File: graphics/BL_obs_ensemble_mean_sd.pdf Graphic file (type pdf)
 
 <use graphics/BL_obs_ensemble_mean_sd.pdf>
@@ -1245,14 +1246,14 @@ Package pdftex.def Info: graphics/BL_obs_ensemble_mean_sd.pdf used on input lin
 e 571.
 (pdftex.def)             Requested size: 236.15796pt x 177.11708pt.
 
-<graphics/frac_pairs.pdf, id=410, 650.43pt x 650.43pt>
+<graphics/frac_pairs.pdf, id=412, 650.43pt x 650.43pt>
 File: graphics/frac_pairs.pdf Graphic file (type pdf)
 
 <use graphics/frac_pairs.pdf>
 Package pdftex.def Info: graphics/frac_pairs.pdf used on input line 577.
 (pdftex.def)             Requested size: 236.15796pt x 236.15941pt.
 
-<graphics/fraction_histogram_with_discrepancy_standard.pdf, id=411, 505.89pt x 
+<graphics/fraction_histogram_with_discrepancy_standard.pdf, id=413, 505.89pt x 
 505.89pt>
 File: graphics/fraction_histogram_with_discrepancy_standard.pdf Graphic file (t
 ype pdf)
@@ -1261,14 +1262,14 @@ Package pdftex.def Info: graphics/fraction_histogram_with_discrepancy_standard.
 pdf used on input line 583.
 (pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
 
-<graphics/credible_NROY.pdf, id=412, 505.89pt x 505.89pt>
+<graphics/credible_NROY.pdf, id=414, 505.89pt x 505.89pt>
 File: graphics/credible_NROY.pdf Graphic file (type pdf)
 
 <use graphics/credible_NROY.pdf>
 Package pdftex.def Info: graphics/credible_NROY.pdf used on input line 589.
 (pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
 
-<graphics/credible_NROY_hists.pdf, id=413, 433.62pt x 578.16pt>
+<graphics/credible_NROY_hists.pdf, id=415, 433.62pt x 578.16pt>
 File: graphics/credible_NROY_hists.pdf Graphic file (type pdf)
 
 <use graphics/credible_NROY_hists.pdf>
@@ -1276,21 +1277,21 @@ Package pdftex.def Info: graphics/credible_NROY_hists.pdf used on input line 59
 5.
 (pdftex.def)             Requested size: 236.15796pt x 314.88364pt.
 
-<graphics/amaz_oat_sens.pdf, id=414, 578.16pt x 578.16pt>
+<graphics/amaz_oat_sens.pdf, id=416, 578.16pt x 578.16pt>
 File: graphics/amaz_oat_sens.pdf Graphic file (type pdf)
 
 <use graphics/amaz_oat_sens.pdf>
 Package pdftex.def Info: graphics/amaz_oat_sens.pdf used on input line 601.
 (pdftex.def)             Requested size: 236.15796pt x 236.15611pt.
 
-<graphics/FAST_histograms.pdf, id=415, 469.755pt x 505.89pt>
+<graphics/FAST_histograms.pdf, id=417, 469.755pt x 505.89pt>
 File: graphics/FAST_histograms.pdf Graphic file (type pdf)
 
 <use graphics/FAST_histograms.pdf>
 Package pdftex.def Info: graphics/FAST_histograms.pdf used on input line 607.
 (pdftex.def)             Requested size: 236.15796pt x 254.31839pt.
 
-<graphics/discrepancy_parameter_space.pdf, id=418, 578.16pt x 578.16pt>
+<graphics/discrepancy_parameter_space.pdf, id=420, 578.16pt x 578.16pt>
 File: graphics/discrepancy_parameter_space.pdf Graphic file (type pdf)
 
 <use graphics/discrepancy_parameter_space.pdf>
@@ -1298,7 +1299,7 @@ Package pdftex.def Info: graphics/discrepancy_parameter_space.pdf used on input
  line 613.
 (pdftex.def)             Requested size: 236.15796pt x 236.15611pt.
 
-<graphics/Prop_NROY_tolerance_unc.pdf, id=419, 505.89pt x 505.89pt>
+<graphics/Prop_NROY_tolerance_unc.pdf, id=421, 505.89pt x 505.89pt>
 File: graphics/Prop_NROY_tolerance_unc.pdf Graphic file (type pdf)
 
 <use graphics/Prop_NROY_tolerance_unc.pdf>
@@ -1306,20 +1307,20 @@ Package pdftex.def Info: graphics/Prop_NROY_tolerance_unc.pdf used on input lin
 e 619.
 (pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
 
-<graphics/best_inputs.png, id=420, 2810.5pt x 5621.0pt>
+<graphics/best_inputs.png, id=422, 2810.5pt x 5621.0pt>
 File: graphics/best_inputs.png Graphic file (type png)
 
 <use graphics/best_inputs.png>
 Package pdftex.def Info: graphics/best_inputs.png used on input line 631.
 (pdftex.def)             Requested size: 236.15796pt x 472.24655pt.
 
-<graphics/taat.png, id=422, 2810.5pt x 5621.0pt>
+<graphics/taat.png, id=424, 2810.5pt x 5621.0pt>
 File: graphics/taat.png Graphic file (type png)
  <use graphics/taat.png>
 Package pdftex.def Info: graphics/taat.png used on input line 643.
 (pdftex.def)             Requested size: 236.15796pt x 472.24655pt.
 
-<graphics/best_inputs_swaps_hists_Paired.pdf, id=423, 505.89pt x 505.89pt>
+<graphics/best_inputs_swaps_hists_Paired.pdf, id=425, 505.89pt x 505.89pt>
 File: graphics/best_inputs_swaps_hists_Paired.pdf Graphic file (type pdf)
 
 <use graphics/best_inputs_swaps_hists_Paired.pdf>
@@ -1327,14 +1328,14 @@ Package pdftex.def Info: graphics/best_inputs_swaps_hists_Paired.pdf used on in
 put line 649.
 (pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
 
-<graphics/best_X_maps.pdf, id=424, 361.35pt x 650.43pt>
+<graphics/best_X_maps.pdf, id=426, 361.35pt x 650.43pt>
 File: graphics/best_X_maps.pdf Graphic file (type pdf)
 
 <use graphics/best_X_maps.pdf>
 Package pdftex.def Info: graphics/best_X_maps.pdf used on input line 655.
 (pdftex.def)             Requested size: 236.15796pt x 425.08696pt.
 
-<graphics/credible_NROY_hists_disc.pdf, id=425, 433.62pt x 578.16pt>
+<graphics/credible_NROY_hists_disc.pdf, id=427, 433.62pt x 578.16pt>
 File: graphics/credible_NROY_hists_disc.pdf Graphic file (type pdf)
 
 <use graphics/credible_NROY_hists_disc.pdf>
@@ -1342,7 +1343,7 @@ Package pdftex.def Info: graphics/credible_NROY_hists_disc.pdf used on input li
 ne 661.
 (pdftex.def)             Requested size: 236.15796pt x 314.88364pt.
 
-<graphics/plausible_disc_input_space.pdf, id=426, 505.89pt x 505.89pt>
+<graphics/plausible_disc_input_space.pdf, id=428, 505.89pt x 505.89pt>
 File: graphics/plausible_disc_input_space.pdf Graphic file (type pdf)
 
 <use graphics/plausible_disc_input_space.pdf>
@@ -1350,14 +1351,14 @@ Package pdftex.def Info: graphics/plausible_disc_input_space.pdf used on input
 line 667.
 (pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
 
-<graphics/input_frequency_marginal.pdf, id=427, 505.89pt x 505.89pt>
+<graphics/input_frequency_marginal.pdf, id=429, 505.89pt x 505.89pt>
 File: graphics/input_frequency_marginal.pdf Graphic file (type pdf)
 
 <use graphics/input_frequency_marginal.pdf>
 Package pdftex.def Info: graphics/input_frequency_marginal.pdf used on input li
 ne 673.
 (pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
- [13] [14 <./graphics/BL_obs_ensemble_mean_sd.pdf> <./graphics/frac_pairs.pdf> 
+ [13 <./graphics/BL_obs_ensemble_mean_sd.pdf>] [14 <./graphics/frac_pairs.pdf> 
 <./graphics/fraction_histogram_with_discrepancy_standard.pdf> <./graphics/credi
 ble_NROY.pdf>] [15 <./graphics/credible_NROY_hists.pdf> <./graphics/amaz_oat_se
 ns.pdf> <./graphics/FAST_histograms.pdf>] [16 <./graphics/discrepancy_parameter
@@ -1377,11 +1378,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 819.
 Here is how much of TeX's memory you used:
  10328 strings out of 493315
  149183 string characters out of 6137904
- 293524 words of memory out of 5000000
+ 293150 words of memory out of 5000000
  13453 multiletter control sequences out of 15000+600000
  46189 words of font info for 62 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 43i,9n,40p,2100b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,40p,2100b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texl
@@ -1395,7 +1396,7 @@ st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on McNeall_famous.pdf (19 pages, 2702455 bytes).
+Output written on McNeall_famous.pdf (19 pages, 2702275 bytes).
 PDF statistics:
  632 PDF objects out of 1000 (max. 8388607)
  561 compressed objects within 6 object streams
