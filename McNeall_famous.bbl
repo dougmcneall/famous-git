@@ -102,6 +102,14 @@ Higdon, D., Gattiker, J., Williams, B., and Rightley, M.: Computer Model
   Statistical Association, 103, 570--583, \doi{10.1198/016214507000000888},
   \urlprefix\url{http://dx.doi.org/10.1198/016214507000000888}, 2008.
 
+\bibitem[{Holden et~al.(2009)Holden, Edwards, Oliver, Lenton, and
+  Wilkinson}]{holden2009precalibration}
+Holden, P.~B., Edwards, N.~R., Oliver, K. I.~C., Lenton, T.~M., and Wilkinson,
+  R.~D.: A probabilistic calibration of climate sensitivity and terrestrial
+  carbon change in {GENIE}-1, Clim Dyn, 35, 785--806,
+  \doi{10.1007/s00382-009-0630-8},
+  \urlprefix\url{http://dx.doi.org/10.1007/s00382-009-0630-8}, 2009.
+
 \bibitem[{Huntingford et~al.(2009)Huntingford, Lowe, Booth, Jones, Harris,
   Gohar, and Meir}]{huntingford2009contributions}
 Huntingford, C., Lowe, J.~A., Booth, B. B.~B., Jones, C.~D., Harris, G.~R.,
@@ -206,12 +214,6 @@ Pukelsheim, F.: The three sigma rule, The American Statistician, 48, 88--91,
 {R Core Team}: R: A Language and Environment for Statistical Computing, R
   Foundation for Statistical Computing, Vienna, Austria,
   \urlprefix\url{https://www.R-project.org/}, 2016.
-
-\bibitem[{Ritz et~al.(2015)Ritz, Edwards, Durand, Payne, Peyaud, and
-  Hindmarsh}]{ritz2015potential}
-Ritz, C., Edwards, T.~L., Durand, G., Payne, A.~J., Peyaud, V., and Hindmarsh,
-  R.~C.: Potential sea-level rise from Antarctic ice-sheet instability
-  constrained by observations, Nature, 528, 115--118, 2015.
 
 \bibitem[{Roustant et~al.(2012)Roustant, Ginsbourger, and
   Deville}]{roustant2012dicekriging}

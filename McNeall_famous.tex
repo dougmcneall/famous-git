@@ -211,22 +211,18 @@ South East Asian and Central African forests vary together very strongly across 
 \subsection{Training an emulator}\label{ssec:emulator}
 The simulator FAMOUS, although relatively computationally cheap, is not fast enough to evaluate at every viable candidate point within input space, termed $\mathcal{X}$. We therefore use a computationally cheap statistical proxy to the simulator, called an emulator. The emulator provides a prediction of simulator output at any required untested input, many orders of magnitude faster than the original simulator.  Once trained, any analysis that might have been done with the simulator can be done with the emulator, with the proviso that we must include an extra uncertainty term to account for the fact that the emulator is not a perfect prediction of the simulator output. We use a gaussian process emulator that assumes zero uncertainty at points where the model has already been evaluated, growing larger away from those points, and dependent upon a set of hyperparameters that are trained at the same time as the emulator. 
 
-We treat the output of the simulator FAMOUS $y$ as a deterministic function of a vector of input parameters $x$, such that $y=g(x)$. The emulator is a nonlinear regression model conditioned on a sample $Y = g(X)$, and provides a prediction of simulator output,  $\hat{y}$ at untested input sets $x \in \mathcal{X}$ such that 
+We treat the output $g(x)$ of the simulator FAMOUS as a deterministic function of a vector of input parameters $x$. The emulator is a nonlinear regression model conditioned on a sample, or ensemble, and provides a prediction of simulator output and corresponding uncertainty.
 
-\begin{equation}
-\hat{y} = \eta(x) + e
-\end{equation}
-
-where $\eta$ represents the emulator, as a substitute for $g()$, and  $e$ represents the uncertainty necessary because the emulator is not a perfect prediction. We build a number of emulators of the ensemble, the details for each depending on the application. All use the DiceKriging package \citep{roustant2012dicekriging}, in the statistical programming environment R \citep{Rcore2016}.
+We build a number of emulators of the ensemble, the details for each depending on the application. All use the DiceKriging package \citep{roustant2012dicekriging}, in the statistical programming environment R \citep{Rcore2016}.
 
 DiceKriging allows the user flexibility in specifying the emulator, and then estimates hyperparameters using the training data. We use "Universal Kriging" and specify a linear prior  for each emulator. This means that the emulator starts with a linear model, and then models deviations from this as a Gaussian process. We verify the quality of the emulators, using a leave-one-out cross validation metric, ensuring that the accuracy and uncertainty estimates of the emulator are consistent across the ensemble (see supplementary material). 
 
 \subsection{History matching}\label{ssec:historymatching}
 We aim to repeat the achievement of \cite{williamson2014identifying}, to use history matching to find a region of parameter space that is consistent with observations, to within the level of observational and acceptable simulator uncertainty. In practice this means finding a set of input parameters $x^{*}$ where the output of the model is deemed tolerably close to the observations, given uncertainty in the observations and known deficiencies of the model. Constraining parameters in this way should help identify the range of projected futures of the forest that are consistent with the observations, rather than a single set of ``best'' parameters.
 
-A key distinction from the practice of model calibration is that the set of statistically consistent inputs are not accepted, but instead are deemed ``Not Ruled Out Yet'' (NROY). As such, we regard them as conditionally accepted, contingent on new observations or information. History matching was developed by \cite{craig1997pressure}, and has been used extensively in hydrocarbon extraction sciences, and astronomy (e.g. \cite{vernon2010galaxy}). It has been used to confront climate simulators with observations, for example by \cite{lee2016aerosol,williamson2013history,ritz2015potential}. \cite{mcneall2013potential} investigated the potential of an observational dataset to constrain input space using history matching.
+A key distinction from the practice of model calibration is that the set of statistically consistent inputs are not accepted, but instead are deemed ``Not Ruled Out Yet'' (NROY). As such, we regard them as conditionally accepted, contingent on new observations or information. History matching was developed by \cite{craig1997pressure}, and has been used extensively in hydrocarbon extraction sciences, and astronomy (e.g. \cite{vernon2010galaxy}). Sometimes termed precalibration, It has been used to confront climate simulators with observations, for example by \cite{lee2016aerosol, williamson2013history, holden2009precalibration}. \cite{mcneall2013potential} investigated the potential of an observational dataset to constrain input space using history matching.
 
-Observations of the system are denoted $z$, and we assume that they are made with uncorrelated and independent errors $\epsilon$ such that $z=y+\epsilon$. Assuming that the simulator contains a systematic structural discrepancy $\delta$, then the observations can be related to the input parameters
+Observations of the system are denoted $z$, and we assume that they are made with uncorrelated and independent errors $\epsilon$ such that $z=y+\epsilon$, where $y$ represents the true state of the climate being observed. Assuming that the simulator contains a systematic structural discrepancy $\delta$, then the observations can be related to the input parameters
 
 \begin{equation}\label{eq:em_structure}
 z=g(x^*) + \delta + \epsilon
@@ -237,7 +233,7 @@ If the simulator were fast enough to evaluate at a large number of candidate poi
 Each point in input space is assigned an Implausibility $I$, according to Eq. (\ref{eq:implausibility}). The forest fraction at a sample of points in input space are calculated, along with uncertainties, using the emulator described above. Inputs that produce forest fraction that is further from the observations are deemed more implausible. Those same inputs are less implausible if there is uncertainty about the observation, about the model discrepancy, or the emulated output at that input. 
 
 \begin{equation}\label{eq:implausibility}
-I^{2}=  |z -E[g(x)]|^{2} / [var(g(x)) +var(\delta) +var(\epsilon)]
+I^{2}(x)=  |z -E[\eta(x)]|^{2} / [\textrm{Var}(\eta(x)) +\textrm{Var}(\delta) +\textrm{Var}(\epsilon)]
 \end{equation}
 
 A threshold of implausibility, above which a candidate input can be safely ruled out as implausible, is usually set to 3; roughly equivalent to a 95\% credible interval of a posterior distribution, if using a Bayesian analysis. This is due to Pukelsheim's three-sigma rule; that for any unimodal distribution, 95\% of the probability mass will be within 3 standard deviations of the mean \citep{pukelsheim1994three}.

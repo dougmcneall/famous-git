@@ -5,34 +5,34 @@ The style file: copernicus.bst
 Database file #1: famous.bib.bib
 You've used 42 entries,
             2811 wiz_defined-function locations,
-            1312 strings with 20722 characters,
-and the built_in function-call counts, 48357 in all, are:
-= -- 5412
-> -- 2104
+            1315 strings with 20814 characters,
+and the built_in function-call counts, 48316 in all, are:
+= -- 5411
+> -- 2095
 < -- 12
-+ -- 933
-- -- 663
++ -- 930
+- -- 660
 * -- 3188
-:= -- 4862
+:= -- 4855
 add.period$ -- 42
 call.type$ -- 42
-change.case$ -- 305
+change.case$ -- 304
 chr.to.int$ -- 42
 cite$ -- 126
 duplicate$ -- 4737
-empty$ -- 2329
-format.name$ -- 788
-if$ -- 9547
+empty$ -- 2330
+format.name$ -- 785
+if$ -- 9540
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 517
+missing$ -- 516
 newline$ -- 135
 num.names$ -- 169
-pop$ -- 1992
+pop$ -- 2004
 preamble$ -- 1
-purify$ -- 302
+purify$ -- 301
 quote$ -- 0
-skip$ -- 2791
+skip$ -- 2771
 stack$ -- 0
 substring$ -- 2011
 swap$ -- 4157
@@ -43,4 +43,4 @@ type$ -- 378
 warning$ -- 0
 while$ -- 236
 width$ -- 0
-write$ -- 531
+write$ -- 533
