@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  15 APR 2016 15:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  18 APR 2016 16:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -980,7 +980,7 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 26.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 33.
  [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -993,12 +993,12 @@ Class copernicus Warning: No section Introduction; proceeding without it.
 
 Class copernicus Warning: No section Conclusions; proceeding without it.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
 (./McNeall_abstract.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 34.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 33.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
  9987 strings out of 493315
@@ -1012,7 +1012,7 @@ Here is how much of TeX's memory you used:
 exlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
 2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on McNeall_abstract.pdf (1 page, 31703 bytes).
+Output written on McNeall_abstract.pdf (1 page, 31490 bytes).
 PDF statistics:
  26 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
