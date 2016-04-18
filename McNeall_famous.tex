@@ -10,8 +10,8 @@
 
 
 %% 2-Column Papers and Discussion Papers
-\documentclass[esd, article]{copernicus} % uncomment to see what the 2 column final paper will look like.
-%\documentclass[esd, manuscript]{copernicus}
+%\documentclass[esd, article]{copernicus} % uncomment to see what the 2 column final paper will look like.
+\documentclass[esd, manuscript]{copernicus}
 
 %% Journal Abbreviations (Please use the same for Discussion Papers and Final Revised Papers)
 
@@ -77,7 +77,7 @@
 \Author[1]{Ben}{Booth}
 \Author[1]{Richard}{Betts}
 \Author[3]{Peter}{Challenor}
-\Author[1]{Andrew}{Wiltshire}
+\Author[1]{Andy}{Wiltshire}
 \Author[1]{David}{Sexton}
 
 \affil[1]{Met Office Hadley Centre, FitzRoy Road, Exeter, EX1 3PB UK}
@@ -340,7 +340,7 @@ We show a map of simulator error in the the two dimensional space of the most im
 
 Different observations rule out different parts of parameter space, while combining observations can be a powerful method of ruling out large parts of parameter space. A number of approaches to combining data in history matching are discussed in \cite{vernon2010galaxy} and \cite{williamson2013history}. A simple strategy is to calculate $max[I]$ at a candidate input across all data independently, and reject those candidates with a value larger than 3 in any. A danger of history matching using $max[I]$ is that a single poorly specified emulator or model discrepancy term could lead to large swathes of parameter space being incorrectly ruled out. As the number of comparisons with data goes up, so does the probability of including a poorly specified model discrepancy. For example, comparing a model with a serious but undiagnosed bias could lead to all a priori plausible parameter space being ruled out as a poor match to the observations. For that reason, it is important to first combine knowledge and judgement about the system being modelled, and the way that the parameters represent their real world counterparts (or don't), before simply relying on observations to remove plausible parameter space.
 
-A conservative measure is to reject a candidate point only if it is judged implausible using a number of measures. This will tend to be more robust to a poorly specified model discrepancy term. \cite{vernon2010galaxy} use the 2nd and 3rd highest implausibility score, where a simulator has implausibility scores for multiple outputs calculated. This is to guard against poor emulators, but in practice works just as well for poorly specified model discrepancy. An alternative suggested by \citep{vernon2010galaxy} is to use a multivariate measure of implausibility.
+A conservative measure is to reject a candidate point only if it is judged implausible using a number of measures. This will tend to be more robust to a poorly specified model discrepancy term. \cite{vernon2010galaxy} use the 2nd and 3rd highest implausibility score, where a simulator has implausibility scores for multiple outputs calculated. This is to guard against poor emulators, but in practice works just as well for poorly specified model discrepancy. An alternative suggested by \cite{vernon2010galaxy} is to use a multivariate measure of implausibility.
 
 To understand the value of individual observations, we ask \emph{what is our tolerance to error?} What level of uncertainty in observations or model discrepancy (or both) can we tolerate before our observations become ineffective for history matching? Figure \ref{fig:Prop_NROY_tolerance_unc} shows the declining proportion of input parameter space ruled out as we increase our tolerance to error, in a number of scenarios. Coloured lines indicate use of the individual, and combinations of, the forest fraction observations. Tolerance to error is specified as a single standard deviation, so in practice, the full distribution of the uncertainty of the observation or discrepancy (e.g. the 95\% range) will be three times as large, using Pukelsheim's rule.
 
@@ -446,7 +446,7 @@ We urge caution with a naive or automatic application of history matching conclu
 We are able to offer a counter example to the hypothesis of \cite{williamson2014identifying}, who found regions of parameter space where what was thought a structural error in the model was significantly reduced. In this case, we believe it likely that better observations would simply confirm that the ``best'' regions of parameter space for the Amazon and other forests were non-overlapping. While individual forest fraction observations may have some uncertainty, we would expect the uncertainty on the differences between those observations to be smaller. A systematic bias in the way that the forests are measured would be common to all observations, for example, even though it would need to be taken into account in the uncertainty calculation for an individual observation.
 
 \subsection{Causes of discrepancy}\label{ssec:causes}
-What could cause this fundamental structural error in the Amazon? There are three possible causes - \emph{external} and \emph{internal} to the vegetation model, although a combination of these causes is not ruled out. First, is there a problem with the emulator that could cause such a bias? We believe that this is not the case, as the emulator performs sufficiently well across parameter space in cross validation experiments (see supplementary material).
+What could cause this fundamental structural error in the Amazon? There are three possible causes - \emph{external} and \emph{internal} to the vegetation model, although a combination of these causes is not ruled out. First, is there a problem with the emulator that could cause such a bias? We believe that this is not the case, as the emulator performs sufficiently well across parameter space in cross validation experiments (see supplementary material Fig. S2).
 
 Second, is there a missing processes in the vegetation model, that impacts the Amazon in FAMOUS? It is possible that the real Amazon can access water to a deeper level than other forests, through deep rooting. This would cause a \emph{low Amazon} bias, seen in the model output. If the simulated Amazon can't access water through deep enough roots, and model parameters were tuned to make Amazon as vigorous as real world, other forests would be more vigorous in the model than in observations. A bias that leads to a reduction in Amazon forest extent (such as that climatological or root depth) is likely to lead to further rainfall reductions, and its associated warming, as the region loses water cycling capability that the forest canopy provided.  This is a feedback, and can be expected to enhance any dry/warm bias that results from other factors, and in turn enhance any forest loss.
 
@@ -566,55 +566,55 @@ The works published in this journal are distributed under the Creative Commons A
 
 %f
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/BL_obs_ensemble_mean_sd.pdf}
+\includegraphics[width=12cm]{graphics/BL_obs_ensemble_mean_sd.pdf}
 \caption{Observations of Broadleaf forest fraction (top left). Mean (top right) and standard deviation (bottom left) of broadleaf forest fraction across the 100 member ensemble of FAMOUS.}
 \label{fig:BL_obs_ensemble_mean_sd}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/frac_pairs.pdf}
+\includegraphics[width=12cm]{graphics/frac_pairs.pdf}
 \caption{FAMOUS input parameters and forest fraction parameters, plotted against each other.}
 \label{fig:frac_pairs}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/fraction_histogram_with_discrepancy_standard.pdf}
+\includegraphics[width=12cm]{graphics/fraction_histogram_with_discrepancy_standard.pdf}
 \caption{Histograms representing the number of ensemble members of a particular forest fraction in each region, and globally. Points plotted below the histograms represent the observed forest fraction (colours), and the forest fraction simulated at the "standard" parameters $\pm$1 standard deviation (black).}
 \label{fig:fraction_histogram_with_discrepancy_standard}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/credible_NROY.pdf}
+\includegraphics[width=12cm]{graphics/credible_NROY.pdf}
 \caption{A density pairs plot of two dimensional projections of parameter space. The blue areas represent the density of NROY points, using all of the data, with an assumed observational uncertainty of 0.05 (1 standard deviation).}
 \label{fig:credible_NROY}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/credible_NROY_hists.pdf}
+\includegraphics[width=12cm]{graphics/credible_NROY_hists.pdf}
 \caption{Best-estimate draws of forest fraction output from the emulator, at the set of points Not Ruled Out Yet when assuming a credible observational uncertainty. The value of the observed forest fractions are are plotted as a single point on the corresponding x-axes (a ``rug plot'').}
 \label{fig:credible_NROY_hists}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/amaz_oat_sens.pdf}
+\includegraphics[width=12cm]{graphics/amaz_oat_sens.pdf}
 \caption{Marginal sensitivity of mean forest fraction to each input parameter in turn, with all other parameters held at standard values. Central lines represent the emulator mean, and shaded areas represent the estimate of emulator uncertainty, at the $\pm$1 standard deviation level.}
 \label{fig:amaz_oat_sens}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/FAST_histograms.pdf}
+\includegraphics[width=12cm]{graphics/FAST_histograms.pdf}
 \caption{Sensitivity analysis of forest fraction via the FAST algorithm of \cite{saltelli1999sensitivity}.}
 \label{fig:FAST_histograms}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/discrepancy_parameter_space.pdf}
+\includegraphics[width=12cm]{graphics/discrepancy_parameter_space.pdf}
 \caption{Maps of simulator error, in units of forest fraction, when projected into the two dimensional space of the most active parameters, NL0 and V\_CRIT\_ALPHA.}
 \label{fig:discrepancy_parameter_space}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/Prop_NROY_tolerance_unc.pdf}
+\includegraphics[width=12cm]{graphics/Prop_NROY_tolerance_unc.pdf}
 \caption{Proportion of NROY (Not Ruled Out Yet) input space plotted against ``tolerence to error'' - the total error budget including emulator, observational and simulator discrepancy uncertainty.}
 \label{fig:Prop_NROY_tolerance_unc}
 \end{figure}
@@ -644,7 +644,7 @@ The works published in this journal are distributed under the Creative Commons A
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/best_inputs_swaps_hists_Paired.pdf}
+\includegraphics[width=12cm]{graphics/best_inputs_swaps_hists_Paired.pdf}
 \caption{(Top) Forest fraction in the FAMOUS Amazon at the set of parameters where the FAMOUS best matches each of the other forest observations. (Bottom) Other forests in FAMOUS at the set where the FAMOUS Amazon best matches observations. Observed forest fractions are shown as marks underneath the histograms.}
 \label{fig:best_inputs_swaps_hists_Paired}
 \end{figure}
@@ -656,19 +656,19 @@ The works published in this journal are distributed under the Creative Commons A
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/credible_NROY_hists_disc.pdf}
+\includegraphics[width=12cm]{graphics/credible_NROY_hists_disc.pdf}
 \caption{Histograms of emulated simulator output using credible estimates for observational uncertainty, a model discrepancy term for the Amazon, and credible discrepancy uncertainty.}
 \label{fig:credible_NROY_hists_disc}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/plausible_disc_input_space.pdf}
+\includegraphics[width=12cm]{graphics/plausible_disc_input_space.pdf}
 \caption{A density plot of the two dimensional projections of NROY samples from the design input space, using a all forest observations and a discrepancy function for the Amazon.}
 \label{fig:plausible_disc_input_space}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=8.3cm]{graphics/input_frequency_marginal.pdf}
+\includegraphics[width=12cm]{graphics/input_frequency_marginal.pdf}
 \caption{Marginal histograms of the relative frequency of NROY emulated input points in each dimension of parameter space, using all forest observations and a discrepancy function for the Amazon.}
 \label{fig:input_frequency_marginal}
 \end{figure}
