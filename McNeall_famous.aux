@@ -17,7 +17,7 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \gdef\abstractexists{true}
-\gdef\@abstr{\parindent 1em\relax  We use observations of forest fraction to constrain carbon cycle and land surface input parameters of the reduced resolution global climate model, FAMOUS. Using a history matching approach along with a computationally cheap statistical proxy (emulator) of the climate model, we compare an ensemble of simulations of forest fraction with observations, and rule out parameter settings where the forests are poorly simulated. \par Regions of parameter space where FAMOUS best simulates the Amazon forest fraction are incompatible with the regions where FAMOUS best simulates other forests, indicating a structural discrepancy in the model. Using observations of the Amazon forest to constrain input parameters leads to very different conclusions about the acceptable values of input parameters than using the other forests. \par We characterise the structural model discrepancy, and explore the consequences of ignoring it in a history matching exercise. We use sensitivity analysis to find the parameters which have most impact on simulator error. We use the emulator to simulate the forest fraction at the best set of parameters implied by matching the model to the Amazon, and to other major forests in turn. We can find parameters that lead to a realistic forest fraction in the Amazon, but using the Amazon alone to tune the simulator would result in a significant overestimate of forest fraction in the other forests. Conversely, using the other forests to calibrate the model leads to a larger underestimate of the Amazon forest fraction. \par Finally, we perform a history matching exercise using credible estimates for simulator discrepancy and observational uncertainty terms. We are unable to constrain the parameters individually, but just under half of joint parameter space is ruled out as being incompatible with forest observations. We discuss the possible sources of the discrepancy in the simulated Amazon, including missing processes in the land surface component, and a bias in the climatology of the Amazon. }
+\gdef\@abstr{\parindent 1em\relax  We use observations of forest fraction to constrain carbon cycle and land surface input parameters of the reduced resolution global climate model, FAMOUS. Using a history matching approach along with a computationally cheap statistical proxy (emulator) of the climate model, we compare an ensemble of simulations of forest fraction with observations, and rule out parameter settings where the forests are poorly simulated. \par Regions of parameter space where FAMOUS best simulates the Amazon forest fraction are incompatible with the regions where FAMOUS best simulates other forests, indicating a structural error in the model. Using observations of the Amazon forest to constrain input parameters leads to very different conclusions about the acceptable values of input parameters than using the other forests. \par We characterise the structural model discrepancy, and explore the consequences of ignoring it in a history matching exercise. We use sensitivity analysis to find the parameters which have most impact on simulator error. We use the emulator to simulate the forest fraction at the best set of parameters implied by matching the model to the Amazon, and to other major forests in turn. We can find parameters that lead to a realistic forest fraction in the Amazon, but using the Amazon alone to tune the simulator would result in a significant overestimate of forest fraction in the other forests. Conversely, using the other forests to calibrate the model leads to a larger underestimate of the Amazon forest fraction. \par Finally, we perform a history matching exercise using credible estimates for simulator discrepancy and observational uncertainty terms. We are unable to constrain the parameters individually, but just under half of joint parameter space is ruled out as being incompatible with forest observations. We discuss the possible sources of the discrepancy in the simulated Amazon, including missing processes in the land surface component, and a bias in the climatology of the Amazon. }
 \@LN@col{1}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
@@ -49,6 +49,7 @@
 \@LN{21}{0}
 \@LN{22}{0}
 \citation{williamson2014identifying}
+\citation{sexton2011multivariate}
 \citation{kennedy2001bayesian}
 \citation{brynjarsdottir2014learning}
 \citation{higdon2008calibration}
@@ -73,8 +74,8 @@
 \@LN{34}{1}
 \@LN{35}{1}
 \@LN{36}{1}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Simulator discrepancy}{2}{subsection.1.1}}
 \@LN{37}{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Simulator discrepancy}{2}{subsection.1.1}}
 \@LN{38}{1}
 \@LN{39}{1}
 \@LN{40}{1}
@@ -119,9 +120,9 @@
 \@LN{78}{1}
 \@LN{79}{1}
 \@LN{80}{1}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Calibration of Land surface components}{2}{subsection.1.2}}
 \@LN{81}{1}
 \@LN{82}{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Calibration of Land surface components}{2}{subsection.1.2}}
 \@LN{83}{1}
 \@LN{84}{1}
 \@LN{85}{1}
@@ -158,9 +159,9 @@
 \@LN{116}{1}
 \@LN{117}{1}
 \@LN{118}{1}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Paper aims and outline}{2}{subsection.1.3}}
 \@LN{119}{1}
 \@LN{120}{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Paper aims and outline}{2}{subsection.1.3}}
 \@LN{121}{1}
 \@LN{122}{1}
 \@LN{123}{1}
@@ -211,12 +212,12 @@
 \@LN{150}{2}
 \@LN{151}{2}
 \@LN{152}{2}
+\@LN{153}{2}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Data and Methods}{3}{section.2}}
 \newlabel{sec:dataandmethods}{{2}{3}{Data and Methods}{section.2}{}}
-\@LN{153}{2}
+\@LN{154}{2}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}The FAMOUS climate model}{3}{subsection.2.1}}
 \newlabel{subsec:FAMOUS}{{2.1}{3}{The FAMOUS climate model}{subsection.2.1}{}}
-\@LN{154}{2}
 \@LN{155}{2}
 \@LN{156}{2}
 \@LN{157}{2}
@@ -240,8 +241,8 @@
 \@LN{175}{2}
 \@LN{176}{2}
 \@LN{177}{2}
-\@LN@col{2}
 \@LN{178}{2}
+\@LN@col{2}
 \@LN{179}{2}
 \@LN{180}{2}
 \@LN{181}{2}
@@ -256,9 +257,9 @@
 \@LN{190}{2}
 \@LN{191}{2}
 \@LN{192}{2}
+\@LN{193}{2}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Known biases in the climate of FAMOUS}{3}{subsection.2.2}}
 \newlabel{ssec:biases}{{2.2}{3}{Known biases in the climate of FAMOUS}{subsection.2.2}{}}
-\@LN{193}{2}
 \@LN{194}{2}
 \@LN{195}{2}
 \@LN{196}{2}
@@ -273,8 +274,8 @@
 \@LN{205}{2}
 \@LN{206}{2}
 \@LN{207}{2}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}The ensemble}{3}{subsection.2.3}}
 \@LN{208}{2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}The ensemble}{3}{subsection.2.3}}
 \@LN{209}{2}
 \@LN{210}{2}
 \@LN{211}{2}
@@ -295,6 +296,7 @@
 \@LN{226}{2}
 \@LN{227}{2}
 \@LN{228}{2}
+\@LN{229}{2}
 \citation{loveland2000landcover}
 \citation{williams2013optimising}
 \citation{roustant2012dicekriging}
@@ -307,7 +309,6 @@
 \citation{holden2009precalibration}
 \citation{mcneall2013potential}
 \@LN@col{1}
-\@LN{229}{3}
 \@LN{230}{3}
 \@LN{231}{3}
 \@LN{232}{3}
@@ -320,9 +321,9 @@
 \@LN{239}{3}
 \@LN{240}{3}
 \@LN{241}{3}
+\@LN{242}{3}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Simulator outputs and observations}{4}{subsection.2.4}}
 \newlabel{inputsoutputs}{{2.4}{4}{Simulator outputs and observations}{subsection.2.4}{}}
-\@LN{242}{3}
 \@LN{243}{3}
 \@LN{244}{3}
 \@LN{245}{3}
@@ -357,13 +358,13 @@
 \@LN{274}{3}
 \@LN{275}{3}
 \@LN{276}{3}
+\@LN{277}{3}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Training an emulator}{4}{subsection.2.5}}
 \newlabel{ssec:emulator}{{2.5}{4}{Training an emulator}{subsection.2.5}{}}
-\@LN{277}{3}
 \@LN{278}{3}
 \@LN{279}{3}
-\@LN@col{2}
 \@LN{280}{3}
+\@LN@col{2}
 \@LN{281}{3}
 \@LN{282}{3}
 \@LN{283}{3}
@@ -394,10 +395,10 @@
 \@LN{308}{3}
 \@LN{309}{3}
 \@LN{310}{3}
-\@LN{311}{3}
-\@LN{312}{3}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6}History matching}{4}{subsection.2.6}}
 \newlabel{ssec:historymatching}{{2.6}{4}{History matching}{subsection.2.6}{}}
+\@LN{311}{3}
+\@LN{312}{3}
 \@LN{313}{3}
 \@LN{314}{3}
 \@LN{315}{3}
@@ -432,9 +433,9 @@
 \@LN{339}{4}
 \@LN{340}{4}
 \@LN{341}{4}
+\newlabel{eq:em_structure}{{1}{5}{History matching}{equation.2.1}{}}
 \@LN{342}{4}
 \@LN{343}{4}
-\newlabel{eq:em_structure}{{1}{5}{History matching}{equation.2.1}{}}
 \@LN{344}{4}
 \@LN{345}{4}
 \@LN{346}{4}
@@ -452,9 +453,9 @@
 \@LN{358}{4}
 \@LN{359}{4}
 \@LN{360}{4}
+\newlabel{eq:implausibility}{{2}{5}{History matching}{equation.2.2}{}}
 \@LN{361}{4}
 \@LN{362}{4}
-\newlabel{eq:implausibility}{{2}{5}{History matching}{equation.2.2}{}}
 \@LN{363}{4}
 \@LN{364}{4}
 \@LN{365}{4}
@@ -470,13 +471,13 @@
 \@LN{374}{4}
 \@LN{375}{4}
 \@LN{376}{4}
-\@LN{377}{4}
-\@LN{378}{4}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Analyses and Results}{5}{section.3}}
 \newlabel{AnalysesandResults}{{3}{5}{Analyses and Results}{section.3}{}}
-\@LN{379}{4}
+\@LN{377}{4}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}An initial history match}{5}{subsection.3.1}}
 \newlabel{ssec:initialhistorymatch}{{3.1}{5}{An initial history match}{subsection.3.1}{}}
+\@LN{378}{4}
+\@LN{379}{4}
 \@LN{380}{4}
 \@LN{381}{4}
 \@LN{382}{4}
@@ -552,10 +553,10 @@
 \@LN{448}{5}
 \@LN{449}{5}
 \@LN{450}{5}
-\@LN{451}{5}
-\@LN{452}{5}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Finding the active parameters with sensitivity analysis}{6}{subsection.3.2}}
 \newlabel{ssec:sensitivity}{{3.2}{6}{Finding the active parameters with sensitivity analysis}{subsection.3.2}{}}
+\@LN{451}{5}
+\@LN{452}{5}
 \@LN{453}{5}
 \@LN{454}{5}
 \@LN{455}{5}
@@ -615,12 +616,11 @@
 \@LN{508}{5}
 \@LN{509}{5}
 \@LN{510}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Mapping simulator error in parameter space}{6}{subsection.3.3}}
+\newlabel{ssec:mapping}{{3.3}{6}{Mapping simulator error in parameter space}{subsection.3.3}{}}
 \@LN{511}{5}
 \@LN{512}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Mapping simulator error}{6}{subsection.3.3}}
-\newlabel{ssec:mapping}{{3.3}{6}{Mapping simulator error}{subsection.3.3}{}}
 \@LN{513}{5}
-\@LN{514}{5}
 \citation{williamson2014identifying}
 \citation{vernon2010galaxy}
 \citation{williamson2013history}
@@ -631,6 +631,7 @@
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Total effect sum in sensitivity analysis.\relax }}{7}{table.caption.3}}
 \newlabel{tab:effects_sum}{{3}{7}{Total effect sum in sensitivity analysis.\relax }{table.caption.3}{}}
 \@LN@col{1}
+\@LN{514}{6}
 \@LN{515}{6}
 \@LN{516}{6}
 \@LN{517}{6}
@@ -653,18 +654,18 @@
 \@LN{534}{6}
 \@LN{535}{6}
 \@LN{536}{6}
-\@LN{537}{6}
-\@LN{538}{6}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}How much input space is ruled out by combinations of observations?}{7}{subsection.3.4}}
 \newlabel{ssec:combination}{{3.4}{7}{How much input space is ruled out by combinations of observations?}{subsection.3.4}{}}
+\@LN{537}{6}
+\@LN{538}{6}
 \@LN{539}{6}
 \@LN{540}{6}
 \@LN{541}{6}
 \@LN{542}{6}
 \@LN{543}{6}
 \@LN{544}{6}
-\@LN{545}{6}
 \@LN@col{2}
+\@LN{545}{6}
 \@LN{546}{6}
 \@LN{547}{6}
 \@LN{548}{6}
@@ -759,10 +760,10 @@
 \@LN{635}{7}
 \@LN{636}{7}
 \@LN{637}{7}
-\@LN{638}{7}
-\@LN{639}{7}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5}What do the individual forests tell us about the best parameters?}{8}{subsection.3.5}}
 \newlabel{ssec:learn}{{3.5}{8}{What do the individual forests tell us about the best parameters?}{subsection.3.5}{}}
+\@LN{638}{7}
+\@LN{639}{7}
 \@LN{640}{7}
 \@LN{641}{7}
 \@LN{642}{7}
@@ -808,10 +809,10 @@
 \@LN{682}{7}
 \@LN{683}{7}
 \@LN{684}{7}
+\@LN{685}{7}
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Amount of overlap in NROY input space for forest combinations.\relax }}{9}{table.caption.4}}
 \newlabel{tab:input_overlap}{{4}{9}{Amount of overlap in NROY input space for forest combinations.\relax }{table.caption.4}{}}
 \@LN@col{1}
-\@LN{685}{8}
 \@LN{686}{8}
 \@LN{687}{8}
 \@LN{688}{8}
@@ -825,10 +826,10 @@
 \@LN{696}{8}
 \@LN{697}{8}
 \@LN{698}{8}
-\@LN{699}{8}
-\@LN{700}{8}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.6}The forests at best parameters}{9}{subsection.3.6}}
 \newlabel{ssec:bestparameters}{{3.6}{9}{The forests at best parameters}{subsection.3.6}{}}
+\@LN{699}{8}
+\@LN{700}{8}
 \@LN{701}{8}
 \@LN{702}{8}
 \@LN{703}{8}
@@ -854,8 +855,8 @@
 \@LN{723}{8}
 \@LN{724}{8}
 \@LN{725}{8}
-\@LN@col{2}
 \@LN{726}{8}
+\@LN@col{2}
 \@LN{727}{8}
 \@LN{728}{8}
 \@LN{729}{8}
@@ -863,9 +864,9 @@
 \@LN{731}{8}
 \@LN{732}{8}
 \@LN{733}{8}
-\@LN{734}{8}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.7}History matching allowing for discrepancy in the Amazon}{9}{subsection.3.7}}
 \newlabel{ssec:hist_disc}{{3.7}{9}{History matching allowing for discrepancy in the Amazon}{subsection.3.7}{}}
+\@LN{734}{8}
 \@LN{735}{8}
 \@LN{736}{8}
 \@LN{737}{8}
@@ -898,17 +899,17 @@
 \@LN{764}{8}
 \@LN{765}{8}
 \@LN{766}{8}
+\@LN{767}{8}
 \citation{vernon2014observable}
 \citation{williamson2014identifying}
 \@LN@col{1}
-\@LN{767}{9}
 \@LN{768}{9}
 \@LN{769}{9}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{10}{section.4}}
-\newlabel{sec:discussion}{{4}{10}{Discussion}{section.4}{}}
 \@LN{770}{9}
 \@LN{771}{9}
 \@LN{772}{9}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{10}{section.4}}
+\newlabel{sec:discussion}{{4}{10}{Discussion}{section.4}{}}
 \@LN{773}{9}
 \@LN{774}{9}
 \@LN{775}{9}
@@ -955,8 +956,8 @@
 \@LN{816}{9}
 \@LN{817}{9}
 \@LN{818}{9}
-\@LN@col{2}
 \@LN{819}{9}
+\@LN@col{2}
 \@LN{820}{9}
 \@LN{821}{9}
 \@LN{822}{9}
@@ -1010,6 +1011,8 @@
 \@LN{870}{9}
 \@LN{871}{9}
 \@LN{872}{9}
+\@LN{873}{9}
+\@LN{874}{9}
 \citation{malhi2009amazon}
 \citation{staver2011determinants}
 \citation{cox2004amazon}
@@ -1018,14 +1021,12 @@
 \citation{yin2012precipitation}
 \citation{williamson2014identifying}
 \@LN@col{1}
-\@LN{873}{10}
-\@LN{874}{10}
 \@LN{875}{10}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Causes of discrepancy}{11}{subsection.4.1}}
-\newlabel{ssec:causes}{{4.1}{11}{Causes of discrepancy}{subsection.4.1}{}}
 \@LN{876}{10}
 \@LN{877}{10}
 \@LN{878}{10}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Causes of discrepancy}{11}{subsection.4.1}}
+\newlabel{ssec:causes}{{4.1}{11}{Causes of discrepancy}{subsection.4.1}{}}
 \@LN{879}{10}
 \@LN{880}{10}
 \@LN{881}{10}
@@ -1067,15 +1068,15 @@
 \@LN{917}{10}
 \@LN{918}{10}
 \@LN{919}{10}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{11}{section.5}}
-\newlabel{sec:conclusions}{{5}{11}{\conclusionname }{section.5}{}}
 \@LN{920}{10}
 \@LN{921}{10}
 \@LN{922}{10}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{11}{section.5}}
+\newlabel{sec:conclusions}{{5}{11}{\conclusionname }{section.5}{}}
 \@LN{923}{10}
-\@LN@col{2}
 \@LN{924}{10}
 \@LN{925}{10}
+\@LN@col{2}
 \@LN{926}{10}
 \@LN{927}{10}
 \@LN{928}{10}
@@ -1126,6 +1127,8 @@
 \@LN{973}{10}
 \@LN{974}{10}
 \@LN{975}{10}
+\@LN{976}{10}
+\@LN{977}{10}
 \bibstyle{copernicus}
 \bibdata{famous.bib}
 \bibcite{abramowitz2012benchmarking}{{1}{2012}{{Abramowitz}}{{}}}
@@ -1151,8 +1154,6 @@
 \bibcite{luo2012framework}{{21}{2012}{{Luo et~al.}}{{Luo, Randerson, Abramowitz, Bacour, Blyth, Carvalhais, Ciais, Dalmonech, Fisher, Fisher, Friedlingstein, Hibbard, Hoffman, Huntzinger, Jones, Koven, Lawrence, Li, Mahecha, Niu, Norby, Piao, Qi, Peylin, Prentice, Riley, Reichstein, Schwalm, Wang, Xia, Zaehle, and Zhou}}}
 \bibcite{malhi2009amazon}{{22}{2009}{{Malhi et~al.}}{{Malhi, Arag{\~a}o, Galbraith, Huntingford, Fisher, Zelazowski, Sitch, McSweeney, and Meir}}}
 \@LN@col{1}
-\@LN{976}{11}
-\@LN{977}{11}
 \@LN{978}{11}
 \@LN{979}{11}
 \@LN{980}{11}
@@ -1208,8 +1209,8 @@
 \@LN{1030}{11}
 \@LN{1031}{11}
 \@LN{1032}{11}
-\@LN@col{2}
 \@LN{1033}{11}
+\@LN@col{2}
 \@LN{1034}{11}
 \@LN{1035}{11}
 \@LN{1036}{11}
@@ -1277,17 +1278,18 @@
 \bibcite{roustant2012dicekriging}{{29}{2012}{{Roustant et~al.}}{{Roustant, Ginsbourger, and Deville}}}
 \bibcite{saltelli1999sensitivity}{{30}{1999}{{Saltelli et~al.}}{{Saltelli, Tarantola, and Chan}}}
 \bibcite{sellers1996revised}{{31}{1996}{{Sellers et~al.}}{{Sellers, Randall, Collatz, Berry, Field, Dazlich, Zhang, Collelo, and Bounoua}}}
-\bibcite{smith2012famous}{{32}{2012}{{Smith}}{{}}}
-\bibcite{smith2008famous}{{33}{2008}{{Smith et~al.}}{{Smith, Gregory, and Osprey}}}
-\bibcite{staver2011determinants}{{34}{2011}{{Staver et~al.}}{{Staver, Archibald, and Levin}}}
-\bibcite{urban2010comparison}{{35}{2010}{{Urban and Fricker}}{{}}}
-\bibcite{vernon2010galaxy}{{36}{2010}{{Vernon et~al.}}{{Vernon, Goldstein, and Bower}}}
-\bibcite{vernon2014observable}{{37}{2014}{{Vernon et~al.}}{{Vernon, Goldstein, and Bower}}}
-\bibcite{williams2013optimising}{{38}{2013}{{Williams et~al.}}{{Williams, Smith, Valdes, Booth, and Osprey}}}
-\bibcite{williams2014oxygen}{{39}{2014}{{Williams et~al.}}{{Williams, Totterdell, Halloran, and Valdes}}}
-\bibcite{williamson2013history}{{40}{2013}{{Williamson et~al.}}{{Williamson, Goldstein, Allison, Blaker, Challenor, Jackson, and Yamazaki}}}
-\bibcite{williamson2014identifying}{{41}{2014}{{Williamson et~al.}}{{Williamson, Blaker, Hampton, and Salter}}}
-\bibcite{yin2012precipitation}{{42}{2012}{{Yin et~al.}}{{Yin, Fu, Shevliakova, and Dickinson}}}
+\bibcite{sexton2011multivariate}{{32}{2011}{{Sexton et~al.}}{{Sexton, Murphy, Collins, and Webb}}}
+\bibcite{smith2012famous}{{33}{2012}{{Smith}}{{}}}
+\bibcite{smith2008famous}{{34}{2008}{{Smith et~al.}}{{Smith, Gregory, and Osprey}}}
+\bibcite{staver2011determinants}{{35}{2011}{{Staver et~al.}}{{Staver, Archibald, and Levin}}}
+\bibcite{urban2010comparison}{{36}{2010}{{Urban and Fricker}}{{}}}
+\bibcite{vernon2010galaxy}{{37}{2010}{{Vernon et~al.}}{{Vernon, Goldstein, and Bower}}}
+\bibcite{vernon2014observable}{{38}{2014}{{Vernon et~al.}}{{Vernon, Goldstein, and Bower}}}
+\bibcite{williams2013optimising}{{39}{2013}{{Williams et~al.}}{{Williams, Smith, Valdes, Booth, and Osprey}}}
+\bibcite{williams2014oxygen}{{40}{2014}{{Williams et~al.}}{{Williams, Totterdell, Halloran, and Valdes}}}
+\bibcite{williamson2013history}{{41}{2013}{{Williamson et~al.}}{{Williamson, Goldstein, Allison, Blaker, Challenor, Jackson, and Yamazaki}}}
+\bibcite{williamson2014identifying}{{42}{2014}{{Williamson et~al.}}{{Williamson, Blaker, Hampton, and Salter}}}
+\bibcite{yin2012precipitation}{{43}{2012}{{Yin et~al.}}{{Yin, Fu, Shevliakova, and Dickinson}}}
 \citation{saltelli1999sensitivity}
 \@LN@col{1}
 \@LN{1092}{12}
@@ -1348,10 +1350,8 @@
 \@LN{1147}{12}
 \@LN{1148}{12}
 \@LN{1149}{12}
-\@LN{1150}{12}
 \@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Observations of Broadleaf forest fraction (top left). Mean (top right) and standard deviation (bottom left) of broadleaf forest fraction across the 100 member ensemble of FAMOUS.\relax }}{13}{figure.caption.6}}
-\newlabel{fig:BL_obs_ensemble_mean_sd}{{1}{13}{Observations of Broadleaf forest fraction (top left). Mean (top right) and standard deviation (bottom left) of broadleaf forest fraction across the 100 member ensemble of FAMOUS.\relax }{figure.caption.6}{}}
+\@LN{1150}{12}
 \@LN{1151}{12}
 \@LN{1152}{12}
 \@LN{1153}{12}
@@ -1387,6 +1387,17 @@
 \@LN{1183}{12}
 \@LN{1184}{12}
 \@LN{1185}{12}
+\@LN{1186}{12}
+\@LN{1187}{12}
+\@LN{1188}{12}
+\@LN{1189}{12}
+\@LN{1190}{12}
+\@LN{1191}{12}
+\@LN{1192}{12}
+\@LN{1193}{12}
+\@LN{1194}{12}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Observations of Broadleaf forest fraction (top left). Mean (top right) and standard deviation (bottom left) of broadleaf forest fraction across the 100 member ensemble of FAMOUS.\relax }}{14}{figure.caption.6}}
+\newlabel{fig:BL_obs_ensemble_mean_sd}{{1}{14}{Observations of Broadleaf forest fraction (top left). Mean (top right) and standard deviation (bottom left) of broadleaf forest fraction across the 100 member ensemble of FAMOUS.\relax }{figure.caption.6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces FAMOUS input parameters and forest fraction parameters, plotted against each other.\relax }}{14}{figure.caption.7}}
 \newlabel{fig:frac_pairs}{{2}{14}{FAMOUS input parameters and forest fraction parameters, plotted against each other.\relax }{figure.caption.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Histograms representing the number of ensemble members of a particular forest fraction in each region, and globally. Points plotted below the histograms represent the observed forest fraction (colours), and the forest fraction simulated at the "standard" parameters $\pm $1 standard deviation (black).\relax }}{14}{figure.caption.8}}
@@ -1403,8 +1414,8 @@
 \newlabel{fig:discrepancy_parameter_space}{{8}{16}{Maps of simulator error, in units of forest fraction, when projected into the two dimensional space of the most active parameters, NL0 and V\_CRIT\_ALPHA.\relax }{figure.caption.13}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Proportion of NROY (Not Ruled Out Yet) input space plotted against ``tolerence to error'' - the total error budget including emulator, observational and simulator discrepancy uncertainty.\relax }}{16}{figure.caption.14}}
 \newlabel{fig:Prop_NROY_tolerance_unc}{{9}{16}{Proportion of NROY (Not Ruled Out Yet) input space plotted against ``tolerence to error'' - the total error budget including emulator, observational and simulator discrepancy uncertainty.\relax }{figure.caption.14}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Marginal density of input parameter sets consistent with a very low ``tolerance to error'', and perfect observations, for all Southeast Asian, North American and Central African forests combined (top) and the Amazon (bottom). Dark blue regions indicate those with the highest concentration of NROY candidates, and therefore most compatible with the observations.\relax }}{16}{figure.caption.15}}
-\newlabel{fig:best_inputs}{{10}{16}{Marginal density of input parameter sets consistent with a very low ``tolerance to error'', and perfect observations, for all Southeast Asian, North American and Central African forests combined (top) and the Amazon (bottom). Dark blue regions indicate those with the highest concentration of NROY candidates, and therefore most compatible with the observations.\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Marginal density of input parameter sets consistent with a very low ``tolerance to error'', and perfect observations, for the North American, Southeast Asian and Central African forests combined (top) and the Amazon (bottom). Dark blue regions indicate those with the highest concentration of NROY candidates, and therefore most compatible with the observations.\relax }}{16}{figure.caption.15}}
+\newlabel{fig:best_inputs}{{10}{16}{Marginal density of input parameter sets consistent with a very low ``tolerance to error'', and perfect observations, for the North American, Southeast Asian and Central African forests combined (top) and the Amazon (bottom). Dark blue regions indicate those with the highest concentration of NROY candidates, and therefore most compatible with the observations.\relax }{figure.caption.15}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Implausibility, given a ``tolerance to error'' of 0.1, varying two parameters at a time and holding all others at their default values. Amazon forest (top) and Central African forest (bottom). Blue indicates regions where the model best simulates the individual option, while red indicates regions where the model simulates the forests more poorly. The green point indicates the location of the ``standard'' set of parameters for FAMOUS in the varied dimensions.\relax }}{17}{figure.caption.16}}
 \newlabel{fig:taat}{{11}{17}{Implausibility, given a ``tolerance to error'' of 0.1, varying two parameters at a time and holding all others at their default values. Amazon forest (top) and Central African forest (bottom). Blue indicates regions where the model best simulates the individual option, while red indicates regions where the model simulates the forests more poorly. The green point indicates the location of the ``standard'' set of parameters for FAMOUS in the varied dimensions.\relax }{figure.caption.16}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces (Top) Forest fraction in the FAMOUS Amazon at the set of parameters where the FAMOUS best matches each of the other forest observations. (Bottom) Other forests in FAMOUS at the set where the FAMOUS Amazon best matches observations. Observed forest fractions are shown as marks underneath the histograms.\relax }}{17}{figure.caption.17}}
