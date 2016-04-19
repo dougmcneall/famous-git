@@ -10,8 +10,8 @@
 
 
 %% 2-Column Papers and Discussion Papers
-%\documentclass[esd, article]{copernicus} % uncomment to see what the 2 column final paper will look like.
-\documentclass[esd, manuscript]{copernicus}
+\documentclass[esd, article]{copernicus} % uncomment to see what the 2 column final paper will look like.
+%\documentclass[esd, manuscript]{copernicus}
 
 %% Journal Abbreviations (Please use the same for Discussion Papers and Final Revised Papers)
 
@@ -566,55 +566,55 @@ The works published in this journal are distributed under the Creative Commons A
 
 %f
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/BL_obs_ensemble_mean_sd.pdf}
+\includegraphics[width=8.3cm]{graphics/BL_obs_ensemble_mean_sd.pdf}
 \caption{Observations of Broadleaf forest fraction (top left). Mean (top right) and standard deviation (bottom left) of broadleaf forest fraction across the 100 member ensemble of FAMOUS.}
 \label{fig:BL_obs_ensemble_mean_sd}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/frac_pairs.pdf}
+\includegraphics[width=8.3cm]{graphics/frac_pairs.pdf}
 \caption{FAMOUS input parameters and forest fraction parameters, plotted against each other.}
 \label{fig:frac_pairs}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/fraction_histogram_with_discrepancy_standard.pdf}
+\includegraphics[width=8.3cm]{graphics/fraction_histogram_with_discrepancy_standard.pdf}
 \caption{Histograms representing the number of ensemble members of a particular forest fraction in each region, and globally. Points plotted below the histograms represent the observed forest fraction (colours), and the forest fraction simulated at the "standard" parameters $\pm$1 standard deviation (black).}
 \label{fig:fraction_histogram_with_discrepancy_standard}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/credible_NROY.pdf}
+\includegraphics[width=8.3cm]{graphics/credible_NROY.pdf}
 \caption{A density pairs plot of two dimensional projections of parameter space. The blue areas represent the density of NROY points, using all of the data, with an assumed observational uncertainty of 0.05 (1 standard deviation).}
 \label{fig:credible_NROY}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/credible_NROY_hists.pdf}
+\includegraphics[width=8.3cm]{graphics/credible_NROY_hists.pdf}
 \caption{Best-estimate draws of forest fraction output from the emulator, at the set of points Not Ruled Out Yet when assuming a credible observational uncertainty. The value of the observed forest fractions are are plotted as a single point on the corresponding x-axes (a ``rug plot'').}
 \label{fig:credible_NROY_hists}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/amaz_oat_sens.pdf}
+\includegraphics[width=8.3cm]{graphics/amaz_oat_sens.pdf}
 \caption{Marginal sensitivity of mean forest fraction to each input parameter in turn, with all other parameters held at standard values. Central lines represent the emulator mean, and shaded areas represent the estimate of emulator uncertainty, at the $\pm$1 standard deviation level.}
 \label{fig:amaz_oat_sens}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/FAST_histograms.pdf}
+\includegraphics[width=8.3cm]{graphics/FAST_histograms.pdf}
 \caption{Sensitivity analysis of forest fraction via the FAST algorithm of \cite{saltelli1999sensitivity}.}
 \label{fig:FAST_histograms}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/discrepancy_parameter_space.pdf}
+\includegraphics[width=8.3cm]{graphics/discrepancy_parameter_space.pdf}
 \caption{Maps of simulator error, in units of forest fraction, when projected into the two dimensional space of the most active parameters, NL0 and V\_CRIT\_ALPHA.}
 \label{fig:discrepancy_parameter_space}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/Prop_NROY_tolerance_unc.pdf}
+\includegraphics[width=8.3cm]{graphics/Prop_NROY_tolerance_unc.pdf}
 \caption{Proportion of NROY (Not Ruled Out Yet) input space plotted against ``tolerence to error'' - the total error budget including emulator, observational and simulator discrepancy uncertainty.}
 \label{fig:Prop_NROY_tolerance_unc}
 \end{figure}
@@ -644,7 +644,7 @@ The works published in this journal are distributed under the Creative Commons A
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/best_inputs_swaps_hists_Paired.pdf}
+\includegraphics[width=8.3cm]{graphics/best_inputs_swaps_hists_Paired.pdf}
 \caption{(Top) Forest fraction in the FAMOUS Amazon at the set of parameters where the FAMOUS best matches each of the other forest observations. (Bottom) Other forests in FAMOUS at the set where the FAMOUS Amazon best matches observations. Observed forest fractions are shown as marks underneath the histograms.}
 \label{fig:best_inputs_swaps_hists_Paired}
 \end{figure}
@@ -656,19 +656,19 @@ The works published in this journal are distributed under the Creative Commons A
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/credible_NROY_hists_disc.pdf}
+\includegraphics[width=8.3cm]{graphics/credible_NROY_hists_disc.pdf}
 \caption{Histograms of emulated simulator output using credible estimates for observational uncertainty, a model discrepancy term for the Amazon, and credible discrepancy uncertainty.}
 \label{fig:credible_NROY_hists_disc}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/plausible_disc_input_space.pdf}
+\includegraphics[width=8.3cm]{graphics/plausible_disc_input_space.pdf}
 \caption{A density plot of the two dimensional projections of NROY samples from the design input space, using a all forest observations and a discrepancy function for the Amazon.}
 \label{fig:plausible_disc_input_space}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=12cm]{graphics/input_frequency_marginal.pdf}
+\includegraphics[width=8.3cm]{graphics/input_frequency_marginal.pdf}
 \caption{Marginal histograms of the relative frequency of NROY emulated input points in each dimension of parameter space, using all forest observations and a discrepancy function for the Amazon.}
 \label{fig:input_frequency_marginal}
 \end{figure}
