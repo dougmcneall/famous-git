@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  19 APR 2016 09:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  28 APR 2016 14:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -729,19 +729,6 @@ LaTeX Info: Redefining \\ on input line 3056.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-\c@mv@sans=\count125
-\c@mv@sansbold=\count126
-LaTeX Font Info:    Overwriting symbol font `operators' in version `sansbold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 1518.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `sansbold'
-(Font)                  OML/cmm/m/it --> OML/cmm/b/it on input line 1519.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `sansbold'
-(Font)                  OMS/cmsy/m/n --> OMS/cmsy/b/n on input line 1520.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `sansbold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 1521.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `sansbold'
-(Font)                  OT1/cmr/m/it --> OT1/cmr/bx/it on input line 1522.
-
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
@@ -812,15 +799,15 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen150
-\Hy@linkcounter=\count127
-\Hy@pagecounter=\count128
+\Hy@linkcounter=\count125
+\Hy@pagecounter=\count126
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count129
+\Hy@SavedSpaceFactor=\count127
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -833,10 +820,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks OFF on input line 4694.
-\c@Hy@tempcnt=\count130
+\c@Hy@tempcnt=\count128
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen151
-\Fld@menulength=\count131
+\Fld@menulength=\count129
 \Field@Width=\dimen152
 \Fld@charsize=\dimen153
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -848,17 +835,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count132
-\c@Item=\count133
-\c@Hfootnote=\count134
+\Hy@abspage=\count130
+\c@Item=\count131
+\c@Hfootnote=\count132
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count135
-\c@bookmark@seq@number=\count136
+\Fld@listcount=\count133
+\c@bookmark@seq@number=\count134
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -867,17 +854,16 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip64
 )
-\c@reaction=\count137
+\c@reaction=\count135
 \tabularwidth=\dimen154
 Package color Info: Redefining color textcol on input line 2175.
 Package color Info: Redefining color bgcol on input line 2175.
 Package color Info: Redefining color barcol on input line 2175.
+Package color Info: Redefining color textcol on input line 2179.
+Package color Info: Redefining color bgcol on input line 2180.
+Package color Info: Redefining color barcol on input line 2181.
 )
 LaTeX Info: Redefining \vec on input line 15.
-
-
-LaTeX Warning: Unused global option(s):
-    [article].
 
 (./McNeall_famous.aux)
 \openout1 = `McNeall_famous.aux'.
@@ -910,16 +896,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count138
+\scratchcounter=\count136
 \scratchdimen=\dimen155
 \scratchbox=\box34
-\nofMPsegments=\count139
-\nofMParguments=\count140
+\nofMPsegments=\count137
+\nofMParguments=\count138
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count141
+\MPscratchCnt=\count139
 \MPscratchDim=\dimen156
-\MPnumerator=\count142
-\makeMPintoPDFobject=\count143
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
 \everyMPtoPDFconversion=\toks37
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -948,24 +934,13 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count144
+\c@section@level=\count142
 )
 LaTeX Info: Redefining \ref on input line 69.
 LaTeX Info: Redefining \pageref on input line 69.
 LaTeX Info: Redefining \nameref on input line 69.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 108.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 108.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 108.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 108.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 108.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 108.
 LaTeX Font Info:    Try loading font information for U+msa on input line 108.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -977,400 +952,159 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 108.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 108.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 108.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 108.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 108.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 111.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 113.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 123.
+(Font)              scaled to size 8.54997pt on input line 113.
+ [1
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-Underfull \hbox (badness 1005) in paragraph at lines 138--139
-[][]\T1/ptm/m/n/10 Kennedy and O'Hagan[] ([]2001[]) in-tro-duced a Bayesian
- []
-
-[2] [3]
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+ [4]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 179.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 179.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 179.
-
-Underfull \vbox (badness 1983) has occurred while \output is active []
-
- [4]
-[5]
-Underfull \vbox (badness 1983) has occurred while \output is active []
-
-
-Underfull \vbox (badness 1983) has occurred while \output is active []
-
- [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-[8]
-Underfull \vbox (badness 3250) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1189) in paragraph at lines 420--421
-\T1/ptm/m/n/10 that the in-puts where FA-MOUS best sim-u-lates Cen-tral
- []
-
-[9] [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
-[]\T1/ptm/m/n/10 We iden-tify mois-ture con-trol on pho-to-syn-the-sis
- []
-
-
-Underfull \hbox (badness 6708) in paragraph at lines 460--461
-\T1/ptm/m/n/10 (V_CRIT_ALPHA) as the most im-por-tant pa-ram-e-ter
- []
-
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 516.
-
-Underfull \hbox (badness 1412) in paragraph at lines 519--520
-[]\T1/ptm/m/n/9 This work was sup-ported by the Joint
- []
-
-[11]
+ [5]
+[6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17]
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 523.
 
- (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-(./McNeall_famous.bbl
-Underfull \hbox (badness 4120) in paragraph at lines 74--81
-[]\T1/ptm/m/n/9 Good, P., Lowe, J. A., Collins, M., and Moufouma-Okia,
- []
-
-
-Underfull \hbox (badness 4726) in paragraph at lines 74--81
-\T1/ptm/m/n/9 W.: An ob-jec-tive trop-i-cal At-lantic sea sur-face tem-per-a-
- []
-
-
-Underfull \hbox (badness 6094) in paragraph at lines 74--81
-\T1/ptm/m/n/9 ture gra-di-ent in-dex for stud-ies of south Ama-zon dry-
- []
-
-
-Underfull \hbox (badness 1127) in paragraph at lines 74--81
-\T1/ptm/m/n/9 season cli-mate vari-abil-ity and change, Philo-soph-i-cal Trans-
-
- []
-
-
-Underfull \hbox (badness 5316) in paragraph at lines 100--104
-[]\T1/ptm/m/n/9 Higdon, D., Gat-tiker, J., Williams, B., and Right-ley, M.:
- []
-
-
-Underfull \hbox (badness 1231) in paragraph at lines 100--104
-\T1/ptm/m/n/9 Com-puter Model Cal-i-bra-tion Us-ing High-Dimensional Out-
- []
-
-
-Underfull \hbox (badness 2050) in paragraph at lines 100--104
-\T1/ptm/m/n/9 put, Jour-nal of the Amer-i-can Sta-tis-ti-cal As-so-ci-a-tion, 1
-03,
- []
-
-
-Underfull \hbox (badness 1460) in paragraph at lines 123--127
-[]\T1/ptm/m/n/9 Joetzjer, E., Dou-ville, H., Delire, C., and Ciais, P.: Present
--
- []
-
-
-Underfull \hbox (badness 1990) in paragraph at lines 123--127
-\T1/ptm/m/n/9 day and fu-ture Ama-zo-nian pre-cip-i-ta-tion in global cli-mate
- []
-
-
-Underfull \hbox (badness 6893) in paragraph at lines 123--127
-\T1/ptm/m/n/9 mod-els: CMIP5 ver-sus CMIP3, Cli-mate Dy-nam-ics, 41,
- []
-
-
-Underfull \hbox (badness 1371) in paragraph at lines 142--147
-[]\T1/ptm/m/n/9 Lee, L. A., Red-ding-ton, C. L., and Carslaw, K. S.: On the
- []
-
-
-Underfull \hbox (badness 1152) in paragraph at lines 142--147
-\T1/ptm/m/n/9 Sci-ences, doi:[]10.1073/pnas.1507050113[], []$http : / / www . p
-nas . org /
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
-Underfull \hbox (badness 1584) in paragraph at lines 173--179
-[]\T1/ptm/m/n/9 Malhi, Y., Aragão, L. E. O. C., Gal-braith, D., Hunt-ing-ford,
- []
-
-
-Underfull \hbox (badness 2065) in paragraph at lines 173--179
-\T1/ptm/m/n/9 C., Fisher, R., Ze-la-zowski, P., Sitch, S., Mc-Sweeney, C.,
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 173--179
-\T1/ptm/m/n/9 and Meir, P.: Ex-plor-ing the like-li-hood and mech-a-nism of
- []
-
-
-Underfull \hbox (badness 2469) in paragraph at lines 173--179
-\T1/ptm/m/n/9 a climate-change-induced dieback of the Ama-zon rain-for-
- []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 195--199
-[]\T1/ptm/m/n/9 Pope, D. V., Gal-lani, L. M., Rown-tree, R. P., and Strat-ton,
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 203--208
-\T1/ptm/m/n/9 A. J., Fruth, J., Gilquin, L., Guil-laume, J., Gratiet, L. L.,
- []
-
-
-Underfull \hbox (badness 5091) in paragraph at lines 220--226
-[]\T1/ptm/m/n/9 Roustant, O., Gins-bourger, D., and Dev-ille, Y.: DiceK-rig-
- []
-
-
-Underfull \hbox (badness 5908) in paragraph at lines 220--226
-\T1/ptm/m/n/9 ing, DiceOp-tim: Two R Pack-ages for the Anal-y-sis of
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 220--226
-\T1/ptm/m/n/9 Op-ti-miza-tion, Jour-nal of Sta-tis-ti-cal Soft-ware, 51, 1--55,
-
- []
-
-
-Underfull \hbox (badness 3039) in paragraph at lines 220--226
-\T1/ptm/m/n/9 doi:[]10.18637/jss.v051.i01[], []$https : / / www . jstatsoft . o
-rg / index . php /
- []
-
-
-Underfull \hbox (badness 3930) in paragraph at lines 229--234
-[]\T1/ptm/m/n/9 Saltelli, A., Taran-tola, S., and Chan, K. P.-S.: A Quan-ti-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--234
-\T1/ptm/m/n/9 ta-tive Model-Independent Method for Global Sen-si-tiv-
- []
-
-
-Underfull \hbox (badness 5985) in paragraph at lines 229--234
-\T1/ptm/m/n/9 ity Anal-y-sis of Model Out-put, Tech-no-met-rics, 41, 39--
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--234
-\T1/ptm/m/n/9 56, doi:[]10.1080/00401706.1999.10485594[], []$http : / / amstat 
-.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--234
-\T1/ptm/m/n/9 tandfonline . com / doi / abs / 10 . 1080 / 00401706 . 1999 . 104
-85594$[],
- []
-
-
-Underfull \hbox (badness 1194) in paragraph at lines 237--244
-\T1/ptm/m/n/9 0442(1996)009<0676:ARLSPF>2.0.CO;2[], []$http : / / dx . doi . or
-g / 10 .
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--302
-\T1/ptm/m/n/9 7-1419-2014[], []$http : / / www . geosci-[]model-[]dev . net / 7
- / 1419 / 2014/$[],
- []
-
-
-Underfull \hbox (badness 6284) in paragraph at lines 312--316
-[]\T1/ptm/m/n/9 Williamson, D., Blaker, A. T., Hamp-ton, C., and Salter,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 312--316
-\T1/ptm/m/n/9 J.: Iden-ti-fy-ing and re-mov-ing struc-tural bi-ases in cli-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 312--316
-\T1/ptm/m/n/9 mate mod-els with his-tory match-ing, Cli-mate Dy-nam-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 312--316
-\T1/ptm/m/n/9 ics, 45, 1299--1324, doi:[]10.1007/s00382-014-2378-z[],
- []
-
-) <graphics/BL_obs_ensemble_mean_sd.pdf, id=413, 578.16pt x 433.62pt>
+(./McNeall_famous.bbl [18] [19] [20])
+<graphics/BL_obs_ensemble_mean_sd.pdf, id=436, 578.16pt x 433.62pt>
 File: graphics/BL_obs_ensemble_mean_sd.pdf Graphic file (type pdf)
 
 <use graphics/BL_obs_ensemble_mean_sd.pdf>
 Package pdftex.def Info: graphics/BL_obs_ensemble_mean_sd.pdf used on input lin
 e 569.
-(pdftex.def)             Requested size: 236.15796pt x 177.11708pt.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
 
-<graphics/frac_pairs.pdf, id=414, 650.43pt x 650.43pt>
+<graphics/frac_pairs.pdf, id=437, 650.43pt x 650.43pt>
 File: graphics/frac_pairs.pdf Graphic file (type pdf)
 
 <use graphics/frac_pairs.pdf>
 Package pdftex.def Info: graphics/frac_pairs.pdf used on input line 575.
-(pdftex.def)             Requested size: 236.15796pt x 236.15941pt.
+(pdftex.def)             Requested size: 341.43306pt x 341.44116pt.
 
-<graphics/fraction_histogram_with_discrepancy_standard.pdf, id=415, 505.89pt x 
+<graphics/fraction_histogram_with_discrepancy_standard.pdf, id=438, 505.89pt x 
 505.89pt>
 File: graphics/fraction_histogram_with_discrepancy_standard.pdf Graphic file (t
 ype pdf)
  <use graphics/fraction_histogram_with_discrepancy_standard.pdf>
 Package pdftex.def Info: graphics/fraction_histogram_with_discrepancy_standard.
 pdf used on input line 581.
-(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/credible_NROY.pdf, id=416, 505.89pt x 505.89pt>
+<graphics/credible_NROY.pdf, id=439, 505.89pt x 505.89pt>
 File: graphics/credible_NROY.pdf Graphic file (type pdf)
 
 <use graphics/credible_NROY.pdf>
 Package pdftex.def Info: graphics/credible_NROY.pdf used on input line 587.
-(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/credible_NROY_hists.pdf, id=417, 433.62pt x 578.16pt>
+<graphics/credible_NROY_hists.pdf, id=440, 433.62pt x 578.16pt>
 File: graphics/credible_NROY_hists.pdf Graphic file (type pdf)
 
 <use graphics/credible_NROY_hists.pdf>
 Package pdftex.def Info: graphics/credible_NROY_hists.pdf used on input line 59
 3.
-(pdftex.def)             Requested size: 236.15796pt x 314.88364pt.
+(pdftex.def)             Requested size: 341.43306pt x 455.26811pt.
 
-<graphics/amaz_oat_sens.pdf, id=418, 578.16pt x 578.16pt>
+<graphics/amaz_oat_sens.pdf, id=441, 578.16pt x 578.16pt>
 File: graphics/amaz_oat_sens.pdf Graphic file (type pdf)
 
 <use graphics/amaz_oat_sens.pdf>
 Package pdftex.def Info: graphics/amaz_oat_sens.pdf used on input line 599.
-(pdftex.def)             Requested size: 236.15796pt x 236.15611pt.
+(pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
 
-<graphics/FAST_histograms.pdf, id=419, 469.755pt x 505.89pt>
+<graphics/FAST_histograms.pdf, id=442, 469.755pt x 505.89pt>
 File: graphics/FAST_histograms.pdf Graphic file (type pdf)
 
 <use graphics/FAST_histograms.pdf>
 Package pdftex.def Info: graphics/FAST_histograms.pdf used on input line 605.
-(pdftex.def)             Requested size: 236.15796pt x 254.31839pt.
+(pdftex.def)             Requested size: 341.43306pt x 367.69873pt.
 
-<graphics/discrepancy_parameter_space.pdf, id=422, 578.16pt x 578.16pt>
+<graphics/discrepancy_parameter_space.pdf, id=445, 578.16pt x 578.16pt>
 File: graphics/discrepancy_parameter_space.pdf Graphic file (type pdf)
 
 <use graphics/discrepancy_parameter_space.pdf>
 Package pdftex.def Info: graphics/discrepancy_parameter_space.pdf used on input
  line 611.
-(pdftex.def)             Requested size: 236.15796pt x 236.15611pt.
+(pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
 
-<graphics/Prop_NROY_tolerance_unc.pdf, id=423, 505.89pt x 505.89pt>
+<graphics/Prop_NROY_tolerance_unc.pdf, id=446, 505.89pt x 505.89pt>
 File: graphics/Prop_NROY_tolerance_unc.pdf Graphic file (type pdf)
 
 <use graphics/Prop_NROY_tolerance_unc.pdf>
 Package pdftex.def Info: graphics/Prop_NROY_tolerance_unc.pdf used on input lin
 e 617.
-(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/best_inputs.png, id=424, 2810.5pt x 5621.0pt>
+<graphics/best_inputs.png, id=447, 2810.5pt x 5621.0pt>
 File: graphics/best_inputs.png Graphic file (type png)
 
 <use graphics/best_inputs.png>
 Package pdftex.def Info: graphics/best_inputs.png used on input line 629.
 (pdftex.def)             Requested size: 236.15796pt x 472.24655pt.
 
-<graphics/taat.png, id=426, 2810.5pt x 5621.0pt>
+<graphics/taat.png, id=449, 2810.5pt x 5621.0pt>
 File: graphics/taat.png Graphic file (type png)
  <use graphics/taat.png>
 Package pdftex.def Info: graphics/taat.png used on input line 641.
 (pdftex.def)             Requested size: 236.15796pt x 472.24655pt.
 
-<graphics/best_inputs_swaps_hists_Paired.pdf, id=427, 505.89pt x 505.89pt>
+<graphics/best_inputs_swaps_hists_Paired.pdf, id=450, 505.89pt x 505.89pt>
 File: graphics/best_inputs_swaps_hists_Paired.pdf Graphic file (type pdf)
 
 <use graphics/best_inputs_swaps_hists_Paired.pdf>
 Package pdftex.def Info: graphics/best_inputs_swaps_hists_Paired.pdf used on in
 put line 647.
-(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/best_X_maps.pdf, id=428, 361.35pt x 650.43pt>
+<graphics/best_X_maps.pdf, id=451, 361.35pt x 650.43pt>
 File: graphics/best_X_maps.pdf Graphic file (type pdf)
 
 <use graphics/best_X_maps.pdf>
 Package pdftex.def Info: graphics/best_X_maps.pdf used on input line 653.
 (pdftex.def)             Requested size: 236.15796pt x 425.08696pt.
 
-<graphics/credible_NROY_hists_disc.pdf, id=429, 433.62pt x 578.16pt>
+<graphics/credible_NROY_hists_disc.pdf, id=452, 433.62pt x 578.16pt>
 File: graphics/credible_NROY_hists_disc.pdf Graphic file (type pdf)
 
 <use graphics/credible_NROY_hists_disc.pdf>
 Package pdftex.def Info: graphics/credible_NROY_hists_disc.pdf used on input li
 ne 659.
-(pdftex.def)             Requested size: 236.15796pt x 314.88364pt.
+(pdftex.def)             Requested size: 341.43306pt x 455.26811pt.
 
-<graphics/plausible_disc_input_space.pdf, id=430, 505.89pt x 505.89pt>
+<graphics/plausible_disc_input_space.pdf, id=453, 505.89pt x 505.89pt>
 File: graphics/plausible_disc_input_space.pdf Graphic file (type pdf)
 
 <use graphics/plausible_disc_input_space.pdf>
 Package pdftex.def Info: graphics/plausible_disc_input_space.pdf used on input 
 line 665.
-(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
 
-<graphics/input_frequency_marginal.pdf, id=431, 505.89pt x 505.89pt>
+<graphics/input_frequency_marginal.pdf, id=454, 505.89pt x 505.89pt>
 File: graphics/input_frequency_marginal.pdf Graphic file (type pdf)
 
 <use graphics/input_frequency_marginal.pdf>
 Package pdftex.def Info: graphics/input_frequency_marginal.pdf used on input li
 ne 671.
-(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
- [13] [14 <./graphics/BL_obs_ensemble_mean_sd.pdf> <./graphics/frac_pairs.pdf> 
-<./graphics/fraction_histogram_with_discrepancy_standard.pdf> <./graphics/credi
-ble_NROY.pdf>] [15 <./graphics/credible_NROY_hists.pdf> <./graphics/amaz_oat_se
-ns.pdf> <./graphics/FAST_histograms.pdf>] [16 <./graphics/discrepancy_parameter
-_space.pdf> <./graphics/Prop_NROY_tolerance_unc.pdf> <./graphics/best_inputs.pn
-g>] [17 <./graphics/taat.png> <./graphics/best_inputs_swaps_hists_Paired.pdf>] 
-[18 <./graphics/best_X_maps.pdf> <./graphics/credible_NROY_hists_disc.pdf> <./g
-raphics/plausible_disc_input_space.pdf>] [19
-
- <./graphics/input_frequency_marginal.pdf>]
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
+ [21] [22 <./graphics/BL_obs_ensemble_mean_sd.pdf>] [23 <./graphics/frac_pairs.
+pdf>] [24 <./graphics/fraction_histogram_with_discrepancy_standard.pdf>] [25 <.
+/graphics/credible_NROY.pdf>]
+[26 <./graphics/credible_NROY_hists.pdf>] [27 <./graphics/amaz_oat_sens.pdf>]
+[28 <./graphics/FAST_histograms.pdf>] [29 <./graphics/discrepancy_parameter_spa
+ce.pdf>] [30 <./graphics/Prop_NROY_tolerance_unc.pdf>] [31 <./graphics/best_inp
+uts.png>] [32 <./graphics/taat.png>] [33 <./graphics/best_inputs_swaps_hists_Pa
+ired.pdf>] [34 <./graphics/best_X_maps.pdf>] [35 <./graphics/credible_NROY_hist
+s_disc.pdf>] [36 <./graphics/plausible_disc_input_space.pdf>] [37 <./graphics/i
+nput_frequency_marginal.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 817.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 817.
  (./McNeall_famous.aux)
@@ -1379,13 +1113,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 817.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 817.
  ) 
 Here is how much of TeX's memory you used:
- 10352 strings out of 493315
- 149585 string characters out of 6137904
- 296801 words of memory out of 5000000
- 13473 multiletter control sequences out of 15000+600000
- 46503 words of font info for 63 fonts, out of 8000000 for 9000
+ 10375 strings out of 493315
+ 149764 string characters out of 6137904
+ 279895 words of memory out of 5000000
+ 13471 multiletter control sequences out of 15000+600000
+ 47189 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 43i,9n,40p,2094b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,40p,1496b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texl
@@ -1395,15 +1129,14 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2013/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/
-fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
-ype1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/t
-imes/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri
-8a.pfb>
-Output written on McNeall_famous.pdf (19 pages, 2716028 bytes).
+f-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
+1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on McNeall_famous.pdf (37 pages, 2703356 bytes).
 PDF statistics:
- 643 PDF objects out of 1000 (max. 8388607)
- 571 compressed objects within 6 object streams
- 112 named destinations out of 1000 (max. 500000)
+ 694 PDF objects out of 1000 (max. 8388607)
+ 604 compressed objects within 7 object streams
+ 130 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
