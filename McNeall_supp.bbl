@@ -1,0 +1,26 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Hastie et~al.(2009)Hastie, Tibshirani, and
+  Friedman}]{hastie2009elements}
+Hastie, T.~J., Tibshirani, R.~J., and Friedman, J.~H.: The elements of
+  statistical learning : data mining, inference, and prediction, Springer
+  series in statistics, Springer, New York,
+  \urlprefix\url{http://statweb.stanford.edu/~tibs/ElemStatLearn/}, 2009.
+
+\bibitem[{Roustant et~al.(2012)Roustant, Ginsbourger, and
+  Deville}]{roustant2012dicekriging}
+Roustant, O., Ginsbourger, D., and Deville, Y.: DiceKriging, DiceOptim: Two R
+  Packages for the Analysis of Computer Experiments by Kriging-Based
+  Metamodeling and Optimization, Journal of Statistical Software, 51, 1--55,
+  \doi{10.18637/jss.v051.i01},
+  \urlprefix\url{https://www.jstatsoft.org/index.php/jss/article/view/v051i01},
+  2012.
+
+\end{thebibliography}
