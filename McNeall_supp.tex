@@ -33,6 +33,13 @@ To ensure that the emulator is adequate for prediction, we need to ensure that i
 
 Cross validation of the emulator for forest fraction shows up no significant problems in prediction of any of the global or regional forest fraction data, across the entire design, as can be seen in figure \ref{fig:frac_loo}.
 
+\subsection{Two dimensional sensitivity analysis}
+We can predict the implausibility at any point in parameter space, identifying regions of input space where the model output is inconsistent with the observations. For example, in Fig.  \ref{fig:taat}, two parameters are varied across the full ensemble range, while all other parameters are held at their default value. The green point marks the default input value, projected into the two-dimensional space. For this illustrative example, we use a ``tolerance to error'' of 0.1 (1 standard deviation), which is the assumed sum of observation and discrepancy uncertainty.
+
+Using the Central African (CONGO for brevity) rainforest to estimate implausibility of each point in parameter space, we see that the standard inputs are located in a deep ``valley'' of low implausibility. Generally, the implausibility is very low at the standard settings. There are regions where implausibility may be equally low or lower, existing as planes within the multidimensional space. However, there appears to be no evidence that the standard set is implausible, given this data.
+
+In contrast, using the Amazon as an observation, the shape of the plausible regions seems very different when projected into this two dimensional space. There are no longer valleys of NROY space, but a larger region that appears off to one side of the design input space. In addition, the standard values are often close to or at the boundaries of implausible space.
+
 
 \bibliographystyle{copernicus}
 \bibliography{famous.bib}
@@ -47,6 +54,12 @@ Cross validation of the emulator for forest fraction shows up no significant pro
 \includegraphics[width=12cm]{graphics/frac_loo.pdf}
 \caption{Leave-one-out cross validation performance of the emulator, when reproducing each forest fraction. Black points represent the emulator central estimate of a held-out point, with grey lines representing $\pm$ 2 standard deviations.}
 \label{fig:frac_loo}
+\end{figure}
+
+\begin{figure}[t]
+\includegraphics[width=8.3cm]{graphics/taat.png}
+\caption{Implausibility, given a ``tolerance to error'' of 0.1, varying two parameters at a time and holding all others at their default values. Amazon forest (top) and Central African forest (bottom). Blue indicates regions where the model best simulates the individual option, while red indicates regions where the model simulates the forests more poorly. The green point indicates the location of the ``standard'' set of parameters for FAMOUS in the varied dimensions.}
+\label{fig:taat}
 \end{figure}
 
 
