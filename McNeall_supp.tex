@@ -4,7 +4,7 @@
 
 \section{The emulator}
 
-We treat the output of the simulator $y$ as an uncertain function $f()$ of the simulator inputs $x$, so that $y = f(x)$. We wish to produce a predictive distribution for $y$ at any model input, conditional on the points already run, or the design $(Y, X)$. Throughout the study, we use a kriging function, similar to a Gaussian process regression emulator, as coded in the R package DiceKriging \citep{roustant2012dicekriging} for prediction of climate simulator output at untried inputs.
+We treat the output of the simulator $y$ as an uncertain function $f()$ of the simulator inputs $x$, so that $y = f(x)$. We wish to produce a predictive distribution for $y$ at any model input, conditional on the points already run, or the design $(Y, X)$. Throughout the study, we use a kriging function, similar to a Gaussian process regression emulator, as coded in the package DiceKriging \citep{roustant2012dicekriging} in the statistical programming environment R \citep{Rcore2016}, for prediction of climate simulator output at untried inputs.
 The kriging model or Gaussian Process regression is specified hierarchically with a separate mean and covariance function. For prediction purposes, \emph{a priori} assume that the trend is a simple linear function of the inputs, and adjust with a Gaussian process. 
 
 %\begin{equation}

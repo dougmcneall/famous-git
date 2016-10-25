@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: McNeall_famous.aux
 The style file: copernicus.bst
 Database file #1: famous.bib.bib
-You've used 44 entries,
+You've used 45 entries,
             2811 wiz_defined-function locations,
-            1328 strings with 21270 characters,
-and the built_in function-call counts, 50730 in all, are:
-= -- 5724
-> -- 2155
+            1333 strings with 21590 characters,
+and the built_in function-call counts, 52082 in all, are:
+= -- 5883
+> -- 2203
 < -- 13
-+ -- 966
-- -- 678
-* -- 3320
-:= -- 5061
-add.period$ -- 44
-call.type$ -- 44
-change.case$ -- 314
-chr.to.int$ -- 44
-cite$ -- 132
-duplicate$ -- 5002
-empty$ -- 2445
-format.name$ -- 811
-if$ -- 10021
++ -- 992
+- -- 693
+* -- 3402
+:= -- 5187
+add.period$ -- 45
+call.type$ -- 45
+change.case$ -- 321
+chr.to.int$ -- 45
+cite$ -- 135
+duplicate$ -- 5142
+empty$ -- 2511
+format.name$ -- 829
+if$ -- 10290
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 536
-newline$ -- 141
-num.names$ -- 177
-pop$ -- 2087
+missing$ -- 550
+newline$ -- 144
+num.names$ -- 181
+pop$ -- 2135
 preamble$ -- 1
-purify$ -- 311
+purify$ -- 318
 quote$ -- 0
-skip$ -- 2956
+skip$ -- 3052
 stack$ -- 0
-substring$ -- 2139
-swap$ -- 4402
+substring$ -- 2202
+swap$ -- 4529
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 396
+type$ -- 405
 warning$ -- 0
-while$ -- 248
+while$ -- 255
 width$ -- 0
-write$ -- 557
+write$ -- 569
