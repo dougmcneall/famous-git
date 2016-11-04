@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  4 NOV 2016 15:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  4 NOV 2016 15:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**McNeall_abstract.tex
-(./McNeall_abstract.tex
+**McNeall_famous_production_upload.tex
+(./McNeall_famous_production_upload.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (./copernicus.cls
@@ -863,32 +863,32 @@ Package color Info: Redefining color textcol on input line 2179.
 Package color Info: Redefining color bgcol on input line 2180.
 Package color Info: Redefining color barcol on input line 2181.
 )
-LaTeX Info: Redefining \vec on input line 3.
+LaTeX Info: Redefining \vec on input line 15.
 
-No file McNeall_abstract.aux.
-\openout1 = `McNeall_abstract.aux'.
+No file McNeall_famous_production_upload.aux.
+\openout1 = `McNeall_famous_production_upload.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 4.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 69.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -925,7 +925,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 4.
+Package hyperref Info: Link coloring OFF on input line 69.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -935,94 +935,613 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count142
 )
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 108.
+LaTeX Font Info:    Try loading font information for U+msa on input line 108.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 108.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 111.
 
-./McNeall_abstract.tex:26: Class copernicus Error: You must define \runningauth
-or.
-
-See the copernicus class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 
-     
-? 
-
-./McNeall_abstract.tex:26: Class copernicus Error: You must define \runningtitl
-e.
-
-See the copernicus class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 
-     
-? 
 
 Package lineno Warning: Linenumber reference failed, 
 (lineno)                rerun to get it right.
 
-LaTeX Font Info:    Try loading font information for T1+phv on input line 28.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 113.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 28.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 36.
+(Font)              scaled to size 8.54997pt on input line 113.
  [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-Class copernicus Warning: No section Abstract; proceeding without it.
+Package natbib Warning: Citation `williamson2014identifying' on page 2 undefine
+d on input line 132.
 
 
-Class copernicus Warning: No section Introduction; proceeding without it.
+Package natbib Warning: Citation `sexton2011multivariate' on page 2 undefined o
+n input line 132.
 
 
-Class copernicus Warning: No section Conclusions; proceeding without it.
+Package natbib Warning: Citation `kennedy2001bayesian' on page 2 undefined on i
+nput line 138.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
-(./McNeall_abstract.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 36.
+
+Package natbib Warning: Citation `brynjarsdottir2014learning' on page 2 undefin
+ed on input line 138.
+
+
+Package natbib Warning: Citation `higdon2008calibration' on page 2 undefined on
+ input line 138.
+
+[2]
+
+Package natbib Warning: Citation `booth2012highsensitivity' on page 3 undefined
+ on input line 142.
+
+
+Package natbib Warning: Citation `booth2013scenario' on page 3 undefined on inp
+ut line 142.
+
+
+Package natbib Warning: Citation `huntingford2009contributions' on page 3 undef
+ined on input line 142.
+
+
+Package natbib Warning: Citation `sellers1996revised' on page 3 undefined on in
+put line 144.
+
+
+Package natbib Warning: Citation `luo2012framework' on page 3 undefined on inpu
+t line 144.
+
+
+Package natbib Warning: Citation `abramowitz2012benchmarking' on page 3 undefin
+ed on input line 144.
+
+
+LaTeX Warning: Reference `sec:dataandmethods' on page 3 undefined on input line
+ 150.
+
+
+LaTeX Warning: Reference `ssec:emulator' on page 3 undefined on input line 150.
+
+
+
+LaTeX Warning: Reference `ssec:historymatching' on page 3 undefined on input li
+ne 150.
+
+
+LaTeX Warning: Reference `ssec:initialhistorymatch' on page 3 undefined on inpu
+t line 150.
+
+
+LaTeX Warning: Reference `ssec:sensitivity' on page 3 undefined on input line 1
+50.
+
+
+LaTeX Warning: Reference `ssec:mapping' on page 3 undefined on input line 150.
+
+
+LaTeX Warning: Reference `ssec:combination' on page 3 undefined on input line 1
+50.
+
+
+LaTeX Warning: Reference `ssec:learn' on page 3 undefined on input line 150.
+
+
+LaTeX Warning: Reference `ssec:bestparameters' on page 3 undefined on input lin
+e 150.
+
+
+LaTeX Warning: Reference `ssec:hist_disc' on page 3 undefined on input line 150
+.
+
+
+LaTeX Warning: Reference `sec:discussion' on page 3 undefined on input line 150
+.
+
+
+LaTeX Warning: Reference `sec:conclusions' on page 3 undefined on input line 15
+0.
+
+[3]
+
+Package natbib Warning: Citation `jones2005systematic' on page 4 undefined on i
+nput line 157.
+
+
+Package natbib Warning: Citation `smith2008famous' on page 4 undefined on input
+ line 157.
+
+
+Package natbib Warning: Citation `gordon2000simulation' on page 4 undefined on 
+input line 157.
+
+
+Package natbib Warning: Citation `pope2000impact' on page 4 undefined on input 
+line 157.
+
+
+Package natbib Warning: Citation `cox2001description' on page 4 undefined on in
+put line 157.
+
+
+Package natbib Warning: Citation `smith2012famous' on page 4 undefined on input
+ line 159.
+
+
+Package natbib Warning: Citation `williams2013optimising' on page 4 undefined o
+n input line 159.
+
+
+Package natbib Warning: Citation `williams2014oxygen' on page 4 undefined on in
+put line 159.
+
+
+Package natbib Warning: Citation `williams2013optimising' on page 4 undefined o
+n input line 161.
+
+
+Package natbib Warning: Citation `williams2013optimising' on page 4 undefined o
+n input line 161.
+
+
+Package natbib Warning: Citation `gnanadesikan2006diagnosing' on page 4 undefin
+ed on input line 165.
+
+
+Package natbib Warning: Citation `smith2008famous' on page 4 undefined on input
+ line 165.
+
+
+Package natbib Warning: Citation `williams2013optimising' on page 4 undefined o
+n input line 168.
+
+
+LaTeX Warning: Reference `tab:params' on page 4 undefined on input line 168.
+
+
+Package natbib Warning: Citation `mckay1979comparison' on page 4 undefined on i
+nput line 168.
+
+
+Package natbib Warning: Citation `urban2010comparison' on page 4 undefined on i
+nput line 168.
+
+[4]
+
+Package natbib Warning: Citation `gregoire2010optimal' on page 5 undefined on i
+nput line 170.
+
+
+Package natbib Warning: Citation `booth2012highsensitivity' on page 5 undefined
+ on input line 172.
+
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 179.
+
+Package natbib Warning: Citation `loveland2000landcover' on page 5 undefined on
+ input line 198.
+
+
+Package natbib Warning: Citation `williams2013optimising' on page 5 undefined o
+n input line 198.
+
+
+LaTeX Warning: Reference `fig:BL_obs_ensemble_mean_sd' on page 5 undefined on i
+nput line 198.
+
+
+LaTeX Warning: Reference `fig:frac_pairs' on page 5 undefined on input line 198
+.
+
+[5]
+
+LaTeX Warning: Reference `fig:frac_pairs' on page 6 undefined on input line 203
+.
+
+
+Package natbib Warning: Citation `roustant2012dicekriging' on page 6 undefined 
+on input line 216.
+
+
+Package natbib Warning: Citation `Rcore2016' on page 6 undefined on input line 
+216.
+
+
+Package natbib Warning: Citation `williamson2014identifying' on page 6 undefine
+d on input line 221.
+
+[6]
+
+Package natbib Warning: Citation `craig1997pressure' on page 7 undefined on inp
+ut line 223.
+
+
+Package natbib Warning: Citation `vernon2010galaxy' on page 7 undefined on inpu
+t line 223.
+
+
+Package natbib Warning: Citation `lee2016aerosol' on page 7 undefined on input 
+line 223.
+
+
+Package natbib Warning: Citation `williamson2013history' on page 7 undefined on
+ input line 223.
+
+
+Package natbib Warning: Citation `holden2009precalibration' on page 7 undefined
+ on input line 223.
+
+
+Package natbib Warning: Citation `mcneall2013potential' on page 7 undefined on 
+input line 223.
+
+
+LaTeX Warning: Reference `eq:em_structure' on page 7 undefined on input line 23
+1.
+
+
+LaTeX Warning: Reference `eq:implausibility' on page 7 undefined on input line 
+233.
+
+
+Package natbib Warning: Citation `pukelsheim1994three' on page 7 undefined on i
+nput line 239.
+
+[7]
+
+LaTeX Warning: Reference `fig:fraction_histogram_with_discrepancy_standard' on 
+page 8 undefined on input line 246.
+
+
+LaTeX Warning: Reference `fig:credible_NROY' on page 8 undefined on input line 
+258.
+
+
+LaTeX Warning: Reference `tab:default_parameter_implausibility' on page 8 undef
+ined on input line 263.
+
+
+LaTeX Warning: Reference `fig:credible_NROY_hists' on page 8 undefined on input
+ line 282.
+
+[8]
+
+LaTeX Warning: Reference `fig:amaz_oat_sens' on page 9 undefined on input line 
+291.
+
+
+Package natbib Warning: Citation `carslaw2013large' on page 9 undefined on inpu
+t line 300.
+
+
+Package natbib Warning: Citation `saltelli1999sensitivity' on page 9 undefined 
+on input line 300.
+
+
+Package natbib Warning: Citation `Rpackage2015sensitivity' on page 9 undefined 
+on input line 300.
+
+
+LaTeX Warning: Reference `fig:FAST_histograms' on page 9 undefined on input lin
+e 300.
+
+[9]
+
+LaTeX Warning: Reference `tab:effects_sum' on page 10 undefined on input line 3
+05.
+
+
+LaTeX Warning: Reference `ssec:sensitivity' on page 10 undefined on input line 
+332.
+
+
+LaTeX Warning: Reference `fig:discrepancy_parameter_space' on page 10 undefined
+ on input line 332.
+
+
+Package natbib Warning: Citation `williamson2014identifying' on page 10 undefin
+ed on input line 339.
+
+
+LaTeX Warning: Reference `eq:implausibility' on page 10 undefined on input line
+ 339.
+
+[10]
+
+Package natbib Warning: Citation `vernon2010galaxy' on page 11 undefined on inp
+ut line 341.
+
+
+Package natbib Warning: Citation `williamson2013history' on page 11 undefined o
+n input line 341.
+
+
+Package natbib Warning: Citation `vernon2010galaxy' on page 11 undefined on inp
+ut line 343.
+
+
+Package natbib Warning: Citation `vernon2010galaxy' on page 11 undefined on inp
+ut line 343.
+
+
+LaTeX Warning: Reference `fig:Prop_NROY_tolerance_unc' on page 11 undefined on 
+input line 345.
+
+[11]
+
+LaTeX Warning: Reference `tab:input_overlap' on page 12 undefined on input line
+ 356.
+
+[12]
+
+LaTeX Warning: Reference `fig:best_inputs' on page 13 undefined on input line 3
+88.
+
+
+LaTeX Warning: Reference `fig:taat' on page 13 undefined on input line 392.
+
+
+LaTeX Warning: Reference `fig:best_inputs_swaps_hists_Paired' on page 13 undefi
+ned on input line 404.
+
+[13]
+
+LaTeX Warning: Reference `fig:best_X_maps' on page 14 undefined on input line 4
+11.
+
+
+LaTeX Warning: Reference `fig:credible_NROY_hists_disc' on page 14 undefined on
+ input line 422.
+
+
+LaTeX Warning: Reference `fig:plausible_disc_input_space' on page 14 undefined 
+on input line 422.
+
+
+LaTeX Warning: Reference `ssec:initialhistorymatch' on page 14 undefined on inp
+ut line 422.
+
+
+LaTeX Warning: Reference `fig:input_frequency_marginal' on page 14 undefined on
+ input line 424.
+
+[14]
+
+Package natbib Warning: Citation `vernon2014observable' on page 15 undefined on
+ input line 444.
+
+[15]
+
+Package natbib Warning: Citation `williamson2014identifying' on page 16 undefin
+ed on input line 446.
+
+
+Package natbib Warning: Citation `malhi2009amazon' on page 16 undefined on inpu
+t line 453.
+
+
+Package natbib Warning: Citation `staver2011determinants' on page 16 undefined 
+on input line 453.
+
+
+Package natbib Warning: Citation `cox2004amazon' on page 16 undefined on input 
+line 453.
+
+
+Package natbib Warning: Citation `good2008objective' on page 16 undefined on in
+put line 453.
+
+
+Package natbib Warning: Citation `joetzjer2013amazon' on page 16 undefined on i
+nput line 453.
+
+
+Package natbib Warning: Citation `yin2012precipitation' on page 16 undefined on
+ input line 453.
+
+[16]
+
+Package natbib Warning: Citation `williamson2014identifying' on page 17 undefin
+ed on input line 462.
+
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 523.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [17]
+No file McNeall_famous_production_upload.bbl.
+<graphics/BL_obs_ensemble_mean_sd.pdf, id=117, 578.16pt x 433.62pt>
+File: graphics/BL_obs_ensemble_mean_sd.pdf Graphic file (type pdf)
+
+<use graphics/BL_obs_ensemble_mean_sd.pdf>
+Package pdftex.def Info: graphics/BL_obs_ensemble_mean_sd.pdf used on input lin
+e 569.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+
+<graphics/frac_pairs.pdf, id=118, 650.43pt x 650.43pt>
+File: graphics/frac_pairs.pdf Graphic file (type pdf)
+
+<use graphics/frac_pairs.pdf>
+Package pdftex.def Info: graphics/frac_pairs.pdf used on input line 575.
+(pdftex.def)             Requested size: 341.43306pt x 341.44116pt.
+
+<graphics/fraction_histogram_with_discrepancy_standard.pdf, id=119, 505.89pt x 
+505.89pt>
+File: graphics/fraction_histogram_with_discrepancy_standard.pdf Graphic file (t
+ype pdf)
+ <use graphics/fraction_histogram_with_discrepancy_standard.pdf>
+Package pdftex.def Info: graphics/fraction_histogram_with_discrepancy_standard.
+pdf used on input line 581.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
+
+<graphics/credible_NROY.pdf, id=120, 505.89pt x 505.89pt>
+File: graphics/credible_NROY.pdf Graphic file (type pdf)
+
+<use graphics/credible_NROY.pdf>
+Package pdftex.def Info: graphics/credible_NROY.pdf used on input line 587.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
+
+<graphics/credible_NROY_hists.pdf, id=121, 433.62pt x 578.16pt>
+File: graphics/credible_NROY_hists.pdf Graphic file (type pdf)
+
+<use graphics/credible_NROY_hists.pdf>
+Package pdftex.def Info: graphics/credible_NROY_hists.pdf used on input line 59
+3.
+(pdftex.def)             Requested size: 341.43306pt x 455.26811pt.
+
+<graphics/amaz_oat_sens.pdf, id=122, 578.16pt x 578.16pt>
+File: graphics/amaz_oat_sens.pdf Graphic file (type pdf)
+
+<use graphics/amaz_oat_sens.pdf>
+Package pdftex.def Info: graphics/amaz_oat_sens.pdf used on input line 599.
+(pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
+
+<graphics/FAST_histograms.pdf, id=123, 469.755pt x 505.89pt>
+File: graphics/FAST_histograms.pdf Graphic file (type pdf)
+
+<use graphics/FAST_histograms.pdf>
+Package pdftex.def Info: graphics/FAST_histograms.pdf used on input line 605.
+(pdftex.def)             Requested size: 341.43306pt x 367.69873pt.
+
+
+Package natbib Warning: Citation `saltelli1999sensitivity' on page 18 undefined
+ on input line 606.
+
+<graphics/discrepancy_parameter_space.pdf, id=124, 578.16pt x 578.16pt>
+File: graphics/discrepancy_parameter_space.pdf Graphic file (type pdf)
+
+<use graphics/discrepancy_parameter_space.pdf>
+Package pdftex.def Info: graphics/discrepancy_parameter_space.pdf used on input
+ line 611.
+(pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
+
+<graphics/Prop_NROY_tolerance_unc.pdf, id=125, 505.89pt x 505.89pt>
+File: graphics/Prop_NROY_tolerance_unc.pdf Graphic file (type pdf)
+
+<use graphics/Prop_NROY_tolerance_unc.pdf>
+Package pdftex.def Info: graphics/Prop_NROY_tolerance_unc.pdf used on input lin
+e 617.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
+
+<graphics/best_inputs.png, id=126, 2810.5pt x 5621.0pt>
+File: graphics/best_inputs.png Graphic file (type png)
+
+<use graphics/best_inputs.png>
+Package pdftex.def Info: graphics/best_inputs.png used on input line 629.
+(pdftex.def)             Requested size: 236.15796pt x 472.24655pt.
+
+<graphics/taat.png, id=128, 2810.5pt x 5621.0pt>
+File: graphics/taat.png Graphic file (type png)
+ <use graphics/taat.png>
+Package pdftex.def Info: graphics/taat.png used on input line 641.
+(pdftex.def)             Requested size: 236.15796pt x 472.24655pt.
+
+<graphics/best_inputs_swaps_hists_Paired.pdf, id=129, 505.89pt x 505.89pt>
+File: graphics/best_inputs_swaps_hists_Paired.pdf Graphic file (type pdf)
+
+<use graphics/best_inputs_swaps_hists_Paired.pdf>
+Package pdftex.def Info: graphics/best_inputs_swaps_hists_Paired.pdf used on in
+put line 647.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
+
+<graphics/best_X_maps.pdf, id=130, 361.35pt x 650.43pt>
+File: graphics/best_X_maps.pdf Graphic file (type pdf)
+
+<use graphics/best_X_maps.pdf>
+Package pdftex.def Info: graphics/best_X_maps.pdf used on input line 653.
+(pdftex.def)             Requested size: 236.15796pt x 425.08696pt.
+
+<graphics/credible_NROY_hists_disc.pdf, id=131, 433.62pt x 578.16pt>
+File: graphics/credible_NROY_hists_disc.pdf Graphic file (type pdf)
+
+<use graphics/credible_NROY_hists_disc.pdf>
+Package pdftex.def Info: graphics/credible_NROY_hists_disc.pdf used on input li
+ne 659.
+(pdftex.def)             Requested size: 341.43306pt x 455.26811pt.
+
+<graphics/plausible_disc_input_space.pdf, id=132, 505.89pt x 505.89pt>
+File: graphics/plausible_disc_input_space.pdf Graphic file (type pdf)
+
+<use graphics/plausible_disc_input_space.pdf>
+Package pdftex.def Info: graphics/plausible_disc_input_space.pdf used on input 
+line 665.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
+
+<graphics/input_frequency_marginal.pdf, id=133, 505.89pt x 505.89pt>
+File: graphics/input_frequency_marginal.pdf Graphic file (type pdf)
+
+<use graphics/input_frequency_marginal.pdf>
+Package pdftex.def Info: graphics/input_frequency_marginal.pdf used on input li
+ne 671.
+(pdftex.def)             Requested size: 341.43306pt x 341.43785pt.
+ [18 <./graphics/BL_obs_ensemble_mean_sd.pdf>] [19 <./graphics/frac_pairs.pdf>]
+ [20 <./graphics/fraction_histogram_with_discrepancy_standard.pdf>] [21 <./grap
+hics/credible_NROY.pdf>] [22 <./graphics/credible_NROY_hists.pdf>] [23 <./graph
+ics/amaz_oat_sens.pdf>] [24 <./graphics/FAST_histograms.pdf>] [25 <./graphics/d
+iscrepancy_parameter_space.pdf>]
+[26 <./graphics/Prop_NROY_tolerance_unc.pdf>] [27 <./graphics/best_inputs.png>]
+[28 <./graphics/taat.png>] [29 <./graphics/best_inputs_swaps_hists_Paired.pdf>]
+[30 <./graphics/best_X_maps.pdf>] [31 <./graphics/credible_NROY_hists_disc.pdf>
+] [32 <./graphics/plausible_disc_input_space.pdf>] [33 <./graphics/input_freque
+ncy_marginal.pdf>]
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 817.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 817.
+(./McNeall_famous_production_upload.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 817.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 817.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 817.
  ) 
 Here is how much of TeX's memory you used:
- 9983 strings out of 493315
- 142199 string characters out of 6137904
- 252166 words of memory out of 5000000
- 13243 multiletter control sequences out of 15000+600000
- 34109 words of font info for 59 fonts, out of 8000000 for 9000
+ 10276 strings out of 493315
+ 148374 string characters out of 6137904
+ 257166 words of memory out of 5000000
+ 13425 multiletter control sequences out of 15000+600000
+ 47189 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 43i,5n,40p,760b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,40p,1514b,415s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on McNeall_abstract.pdf (1 page, 31761 bytes).
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
+1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on McNeall_famous_production_upload.pdf (33 pages, 2681750 bytes
+).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 361 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

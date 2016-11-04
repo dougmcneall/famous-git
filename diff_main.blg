@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: diff_main.aux
+The style file: copernicus.bst
+Database file #1: famous.bib.bib
+You've used 47 entries,
+            2811 wiz_defined-function locations,
+            1348 strings with 22068 characters,
+and the built_in function-call counts, 53286 in all, are:
+= -- 6003
+> -- 2243
+< -- 14
++ -- 1009
+- -- 705
+* -- 3485
+:= -- 5326
+add.period$ -- 47
+call.type$ -- 47
+change.case$ -- 329
+chr.to.int$ -- 47
+cite$ -- 141
+duplicate$ -- 5264
+empty$ -- 2591
+format.name$ -- 845
+if$ -- 10527
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 566
+newline$ -- 150
+num.names$ -- 189
+pop$ -- 2177
+preamble$ -- 1
+purify$ -- 326
+quote$ -- 0
+skip$ -- 3116
+stack$ -- 0
+substring$ -- 2239
+swap$ -- 4613
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 423
+warning$ -- 0
+while$ -- 264
+width$ -- 0
+write$ -- 594

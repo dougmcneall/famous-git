@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  4 NOV 2016 15:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  3 NOV 2016 15:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**McNeall_abstract.tex
-(./McNeall_abstract.tex
+**diff_main.tex
+(./diff_main.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (./copernicus.cls
@@ -729,6 +729,19 @@ LaTeX Info: Redefining \\ on input line 3056.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
+\c@mv@sans=\count125
+\c@mv@sansbold=\count126
+LaTeX Font Info:    Overwriting symbol font `operators' in version `sansbold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 1518.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `sansbold'
+(Font)                  OML/cmm/m/it --> OML/cmm/b/it on input line 1519.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `sansbold'
+(Font)                  OMS/cmsy/m/n --> OMS/cmsy/b/n on input line 1520.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `sansbold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 1521.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `sansbold'
+(Font)                  OT1/cmr/m/it --> OT1/cmr/bx/it on input line 1522.
+
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
@@ -799,15 +812,15 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen150
-\Hy@linkcounter=\count125
-\Hy@pagecounter=\count126
+\Hy@linkcounter=\count127
+\Hy@pagecounter=\count128
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count127
+\Hy@SavedSpaceFactor=\count129
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -820,10 +833,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks OFF on input line 4694.
-\c@Hy@tempcnt=\count128
+\c@Hy@tempcnt=\count130
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen151
-\Fld@menulength=\count129
+\Fld@menulength=\count131
 \Field@Width=\dimen152
 \Fld@charsize=\dimen153
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -835,17 +848,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count130
-\c@Item=\count131
-\c@Hfootnote=\count132
+\Hy@abspage=\count132
+\c@Item=\count133
+\c@Hfootnote=\count134
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count133
-\c@bookmark@seq@number=\count134
+\Fld@listcount=\count135
+\c@bookmark@seq@number=\count136
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -854,58 +867,70 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip64
 )
-\c@reaction=\count135
+\c@reaction=\count137
 \tabularwidth=\dimen154
 Package color Info: Redefining color textcol on input line 2175.
 Package color Info: Redefining color bgcol on input line 2175.
 Package color Info: Redefining color barcol on input line 2175.
-Package color Info: Redefining color textcol on input line 2179.
-Package color Info: Redefining color bgcol on input line 2180.
-Package color Info: Redefining color barcol on input line 2181.
 )
-LaTeX Info: Redefining \vec on input line 3.
+LaTeX Info: Redefining \vec on input line 23.
 
-No file McNeall_abstract.aux.
-\openout1 = `McNeall_abstract.aux'.
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box34
+\UL@hyphenbox=\box35
+\UL@skip=\skip65
+\UL@hook=\toks36
+\UL@height=\dimen155
+\UL@pe=\count138
+\UL@pixel=\dimen156
+\ULC@box=\box36
+Package: ulem 2012/05/18
+\ULdepth=\dimen157
+)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Warning: Unused global option(s):
+    [article].
+
+(./diff_main.aux)
+\openout1 = `diff_main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 95.
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 4.
-
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 95.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count136
-\scratchdimen=\dimen155
-\scratchbox=\box34
-\nofMPsegments=\count137
-\nofMParguments=\count138
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count139
-\MPscratchDim=\dimen156
-\MPnumerator=\count140
-\makeMPintoPDFobject=\count141
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count139
+\scratchdimen=\dimen158
+\scratchbox=\box37
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen159
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
+\everyMPtoPDFconversion=\toks38
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -924,8 +949,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 4.
+\AtBeginShipoutBox=\box38
+Package hyperref Info: Link coloring OFF on input line 95.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -933,96 +958,756 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count142
+\c@section@level=\count145
 )
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+LaTeX Info: Redefining \ref on input line 95.
+LaTeX Info: Redefining \pageref on input line 95.
+LaTeX Info: Redefining \nameref on input line 95.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 134.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-./McNeall_abstract.tex:26: Class copernicus Error: You must define \runningauth
-or.
-
-See the copernicus class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 
-     
-? 
-
-./McNeall_abstract.tex:26: Class copernicus Error: You must define \runningtitl
-e.
-
-See the copernicus class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 
-     
-? 
-
-Package lineno Warning: Linenumber reference failed, 
-(lineno)                rerun to get it right.
-
-LaTeX Font Info:    Try loading font information for T1+phv on input line 28.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 28.
+(Font)              scaled to size 9.49997pt on input line 134.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 16.41594pt on input line 134.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 134.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 16.41594pt on input line 134.
+LaTeX Font Info:    Try loading font information for U+msa on input line 134.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 134.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 36.
- [1
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 134.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 134.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 134.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 9.49997pt on input line 134.
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
 
-Class copernicus Warning: No section Abstract; proceeding without it.
-
-
-Class copernicus Warning: No section Introduction; proceeding without it.
-
-
-Class copernicus Warning: No section Conclusions; proceeding without it.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
-(./McNeall_abstract.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 36.
+[1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
+]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 4.74998pt on input line 156.
+
+Underfull \hbox (badness 1776) in paragraph at lines 157--158
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+|   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 157--158
+|   []   |   []   [][]|   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 159--161
+\T1/ptm/m/n/10 lit-er-a-ture. []|   []   |   []   [][]|   []   []are tune-able 
+by
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 163--164
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 4316) in paragraph at lines 163--164
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \vbox (badness 7415) has occurred while \output is active []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 172--174
+[]\T1/ptm/m/n/10 Simulator dis-crep-ancy []|   []   |   []   |   []   |   []   
+|   []
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 178--191
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 178--191
+|   []   [][]\T1/ptm/m/n/10 Kennedy and O'Hagan[] ([]2001[]) in-tro-duced
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 178--191
+\T1/ptm/m/n/10 i-fi-ca-tion of a pri-ori es-ti-mates of sim-u-la-tor dis-crep-a
+ncy,
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 178--191
+\T1/ptm/m/n/10 and of-fer meth-ods to learn about that dis-crep-ancy by
+ []
+
+
+Underfull \hbox (badness 2529) in paragraph at lines 178--191
+\T1/ptm/m/n/10 com-par-i-son of the sim-u-la-tor and ob-ser-va-tions. Fail-ure
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 178--191
+\T1/ptm/m/n/10 to take model dis-crep-ancy into ac-count in cal-i-bra-tion
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 178--191
+\T1/ptm/m/n/10 can lead to over-con-fi-dent and in-ac-cu-rate es-ti-mates of
+ []
+
+
+Underfull \hbox (badness 6428) in paragraph at lines 178--191
+\T1/ptm/m/n/10 the pa-ram-e-ters, and con-se-quently the pre-dic-tions of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--191
+\T1/ptm/m/n/10 the model (e.g. []|   []
+ []
+
+
+Overfull \hbox (81.09915pt too wide) in paragraph at lines 178--191
+|   [][][]|   []
+ []
+
+
+Underfull \hbox (badness 5924) in paragraph at lines 178--191
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 5446) in paragraph at lines 178--191
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 5578) in paragraph at lines 178--191
+|   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 178--191
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 178--191
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2
+
+]
+[3]
+Underfull \hbox (badness 1052) in paragraph at lines 220--227
+\T1/ptm/m/n/10 sults of that study. The en-sem-ble was run in or-der to
+ []
+
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 237.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 237.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.54997pt on input line 237.
+
+Underfull \hbox (badness 1019) in paragraph at lines 256--257
+\T1/ptm/m/n/10 We []|   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 288--296
+|   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 288--296
+\T1/ptm/m/n/10 in-put space []|   []   |   []   |   [][][]|   []   |   []   |  
+ []   |   [][]. We
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 288--296
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--313
+[]|   []   |   []   [][]|   []   |   []   []\T1/ptm/m/n/10 a num-ber of em-u-la
+-tors of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--313
+\T1/ptm/m/n/10 the en-sem-ble, the de-tails for each de-pend-ing on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--313
+\T1/ptm/m/n/10 the ap-pli-ca-tion. []|   []   |   []   |   []   |   []   |   []
+
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 304--313
+|   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--313
+|   []   |   []   |   []   [][]|   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 304--313
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 316--317
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--327
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 328--329
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+[5] [6]
+Underfull \hbox (badness 1242) in paragraph at lines 388--389
+\T1/ptm/m/n/10 ners of the in-put space con-sid-ered plau-si-ble. The fail-
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 399--400
+[]\T1/ptm/m/n/10 V_CRIT_ALPHA, and NL0 are the most in-flu-en-tial
+ []
+
+
+LaTeX Warning: Reference `tab:effects_sum' on page 7 undefined on input line 41
+3.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--464
+[]|   []   [][]|   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--464
+[][]|   [][][]|   [][][]|   [][][]|   [][][]|   [][][]|   [][][]|   []   [][]| 
+  []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
+|   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 4582) in paragraph at lines 489--490
+|   []   []\T1/ptm/m/n/10 un-cer-tainty be-tween ob-ser-va-tions and model
+ []
+
+
+Underfull \vbox (badness 3407) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+
+LaTeX Warning: Reference `fig:taat' on page 9 undefined on input line 544.
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 548--549
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+Underfull \vbox (badness 3250) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `fig:input_frequency_marginal' on page 10 undefined on
+ input line 587.
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 587--596
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+[10]
+Underfull \hbox (badness 2512) in paragraph at lines 607--610
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 607--610
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 617--619
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 617--619
+\T1/ptm/m/n/10 of the en-sem-ble in the ac-tive pa-ram-e-ter sub-space, so
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 617--619
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+[11]
+Underfull \hbox (badness 1527) in paragraph at lines 628--630
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 628--630
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 634--636
+[]\T1/ptm/m/n/10 Second, is there a miss-ing pro-cesses in the veg-e-ta-
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
+[]\T1/ptm/m/n/10 We iden-tify mois-ture con-trol on pho-to-syn-the-sis
+ []
+
+
+Underfull \hbox (badness 6708) in paragraph at lines 644--645
+\T1/ptm/m/n/10 (V_CRIT_ALPHA) as the most im-por-tant pa-ram-e-ter
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 700.
+
+Underfull \hbox (badness 1412) in paragraph at lines 703--704
+[]\T1/ptm/m/n/9 This work was sup-ported by the Joint
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 707.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+(./diff_main.bbl [13]
+Underfull \hbox (badness 4120) in paragraph at lines 88--95
+[]\T1/ptm/m/n/9 Good, P., Lowe, J. A., Collins, M., and Moufouma-Okia,
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 88--95
+\T1/ptm/m/n/9 W.: An ob-jec-tive trop-i-cal At-lantic sea sur-face tem-per-a-
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 88--95
+\T1/ptm/m/n/9 ture gra-di-ent in-dex for stud-ies of south Ama-zon dry-
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 88--95
+\T1/ptm/m/n/9 season cli-mate vari-abil-ity and change, Philo-soph-i-cal Trans-
+
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 114--118
+[]\T1/ptm/m/n/9 Higdon, D., Gat-tiker, J., Williams, B., and Right-ley, M.:
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 114--118
+\T1/ptm/m/n/9 Com-puter Model Cal-i-bra-tion Us-ing High-Dimensional Out-
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 114--118
+\T1/ptm/m/n/9 put, Jour-nal of the Amer-i-can Sta-tis-ti-cal As-so-ci-a-tion, 1
+03,
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 137--141
+[]\T1/ptm/m/n/9 Joetzjer, E., Dou-ville, H., Delire, C., and Ciais, P.: Present
+-
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 137--141
+\T1/ptm/m/n/9 day and fu-ture Ama-zo-nian pre-cip-i-ta-tion in global cli-mate
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 137--141
+\T1/ptm/m/n/9 mod-els: CMIP5 ver-sus CMIP3, Cli-mate Dy-nam-ics, 41,
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 156--161
+[]\T1/ptm/m/n/9 Lee, L. A., Red-ding-ton, C. L., and Carslaw, K. S.: On the
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 156--161
+\T1/ptm/m/n/9 Sci-ences, doi:[]10.1073/pnas.1507050113[], []$http : / / www . p
+nas . org /
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 187--193
+[]\T1/ptm/m/n/9 Malhi, Y., Aragão, L. E. O. C., Gal-braith, D., Hunt-ing-ford,
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 187--193
+\T1/ptm/m/n/9 C., Fisher, R., Ze-la-zowski, P., Sitch, S., Mc-Sweeney, C.,
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 187--193
+\T1/ptm/m/n/9 and Meir, P.: Ex-plor-ing the like-li-hood and mech-a-nism of
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 187--193
+\T1/ptm/m/n/9 a climate-change-induced dieback of the Ama-zon rain-for-
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 208--212
+[]\T1/ptm/m/n/9 O'Hagan, A.: Bayesian anal-y-sis of com-puter code out-puts:
+ []
+
+
+Underfull \hbox (badness 4036) in paragraph at lines 208--212
+\T1/ptm/m/n/9 a tu-to-rial, Re-li-a-bil-ity En-gi-neer-ing & Sys-tem Safety, 91
+,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--212
+\T1/ptm/m/n/9 1290--1300, []$http : / / www . sciencedirect . com / science / a
+rticle / pii /
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 215--219
+[]\T1/ptm/m/n/9 Pope, D. V., Gal-lani, L. M., Rown-tree, R. P., and Strat-ton,
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 223--228
+\T1/ptm/m/n/9 A. J., Fruth, J., Gilquin, L., Guil-laume, J., Gratiet, L. L.,
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 240--246
+[]\T1/ptm/m/n/9 Roustant, O., Gins-bourger, D., and Dev-ille, Y.: DiceK-rig-
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 240--246
+\T1/ptm/m/n/9 ing, DiceOp-tim: Two R Pack-ages for the Anal-y-sis of
+ []
+
+
+Underfull \hbox (badness 6725) in paragraph at lines 240--246
+\T1/ptm/m/n/9 Op-ti-miza-tion, Jour-nal of Sta-tis-ti-cal Soft-ware, 51, 1--55,
+
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 240--246
+\T1/ptm/m/n/9 doi:[]10.18637/jss.v051.i01[], []$https : / / www . jstatsoft . o
+rg / index . php /
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 249--254
+[]\T1/ptm/m/n/9 Saltelli, A., Taran-tola, S., and Chan, K. P.-S.: A Quan-ti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--254
+\T1/ptm/m/n/9 ta-tive Model-Independent Method for Global Sen-si-tiv-
+ []
+
+
+Underfull \hbox (badness 5985) in paragraph at lines 249--254
+\T1/ptm/m/n/9 ity Anal-y-sis of Model Out-put, Tech-no-met-rics, 41, 39--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--254
+\T1/ptm/m/n/9 56, doi:[]10.1080/00401706.1999.10485594[], []$http : / / amstat 
+.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--254
+\T1/ptm/m/n/9 tandfonline . com / doi / abs / 10 . 1080 / 00401706 . 1999 . 104
+85594$[],
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \hbox (badness 1194) in paragraph at lines 257--264
+\T1/ptm/m/n/9 0442(1996)009<0676:ARLSPF>2.0.CO;2[], []$http : / / dx . doi . or
+g / 10 .
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 294--299
+[]\T1/ptm/m/n/9 Tran, G. T., Oliver, K. I., Toal, D. J., Holden, P. B., and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--330
+\T1/ptm/m/n/9 7-1419-2014[], []$http : / / www . geosci-[]model-[]dev . net / 7
+ / 1419 / 2014/$[],
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 340--344
+[]\T1/ptm/m/n/9 Williamson, D., Blaker, A. T., Hamp-ton, C., and Salter,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--344
+\T1/ptm/m/n/9 J.: Iden-ti-fy-ing and re-mov-ing struc-tural bi-ases in cli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--344
+\T1/ptm/m/n/9 mate mod-els with his-tory match-ing, Cli-mate Dy-nam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--344
+\T1/ptm/m/n/9 ics, 45, 1299--1324, doi:[]10.1007/s00382-014-2378-z[],
+ []
+
+) <graphics/BL_obs_ensemble_mean_sd.pdf, id=462, 578.16pt x 433.62pt>
+File: graphics/BL_obs_ensemble_mean_sd.pdf Graphic file (type pdf)
+
+<use graphics/BL_obs_ensemble_mean_sd.pdf>
+Package pdftex.def Info: graphics/BL_obs_ensemble_mean_sd.pdf used on input lin
+e 755.
+(pdftex.def)             Requested size: 236.15796pt x 177.11708pt.
+
+<graphics/frac_pairs.pdf, id=463, 650.43pt x 650.43pt>
+File: graphics/frac_pairs.pdf Graphic file (type pdf)
+
+<use graphics/frac_pairs.pdf>
+Package pdftex.def Info: graphics/frac_pairs.pdf used on input line 763.
+(pdftex.def)             Requested size: 236.15796pt x 236.15941pt.
+
+<graphics/fraction_histogram_with_discrepancy_standard.pdf, id=464, 505.89pt x 
+505.89pt>
+File: graphics/fraction_histogram_with_discrepancy_standard.pdf Graphic file (t
+ype pdf)
+ <use graphics/fraction_histogram_with_discrepancy_standard.pdf>
+Package pdftex.def Info: graphics/fraction_histogram_with_discrepancy_standard.
+pdf used on input line 771.
+(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
+
+<graphics/credible_NROY.pdf, id=465, 505.89pt x 505.89pt>
+File: graphics/credible_NROY.pdf Graphic file (type pdf)
+
+<use graphics/credible_NROY.pdf>
+Package pdftex.def Info: graphics/credible_NROY.pdf used on input line 779.
+(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
+
+<graphics/credible_NROY_hists.pdf, id=466, 433.62pt x 578.16pt>
+File: graphics/credible_NROY_hists.pdf Graphic file (type pdf)
+
+<use graphics/credible_NROY_hists.pdf>
+Package pdftex.def Info: graphics/credible_NROY_hists.pdf used on input line 78
+7.
+(pdftex.def)             Requested size: 236.15796pt x 314.88364pt.
+
+<graphics/amaz_oat_sens.pdf, id=467, 578.16pt x 578.16pt>
+File: graphics/amaz_oat_sens.pdf Graphic file (type pdf)
+
+<use graphics/amaz_oat_sens.pdf>
+Package pdftex.def Info: graphics/amaz_oat_sens.pdf used on input line 795.
+(pdftex.def)             Requested size: 236.15796pt x 236.15611pt.
+
+<graphics/FAST_histograms.pdf, id=468, 469.755pt x 505.89pt>
+File: graphics/FAST_histograms.pdf Graphic file (type pdf)
+
+<use graphics/FAST_histograms.pdf>
+Package pdftex.def Info: graphics/FAST_histograms.pdf used on input line 803.
+(pdftex.def)             Requested size: 236.15796pt x 254.31839pt.
+
+<graphics/discrepancy_parameter_space.pdf, id=471, 578.16pt x 578.16pt>
+File: graphics/discrepancy_parameter_space.pdf Graphic file (type pdf)
+
+<use graphics/discrepancy_parameter_space.pdf>
+Package pdftex.def Info: graphics/discrepancy_parameter_space.pdf used on input
+ line 811.
+(pdftex.def)             Requested size: 236.15796pt x 236.15611pt.
+
+<graphics/Prop_NROY_tolerance_unc.pdf, id=472, 505.89pt x 505.89pt>
+File: graphics/Prop_NROY_tolerance_unc.pdf Graphic file (type pdf)
+
+<use graphics/Prop_NROY_tolerance_unc.pdf>
+Package pdftex.def Info: graphics/Prop_NROY_tolerance_unc.pdf used on input lin
+e 819.
+(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
+
+<graphics/best_inputs.png, id=473, 2810.5pt x 5621.0pt>
+File: graphics/best_inputs.png Graphic file (type png)
+
+<use graphics/best_inputs.png>
+Package pdftex.def Info: graphics/best_inputs.png used on input line 832.
+(pdftex.def)             Requested size: 236.15796pt x 472.24655pt.
+
+<graphics/best_inputs_swaps_hists_Paired.pdf, id=475, 505.89pt x 505.89pt>
+File: graphics/best_inputs_swaps_hists_Paired.pdf Graphic file (type pdf)
+
+<use graphics/best_inputs_swaps_hists_Paired.pdf>
+Package pdftex.def Info: graphics/best_inputs_swaps_hists_Paired.pdf used on in
+put line 860.
+(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
+
+<graphics/best_X_maps.pdf, id=476, 361.35pt x 650.43pt>
+File: graphics/best_X_maps.pdf Graphic file (type pdf)
+
+<use graphics/best_X_maps.pdf>
+Package pdftex.def Info: graphics/best_X_maps.pdf used on input line 866.
+(pdftex.def)             Requested size: 236.15796pt x 425.08696pt.
+
+<graphics/credible_NROY_hists_disc.pdf, id=477, 433.62pt x 578.16pt>
+File: graphics/credible_NROY_hists_disc.pdf Graphic file (type pdf)
+
+<use graphics/credible_NROY_hists_disc.pdf>
+Package pdftex.def Info: graphics/credible_NROY_hists_disc.pdf used on input li
+ne 874.
+(pdftex.def)             Requested size: 236.15796pt x 314.88364pt.
+
+<graphics/plausible_disc_input_space.pdf, id=478, 505.89pt x 505.89pt>
+File: graphics/plausible_disc_input_space.pdf Graphic file (type pdf)
+
+<use graphics/plausible_disc_input_space.pdf>
+Package pdftex.def Info: graphics/plausible_disc_input_space.pdf used on input 
+line 882.
+(pdftex.def)             Requested size: 236.15796pt x 236.16272pt.
+
+Underfull \hbox (badness 3396) in paragraph at lines 893--898
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+[15 <./graphics/BL_obs_ensemble_mean_sd.pdf>] [16 <./graphics/frac_pairs.pdf> <
+./graphics/fraction_histogram_with_discrepancy_standard.pdf> <./graphics/credib
+le_NROY.pdf>] [17 <./graphics/credible_NROY_hists.pdf> <./graphics/amaz_oat_sen
+s.pdf> <./graphics/FAST_histograms.pdf>] [18 <./graphics/discrepancy_parameter_
+space.pdf> <./graphics/Prop_NROY_tolerance_unc.pdf> <./graphics/best_inputs.png
+>] [19 <./graphics/best_inputs_swaps_hists_Paired.pdf> <./graphics/best_X_maps.
+pdf>] [20
+
+ <./graphics/credible_NROY_hists_disc.pdf> <./graphics/plausible_disc_input_spa
+ce.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1044.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1044.
+ (./diff_main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1044.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1044.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1044.
  ) 
 Here is how much of TeX's memory you used:
- 9983 strings out of 493315
- 142199 string characters out of 6137904
- 252166 words of memory out of 5000000
- 13243 multiletter control sequences out of 15000+600000
- 34109 words of font info for 59 fonts, out of 8000000 for 9000
+ 10450 strings out of 493315
+ 150361 string characters out of 6137904
+ 354558 words of memory out of 5000000
+ 13563 multiletter control sequences out of 15000+600000
+ 52179 words of font info for 68 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 43i,5n,40p,760b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,40p,3303b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on McNeall_abstract.pdf (1 page, 31761 bytes).
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fon
+ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on diff_main.pdf (20 pages, 1025532 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 605 compressed objects within 7 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

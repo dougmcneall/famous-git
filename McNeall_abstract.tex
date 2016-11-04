@@ -8,7 +8,7 @@
 % \Author[affil]{given_name}{surname}
 
 \Author[1]{Doug}{McNeall}
-\Author[2]{Jonny}{Williams}
+\Author[2,4]{Jonny}{Williams}
 \Author[1]{Ben}{Booth}
 \Author[1]{Richard}{Betts}
 \Author[3]{Peter}{Challenor}
@@ -16,18 +16,21 @@
 \Author[1]{David}{Sexton}
 
 \affil[1]{Met Office Hadley Centre, FitzRoy Road, Exeter, EX1 3PB UK}
-\affil[2]{NIWA, 301 Evans Bay Parade, Hataitai, Wellington 6021, New Zealand}
+\affil[2]{BRIDGE, School of Geographical Sciences, University of Bristol, Bristol, BS8 1SS, UK}
 \affil[3]{University of Exeter, North Park Road, Exeter EX4 4QE UK}
+\affil[4]{Now at NIWA, 301 Evans Bay Parade, Hataitai, Wellington 6021, New Zealand}
+%% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
 
 
 \maketitle
 
-We use observations of forest fraction to constrain carbon cycle and land surface input parameters of the reduced resolution global climate model, FAMOUS. Using a history matching approach along with a computationally cheap statistical proxy (emulator) of the climate model, we compare an ensemble of simulations of forest fraction with observations, and rule out parameter settings where the forests are poorly simulated. 
+Uncertainty in the simulation of the carbon cycle contributes significantly to uncertainty in the projections of future climate change. We use observations of forest fraction to constrain carbon cycle and land surface input parameters of the global climate model FAMOUS, in the presence of an uncertain structural error. 
 
-Regions of parameter space where FAMOUS best simulates the Amazon forest fraction are incompatible with the regions where FAMOUS best simulates other forests, indicating a structural error in the model. Using observations of the Amazon forest to constrain input parameters leads to very different conclusions about the acceptable values of input parameters than using the other forests.
+Using an ensemble of climate model runs to build a computationally cheap statistical proxy (emulator) of the climate model, we use history matching to rule out input parameter settings where the corresponding climate model output is judged sufficiently different from observations, even allowing for uncertainty.
 
-We characterise the structural model discrepancy, and explore the consequences of ignoring it in a history matching exercise. We use sensitivity analysis to find the parameters which have most impact on simulator error.  We use the emulator to simulate the forest fraction at the best set of parameters implied by matching the model to the Amazon, and to other major forests in turn. We can find parameters that lead to a realistic forest fraction in the Amazon, but using the Amazon alone to tune the simulator would result in a significant overestimate of forest fraction in the other forests. Conversely, using the other forests to calibrate the model leads to a larger underestimate of the Amazon forest fraction.
+Regions of parameter space where FAMOUS best simulates the Amazon forest fraction are incompatible with the regions where FAMOUS best simulates other forests, indicating a structural error in the model. We use the emulator to simulate the forest fraction at the best set of parameters implied by matching the model to the Amazon, Central African, South East Asian and North American forests in turn. We can find parameters that lead to a realistic forest fraction in the Amazon, but that using the Amazon alone to tune the simulator would result in a significant overestimate of forest fraction in the other forests. Conversely, using the other forests to tune the simulator leads to a larger underestimate of the Amazon forest fraction.
 
-Finally, we perform a history matching exercise using credible estimates for simulator discrepancy and observational uncertainty terms. We are unable to constrain the parameters individually, but just under half of joint parameter space is ruled out as being incompatible with forest observations. We discuss the possible sources of the discrepancy in the simulated Amazon, including missing processes in the land surface component, and a bias in the climatology of the Amazon.
+We use sensitivity analysis to find the parameters which have most impact on simulator output, and perform a history matching exercise using credible estimates for simulator discrepancy and observational uncertainty terms. We are unable to constrain the parameters individually, but rule out just under half of joint parameter space as being incompatible with forest observations. We discuss the possible sources of the discrepancy in the simulated Amazon, including missing processes in the land surface component, and a bias in the climatology of the Amazon.
+
 
 \end{document}
