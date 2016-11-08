@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  7 NOV 2016 10:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.16)  8 NOV 2016 11:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -961,11 +961,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./McNe
 all_supp.bbl
-[2]) <graphics/map_forests.pdf, id=45, 578.16pt x 289.08pt>
-File: graphics/map_forests.pdf Graphic file (type pdf)
+[2]) <graphics/fs01_map_forests.pdf, id=45, 578.16pt x 289.08pt>
+File: graphics/fs01_map_forests.pdf Graphic file (type pdf)
 
-<use graphics/map_forests.pdf>
-Package pdftex.def Info: graphics/map_forests.pdf used on input line 48.
+<use graphics/fs01_map_forests.pdf>
+Package pdftex.def Info: graphics/fs01_map_forests.pdf used on input line 48.
 (pdftex.def)             Requested size: 341.43306pt x 170.71451pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 49.
@@ -974,20 +974,21 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 49.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<graphics/frac_loo.pdf, id=46, 722.7pt x 505.89pt>
-File: graphics/frac_loo.pdf Graphic file (type pdf)
- <use graphics/frac_loo.pdf>
-Package pdftex.def Info: graphics/frac_loo.pdf used on input line 54.
+<graphics/fs02_frac_loo.pdf, id=46, 722.7pt x 505.89pt>
+File: graphics/fs02_frac_loo.pdf Graphic file (type pdf)
+
+<use graphics/fs02_frac_loo.pdf>
+Package pdftex.def Info: graphics/fs02_frac_loo.pdf used on input line 54.
 (pdftex.def)             Requested size: 341.43306pt x 239.0034pt.
 
-<graphics/taat.png, id=47, 2810.5pt x 5621.0pt>
-File: graphics/taat.png Graphic file (type png)
- <use graphics/taat.png>
-Package pdftex.def Info: graphics/taat.png used on input line 60.
-(pdftex.def)             Requested size: 236.15796pt x 472.24655pt.
+<graphics/fs03_taat.png, id=47, 2810.5pt x 5621.0pt>
+File: graphics/fs03_taat.png Graphic file (type png)
 
-[3 <./graphics/map_forests.pdf>] [4 <./graphics/frac_loo.pdf>] [5 <./graphics/t
-aat.png>]
+<use graphics/fs03_taat.png>
+Package pdftex.def Info: graphics/fs03_taat.png used on input line 60.
+(pdftex.def)             Requested size: 236.15796pt x 472.24655pt.
+ [3 <./graphics/fs01_map_forests.pdf>] [4 <./graphics/fs02_frac_loo.pdf>] [5 <.
+/graphics/fs03_taat.png>]
 
 Class copernicus Warning: No section Abstract; proceeding without it.
 
@@ -1006,7 +1007,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
  10048 strings out of 493315
- 143222 string characters out of 6137904
+ 143297 string characters out of 6137904
  257524 words of memory out of 5000000
  13281 multiletter control sequences out of 15000+600000
  26996 words of font info for 50 fonts, out of 8000000 for 9000
@@ -1024,7 +1025,7 @@ exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on McNeall_supp.pdf (5 pages, 2296718 bytes).
+Output written on McNeall_supp.pdf (5 pages, 2296723 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
  98 compressed objects within 1 object stream
