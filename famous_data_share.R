@@ -44,8 +44,8 @@ y.list = list(AMAZ_MOD_FRAC, SEASIA_MOD_FRAC, CONGO_MOD_FRAC,
 y.namelist = list('AMAZ_MOD_FRAC', 'SEASIA_MOD_FRAC', 'CONGO_MOD_FRAC',
                    'NAMERICA_MOD_FRAC', 'GLOB_MOD_FRAC')
 
-full_frac = cbind(X, AMAZ_MOD_FRAC, SEASIA_MOD_FRAC,CONGO_MOD_FRAC, NAMERICA_MOD_FRAC, GLOB_MOD_FRAC)
-
+full_frac = cbind(params_beta$FULL_ID,X, AMAZ_MOD_FRAC, SEASIA_MOD_FRAC,CONGO_MOD_FRAC, NAMERICA_MOD_FRAC, GLOB_MOD_FRAC)
+colnames(full_frac)[1] = 'FULL_ID'
 obs = matrix(c(obs_amazon, obs_seasia, obs_congo, obs_namerica, obs_glob), nrow = 1)
 colnames(obs) <- c("AMAZON", "SEASIA", "CONGO", "NAMERICA", "GLOBAL")
 
