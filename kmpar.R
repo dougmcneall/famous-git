@@ -36,9 +36,16 @@ km.wrap = function(form, em, ...){
   # wrapper function to fit km model to list em.
   # each list element in em contains a design matrix X 
   # and an output vector y
-  fit = km(form, design=em$X, response=em$y, control=list(trace=FALSE), ...)
-  fit 
-}
+  out = NA
+  fit = try(km(form, design=em$X, response=em$y, control=list(trace=FALSE), ...), silent=TRUE)
+  #if(class(fit) == "try-error"){
+  #  out = NA
+  #}
+  #else{
+  #  out = fit 
+  #}
+  #out
+#}
 
 # -------------------------------------------------------------------
 # Test case, modified from km examples in DiceKriging.
@@ -220,14 +227,14 @@ image.plot(longs, rev(lats), remap.famous(npp.ens[1,], longs, lats), col=yg )
 
 # break the ensemble into a list
 ens.list = emlist(X=X, Y=npp.ens)
-ens.list.trunc = ens.list[200:219]
+ens.list.trunc = ens.list[230:250]
 
 ptm = proc.time()
 # parallel lapply km to the list of outputs
 test.km = mclapply(ens.list.trunc,FUN=km.wrap, form = ~.)
 
 # find a prediction in each element
-xnew = as.matrix(X[1, ], nrow=1)
+#xnew = as.matrix(X[1, ], nrow=1)
 xnew = X.stan.norm
 
 pred.list = mclapply(test.km,
