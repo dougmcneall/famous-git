@@ -4,7 +4,7 @@
 
 
 # We take two approaches to GP emulation of large data sets 
-# 1) Direct computation and 2) Dimension reduction.
+# 1) Direct (point-by-point) computation and 2) Dimension reduction.
 # Either are amenable to parallelisation, as each element of (say)
 # a map or each PC can be emulated independently. The basic approach
 # is to break the data set into a list, each element of which is
@@ -44,8 +44,10 @@ km.wrap = function(form, em, ...){
   #else{
   #  out = fit 
   #}
-  #out
-#}
+  out = fit
+  out
+}
+
 
 # -------------------------------------------------------------------
 # Test case, modified from km examples in DiceKriging.
@@ -107,82 +109,82 @@ load(paste0(datdir,'observed_estimates.Rdata'))
 load(paste0(datdir,'famous_params_beta.RData'))
 
 # Helper functions for working with FAMOUS data
-f <- function(s){
+f = function(s){
   strsplit(s, split = "a.pt")[[1]][1]
 }
 
-open.field <- function(fn, var){
+open.field = function(fn, var){
   # helper function to load a map of var from nc file
-  nc <- nc_open(fn)
-  nc.var <- ncvar_get(nc, var)
+  nc = nc_open(fn)
+  nc.var = ncvar_get(nc, var)
   nc.var	
 }
-load.spatial.ens <- function(fn.list, var){
+load.spatial.ens = function(fn.list, var){
   # open all nc files in a list, vectorise, and concatenate to
   # an ensemble matrix, each row is a map
-  field.list <- lapply(fn.list, FUN = open.field, var = var)
-  out <- t(sapply(field.list,cbind)) # should do by columns
+  field.list = lapply(fn.list, FUN = open.field, var = var)
+  out = t(sapply(field.list,cbind)) # should do by columns
   out
 }
 
-remap.famous <- function(dat,longs,lats, shift = FALSE){
+remap.famous = function(dat,longs,lats, shift = FALSE){
   # reshape a map in vector form so that image() like functions
   # will plot it correctly
-  mat <- matrix(dat, nrow = length(longs), ncol = length(lats))[ ,length(lats):1]
+  mat = matrix(dat, nrow = length(longs), ncol = length(lats))[ ,length(lats):1]
   if(shift){
-    block1.ix <- which(longs < shift)
-    block2.ix <- which(longs > shift)
-    mat.shift <- rbind(mat[ block2.ix, ], mat[block1.ix, ]) 
-    out <- mat.shift
+    block1.ix = which(longs < shift)
+    block2.ix = which(longs > shift)
+    mat.shift = rbind(mat[ block2.ix, ], mat[block1.ix, ]) 
+    out = mat.shift
   }
   else{
-    out <- mat
+    out = mat
   }
   out
 }
 
 # Functions for dimension reduced emulation
-pc.project <- function(pca,scores.em,Z.em,scale){
+pc.project = function(pca,scores.em,Z.em,scale){
   # project principal components
   num.pc <- dim(scores.em)[2]
   if (scale){
-    anom <- ((pca$rotation[ ,1:num.pc] %*% t(scores.em))*pca$scale)
-    anom.sd <- ((pca$rotation[ ,1:num.pc] %*% t(Z.em))*pca$scale)          
+    anom = ((pca$rotation[ ,1:num.pc] %*% t(scores.em))*pca$scale)
+    anom.sd = ((pca$rotation[ ,1:num.pc] %*% t(Z.em))*pca$scale)          
   }
   else {
-    anom <- pca$rotation[ ,1:num.pc] %*% t(scores.em)
-    anom.sd <- pca$rotation[ ,1:num.pc] %*% t(Z.em)   
+    anom = pca$rotation[ ,1:num.pc] %*% t(scores.em)
+    anom.sd = pca$rotation[ ,1:num.pc] %*% t(Z.em)   
   }
-  tens <- t(anom + pca$center)
+  tens = t(anom + pca$center)
   return(list(tens = tens, anom.sd = anom.sd))
 }
 
-km.pc <- function(Y, X, newdata, num.pc, scale = FALSE, center = TRUE, type = "UK", ...){
+km.pc = function(Y, X, newdata, num.pc, scale = FALSE, center = TRUE, type = "UK", ...){
   # Base function for emulation of high dimensional data
   # with PCA and Gaussian Process emulator
   
   if (class(Y)!= 'prcomp'){
-    pca <- prcomp(Y,scale = scale, center = center)
+    pca = prcomp(Y,scale=scale, center=center)
   }
   else{
-    pca <- Y
+    pca = Y
   }
   if(is.matrix(newdata)!= TRUE){
     print('matrixifying newdata')
-    newdata <- matrix(newdata,nrow = 1) 
+    newdata = matrix(newdata,nrow=1) 
   }
-  scores.em <- matrix(nrow = dim(newdata)[1],ncol = num.pc)
-  Z.em <- matrix(nrow = dim(newdata)[1],ncol = num.pc)
+  scores.em = matrix(nrow=dim(newdata)[1],ncol=num.pc)
+  Z.em = matrix(nrow=dim(newdata)[1],ncol=num.pc)
   
   for (i in 1:num.pc){
     # build the GP model
-    fit <- km(design = X, response = pca$x[,i])
-    pred <- predict(fit, newdata = newdata, type = type, ...)
-    scores.em[ ,i] <- pred$mean
-    Z.em[ ,i] <- pred$sd
+    fit = km(design=X, response=pca$x[,i])
+    pred = predict(fit, newdata=newdata, type = type, ...)
+    scores.em[ ,i] = pred$mean
+    Z.em[ ,i] = pred$sd
   }
   proj = pc.project(pca, scores.em, Z.em, scale)
-  return(list(tens = proj$tens,scores.em = scores.em,Z.em = Z.em,anom.sd = proj$anom.sd))
+  return(list(tens=proj$tens, scores.em=scores.em, Z.em=Z.em, anom.sd=proj$anom.sd))
 }
 
 
@@ -190,38 +192,36 @@ km.pc <- function(Y, X, newdata, num.pc, scale = FALSE, center = TRUE, type = "U
 
 
 # filename list
-fn.list <- as.list(paste(famousdir, dir(famousdir), sep = ""))
+fn.list = as.list(paste(famousdir, dir(famousdir), sep = ""))
 # model list 
-modlist <- sapply(dir(famousdir), f)
-nmods <- length(modlist)
+modlist = sapply(dir(famousdir), f)
+nmods = length(modlist)
 
 # test open a file
-nc <- nc_open(fn.list[[1]])
-npp.nc <- ncvar_get(nc, "NPP_mm_srf")
-lats <- ncvar_get(nc,"latitude")
-longs <- ncvar_get(nc,"longitude")
+nc = nc_open(fn.list[[1]])
+npp.nc = ncvar_get(nc, "NPP_mm_srf")
+lats = ncvar_get(nc,"latitude")
+longs = ncvar_get(nc,"longitude")
 
 # match the inputs to the correct order of the outputs
-ix <- match(modlist, as.character(params_beta$FULL_ID))
-X <- params_beta[ix,4:10]    # input parameters
-d.X<- ncol(X)           # input dimensions
-X.norm <- normalize(X)
+ix = match(modlist, as.character(params_beta$FULL_ID))
+X = params_beta[ix,4:10]    # input parameters
+d.X = ncol(X)           # input dimensions
+X.norm = normalize(X)
 # standard set of parameters
-X.standard <- c(0.875, 3, 0.03, 0.25, 36, 2, 0.5)
-X.stan.norm <- normalize(matrix(X.standard, nrow = 1), wrt = X)
-colnames(X.stan.norm) <- colnames(X.norm)
+X.standard = c(0.875, 3, 0.03, 0.25, 36, 2, 0.5)
+X.stan.norm = normalize(matrix(X.standard, nrow = 1), wrt = X)
+colnames(X.stan.norm) = colnames(X.norm)
 
-
-#colnames(X.stan.norm) <- colnames(X.norm)
-ndims <- ncol(X)
-nens <- nrow(X)
+ndims = ncol(X)
+nens = nrow(X)
 
 # load an ensemble into a matrix
 npp.ens = load.spatial.ens(fn.list, "NPP_mm_srf") * 1e08
 npp.ens.trunc = npp.ens[ ,200:219] 
 
 # find range of data for plotting
-zl <- range(npp.ens, na.rm = TRUE)
+zl = range(npp.ens, na.rm = TRUE)
 # plot first ensemble member
 image.plot(longs, rev(lats), remap.famous(npp.ens[1,], longs, lats), col=yg )
 
@@ -275,13 +275,29 @@ direct.time = proc.time() - ptm
 # recode the function to take advantage
 
 # Replace NAs with zeros for the moment to get prcomp to work
-na.map <- is.na(npp.ens)
-npp.nona <- npp.ens
-npp.nona[na.map] <- 0
+na.map = is.na(npp.ens)
+npp.nona = npp.ens
+npp.nona[na.map] = 0
 
 npp.pc <- prcomp(npp.nona, scale = FALSE, center = TRUE)
-
 image.plot(longs, rev(lats), remap.famous(npp.pc$rotation[,1], longs, lats))
+
+test.pc = km.pc(Y=npp.nona, X=X.norm, newdata=X.stan.norm, num.pc=3)
+image.plot(longs, rev(lats), remap.famous(test.pc$tens, longs, lats), col=yg )
+world(add = TRUE) # I've solved the offset problem before
+
+image.plot(longs, rev(lats), 
+           remap.famous(test.pc$tens,longs, lats),
+           col=yg)
+map("world2", ylim=c(-90,90), xlim = c(0,360), add = TRUE)
+
+# things to do
+# Parallelise km.pc
+# Put formulae into km.pc, and make sure that they work
+# Run tests of point-by-point against dimension reduction approaches.
+# How do errors change as the number of PCs goes up?
+# How do things change as 
+
 
 
 
