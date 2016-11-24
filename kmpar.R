@@ -298,6 +298,10 @@ map("world2", ylim=c(-90,90), xlim = c(0,360), add = TRUE)
 # How do errors change as the number of PCs goes up?
 # How do things change as 
 
+# Note, get the raw version by clicking the 'download' version on github, and copying the path.
+gitdaturl = 'https://github.com/dougmcneall/famous-git/raw/master/famous_forest_fraction.RData'
+download.file(gitdaturl, 'myfile')
+load('myfile')
 
 
 
