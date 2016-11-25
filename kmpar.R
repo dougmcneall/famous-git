@@ -479,8 +479,7 @@ km.pc = function(Y, X, newdata, num.pc, scale = FALSE, center = TRUE, type = "UK
 kmpar.pc = function(Y, X, newdata, num.pc, scale = FALSE, center = TRUE, type = "UK", ...){
   # Base function for emulation of high dimensional data
   # with PCA and Gaussian Process emulator
-  
-  if (class(Y)!= 'prcomp'){
+   if (class(Y)!= 'prcomp'){
     pca = prcomp(Y,scale=scale, center=center)
   }
   else{
@@ -492,21 +491,10 @@ kmpar.pc = function(Y, X, newdata, num.pc, scale = FALSE, center = TRUE, type = 
   }
   scores.em = matrix(nrow=dim(newdata)[1],ncol=num.pc)
   Z.em = matrix(nrow=dim(newdata)[1],ncol=num.pc)
-  
-  # replace loop with direct.pred
   pred = direct.pred(form=~., X=X, Y=pca$x[,1:num.pc], Xnew=newdata )
-  
+  # fixing the number of rows at 1 at the moment
   scores.em[1,] = pred$mean
   Z.em[1,] = pred$sd
-  # # loop
-  # for (i in 1:num.pc){
-  #   # build the GP model
-  #   fit = km(design=X, response=pca$x[,i])
-  #   pred = predict(fit, newdata=newdata, type = type, ...)
-  #   scores.em[ ,i] = pred$mean
-  #   Z.em[ ,i] = pred$sd
-  # }
-  
   proj = pc.project(pca, scores.em, Z.em, scale)
   return(list(tens=proj$tens, scores.em=scores.em, Z.em=Z.em, anom.sd=proj$anom.sd))
 }
@@ -524,6 +512,14 @@ image.plot(longs, rev(lats),
            remap.famous(bl.frac.pc.par$tens,longs, lats),
            col=yg)
 map("world2", ylim=c(-90,90), xlim = c(0,360), add = TRUE)
+
+# ISSUES
+# Zeros and NAs - excise where an entire column in Y is NA
+# Only does one newdata row - is this trivial to fix?
+# Testing - send to David?
+
+
+
 
 
 
