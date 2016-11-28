@@ -476,7 +476,7 @@ km.pc = function(Y, X, newdata, num.pc, scale = FALSE, center = TRUE, type = "UK
 }
 
 
-kmpar.pc = function(Y, X, newdata, num.pc, scale = FALSE, center = TRUE, type = "UK", ...){
+kmpar.pc = function(form = ~., Y, X, newdata, num.pc, scale=FALSE, center=TRUE, type="UK", ...){
   # Base function for emulation of high dimensional data
   # with PCA and Gaussian Process emulator
    if (class(Y)!= 'prcomp'){
@@ -491,7 +491,7 @@ kmpar.pc = function(Y, X, newdata, num.pc, scale = FALSE, center = TRUE, type = 
   }
   scores.em = matrix(nrow=dim(newdata)[1],ncol=num.pc)
   Z.em = matrix(nrow=dim(newdata)[1],ncol=num.pc)
-  pred = direct.pred(form=~., X=X, Y=pca$x[,1:num.pc], Xnew=newdata )
+  pred = direct.pred(form=form, X=X, Y=pca$x[,1:num.pc], Xnew=newdata )
   # fixing the number of rows at 1 at the moment
   scores.em[1,] = pred$mean
   Z.em[1,] = pred$sd
@@ -519,6 +519,120 @@ map("world2", ylim=c(-90,90), xlim = c(0,360), add = TRUE)
 # Testing - send to David?
 
 
+# What happens when we pass in another formula?
+bl.frac.pc.par1 = kmpar.pc(form=~1, Y=bl.frac.nona, X=X.norm,
+                           newdata=X.stan.norm, num.pc=3)
+
+image.plot(longs, rev(lats), 
+           remap.famous(bl.frac.pc.par1$tens,longs, lats),
+           col=yg)
+map("world2", ylim=c(-90,90), xlim = c(0,360), add = TRUE)
+
+
+# Build a function that excises nans, and another that puts them back in
+# Need to keep a track of the index of the columns.
+
+finite.cols = function(Y){
+  #find where the columns of a matrix have all finite values
+  Y.finite = is.finite(Y)
+  fincol = apply(Y.finite, 2, all)
+  ix = which(fincol)
+  return(list(fincol=fincol,ix=ix)) 
+}
+
+test = finite.cols(bl.frac.ens)
+
+image.plot(longs, rev(lats), 
+           remap.famous(test$fincol,longs, lats),
+           col=yg)
+map("world2", ylim=c(-90,90), xlim = c(0,360), add = TRUE)
+
+excise = function(Y){
+  # excise non finite columns from a matrix (Y.all) and 
+  # index vector of where columns are all finite (all.finite)
+  # will this put things back in the right order
+  all.finite = finite.cols(Y)
+  Y.ex = Y[ , all.finite$ix]
+  return(list(Y.ex = Y.ex, all.finite.ix=all.finite$ix))
+}
+
+Y.excised = excise(bl.frac.ens)
+
+# Does it have an impact on accuracy when you excise the NAs?
+# Will it put it back in in the right order?
+bl.frac.ex = excise(bl.frac.ens)
+
+bl.frac.pc.par.ex = kmpar.pc(form=~., Y=bl.frac.ex$Y.ex, X=X.norm,
+                           newdata=X.stan.norm, num.pc=3)
+
+temp =  matrix(rep(NA,ncol(bl.frac.ens)), nrow = 1)
+temp[, bl.frac.ex$all.finite.ix] = bl.frac.pc.par.ex$tens
+
+image.plot(longs, rev(lats), 
+           remap.famous(temp,longs, lats),
+           col=yg)
+map("world2", ylim=c(-90,90), xlim = c(0,360), add = TRUE)
+
+# now integrate into km by pc
+
+kmpar.pc = function(form = ~., Y, X, newdata, num.pc, scale=FALSE, center=TRUE, type="UK", ...){
+  # Base function for emulation of high dimensional data
+  # with PCA and Gaussian Process emulator
+  
+    Ytrunc = excise(Y)
+    pca = prcomp(Ytrunc$Y.ex,scale=scale, center=center)
+
+  if(is.matrix(newdata)!= TRUE){
+    print('matrixifying newdata')
+    newdata = matrix(newdata,nrow=1) 
+  }
+  
+  #scores.em = matrix(nrow=dim(newdata)[1],ncol=num.pc)
+  #Z.em = matrix(nrow=dim(newdata)[1],ncol=num.pc)
+  
+  pred = direct.pred(form=form, X=X, Y=pca$x[,1:num.pc], Xnew=newdata )
+  # fixing the number of rows at 1 at the moment
+  scores.em = matrix(pred$mean, nrow = nrow(newdata))
+  Z.em = as.matrix(pred$sd, nrow = nrow(newdata))
+  
+  # this projection is in the "excised" state
+  proj = pc.project(pca, scores.em, Z.em, scale)
+  
+  # Now insert the projected data back into the original framework
+  tens = matrix(NA, nrow=nrow(newdata), ncol=ncol(Y))
+  tens[ , Ytrunc$all.finite.ix] = proj$tens
+  
+  anom.sd = matrix(NA, nrow=nrow(newdata), ncol=ncol(Y))
+  anom.sd[,Ytrunc$all.finite.ix] = proj$anom.sd
+  
+  return(list(tens=tens, scores.em=scores.em, Z.em=Z.em, anom.sd=anom.sd))
+}
+
+
+# check whether the original km pc allows you to request a matrix out.
+
+test.km.pc = km.pc(Y=bl.frac.nona, X=X.norm, newdata=X.stan.norm, num.pc=3)
+test.km.pc = km.pc(Y=bl.frac.nona, X=X.norm, newdata=X.stan.norm, num.pc=3)
+
+
+
+test.km.pc = km.pc(Y=bl.frac.nona[-c(1,2), ], X=X.norm[-c(1,2), ], 
+                   newdata=X.norm[1:2, ], num.pc=3)
+
+
+test.kmpar.pc = kmpar.pc(Y=bl.frac.ens[-c(1,2), ], X=X.norm[-c(1,2), ], 
+                   newdata=X.norm[1:2, ], num.pc=3)
+
+
+image.plot(longs, rev(lats), 
+           remap.famous(test.kmpar.pc$tens[1,],longs, lats),
+           col=yg)
+map("world2", ylim=c(-90,90), xlim = c(0,360), add = TRUE)
+
+
+pca = prcomp(bl.frac.nona)
+
+direct.pred(form=~., X=X, Y=npp.ens[,200:219], Xnew=X.s)
 
 
 
