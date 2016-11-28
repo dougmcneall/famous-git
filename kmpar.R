@@ -587,11 +587,8 @@ kmpar.pc = function(form = ~., Y, X, newdata, num.pc, scale=FALSE, center=TRUE, 
     newdata = matrix(newdata,nrow=1) 
   }
   
-  #scores.em = matrix(nrow=dim(newdata)[1],ncol=num.pc)
-  #Z.em = matrix(nrow=dim(newdata)[1],ncol=num.pc)
+  pred = direct.pred(form=form, X=X, Y=pca$x[ ,1:num.pc], Xnew=newdata)
   
-  pred = direct.pred(form=form, X=X, Y=pca$x[,1:num.pc], Xnew=newdata )
-  # fixing the number of rows at 1 at the moment
   scores.em = matrix(pred$mean, nrow = nrow(newdata))
   Z.em = as.matrix(pred$sd, nrow = nrow(newdata))
   
@@ -600,10 +597,10 @@ kmpar.pc = function(form = ~., Y, X, newdata, num.pc, scale=FALSE, center=TRUE, 
   
   # Now insert the projected data back into the original framework
   tens = matrix(NA, nrow=nrow(newdata), ncol=ncol(Y))
-  tens[ , Ytrunc$all.finite.ix] = proj$tens
-  
   anom.sd = matrix(NA, nrow=nrow(newdata), ncol=ncol(Y))
+  
   anom.sd[,Ytrunc$all.finite.ix] = proj$anom.sd
+  tens[ , Ytrunc$all.finite.ix] = proj$tens
   
   return(list(tens=tens, scores.em=scores.em, Z.em=Z.em, anom.sd=anom.sd))
 }
@@ -629,10 +626,38 @@ image.plot(longs, rev(lats),
            col=yg)
 map("world2", ylim=c(-90,90), xlim = c(0,360), add = TRUE)
 
+# --------------------------------------------------------
+# Is the new function more accurate than the one that
+# doesn't excise the nans?
+# --------------------------------------------------------
 
-pca = prcomp(bl.frac.nona)
+out.ix = 1:20
+in.ix  = 21:100
+test.km.pc = km.pc(Y=bl.frac.nona[-out.ix, ],
+                   X=X.norm[-out.ix, ], newdata=X.norm[out.ix, ], num.pc=3)
 
-direct.pred(form=~., X=X, Y=npp.ens[,200:219], Xnew=X.s)
+test.kmpar.pc = kmpar.pc(Y=bl.frac.ens[-out.ix, ],
+                   X=X.norm[-out.ix, ], newdata=X.norm[out.ix, ], num.pc=3)
+
+# test only at the places where there is data
+fc = finite.cols(bl.frac.ens)
+loop.err = bl.frac.nona[out.ix, fc$ix] - test.km.pc$tens[, fc$ix]
+par.err = bl.frac.ens[out.ix, fc$ix] - test.kmpar.pc$tens[, fc$ix]
+
+par(mfrow = c(2,1))
+
+hist(loop.err, xlim = c(-0.5,0.5))
+hist(par.err, xlim = c(-0.5,0.5))
+
+mean(abs(loop.err))
+mean(abs(par.err))
+
+# get it back up to a map
+
+
+
+
+
 
 
 
